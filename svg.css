@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+#pickred {
+	height:15px;
+	width:15px;
+	background-color:DarkRed ;
+		display:inline-block;
+	
+	}
+#pickblue {
+	height:15px;
+	width:15px;
+	background-color:DarkBlue ;
+		display:inline-block;
+	}
+#pickgreen {
+	height:15px;
+	width:15px;
+	background-color:DarkGreen ;
+		display:inline-block;
+	
+	}
+#pickyellow {
+	height:15px;
+	width:15px;
+	background-color:GoldenRod ;
+		display:inline-block;
+	}
+#pickDarkViolet {
+	height:15px;
+	width:15px;
+	background-color:DarkViolet ;
+		display:inline-block;
+	
+}
+#pickDarkorange {
+	height:15px;
+	width:15px;
+	background-color:DarkOrange ;
+		display:inline-block;
+	
+}
+
+#reset {
+	height:50px;
+	width:100px;
+	display:inline-block;
+	color:black;
+	}
+
+input {
+	border:none;
+}
+
+input:hover {
+	opacity:0.7;
+}
+.buttonsDERECHA {
+	display:inline-block;
+}
+.buzo {
+	text-align:center;
+	margin:0 auto;
+}
+@media (max-width: 768px) {
+	.buzo {
+		width:70%;
+		height:70%;
+	}
+}
