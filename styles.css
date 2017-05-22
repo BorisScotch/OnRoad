@@ -104,7 +104,6 @@ ul, menu, dir {
 }
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
 	max-height:100vh;
-	height:100vh;
 }
 @media (max-width: 1025px)  {
 	.navbar-nav {
