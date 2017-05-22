@@ -384,9 +384,10 @@ function resetsall() {
  document.getElementById("arrugasmangaizquierda").setAttribute("fill", "black");
  document.getElementById("arrugasmangaizquierda2").setAttribute("fill", "black");
  document.getElementById("arrugasmangaderecha").setAttribute("fill", "black");
- document.getElementById("arrugasmangaderecha2").setAttribute("fill", "black"); 
+ document.getElementById("arrugasmangaderecha2").setAttribute("fill", "black");
+ document.getElementById("bolsilloderecho").setAttribute("fill", "white ");
+ document.getElementById("bolsilloizquierdo").setAttribute("fill", "white "); 
 }
-
 //------------------------------------------ MENU COLORES ------------------------------------------
 var MainMenu = (function() {
     var MainMenu = function(config) {
