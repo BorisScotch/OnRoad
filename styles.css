@@ -113,8 +113,6 @@ ul, menu, dir {
 }
 @media (max-width: 768px) {
 	a.navbar-brand.img-center {
-		height:141px;
-		width:150px;
 	}
 	.navbar-brand {
 		padding: 0px;
