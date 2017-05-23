@@ -1,72 +1,95 @@
 @charset "utf-8";
 /* CSS Document */
-
+.buttons-MI {
+	background:rgba(0, 105, 137, 0.4);
+}
+.buttons-MD {
+	background:rgba(0, 105, 137, 0.4);
+}
+.buttons-II {
+	background:rgba(0, 105, 137, 0.4);
+}
+.buttons-ID {
+	background:rgba(0, 105, 137, 0.4);
+}
+.buttons-BD {
+	background:rgba(0, 105, 137, 0.4);
+}
+.buttons-BI {
+	background:rgba(0, 105, 137, 0.4);
+}
+.buttons-C {
+	background:rgba(0, 105, 137, 0.4);
+}
+.buttons-CI {
+	background:rgba(0, 105, 137, 0.4);
+}
 #pickred {
-	height:15px;
-	width:15px;
+	height:20px;
+	width:20px;
 	background-color:DarkRed ;
 		display:inline-block;
 	
 	}
 #pickblue {
-	height:15px;
-	width:15px;
+	height:20px;
+	width:20px;
 	background-color:DarkBlue ;
 		display:inline-block;
 	}
 #pickgreen {
-	height:15px;
-	width:15px;
+	height:20px;
+	width:20px;
 	background-color:DarkGreen ;
 		display:inline-block;
 	
 	}
 #pickyellow {
-	height:15px;
-	width:15px;
+	height:20px;
+	width:20px;
 	background-color:GoldenRod ;
 		display:inline-block;
 	}
 #pickDarkViolet {
-	height:15px;
-	width:15px;
+	height:20px;
+	width:20px;
 	background-color:DarkViolet ;
 		display:inline-block;
 	
 }
 #pickDarkorange {
-	height:15px;
-	width:15px;
+	height:20px;
+	width:20px;
 	background-color:DarkOrange ;
 		display:inline-block;
 }
 #pickaquamarine {
-	height:15px;
-	width:15px;
+	height:20px;
+	width:20px;
 	background-color:AquaMarine ;
 	display:inline-block;
 }
 #pickaquamarine {
-	height:15px;
-	width:15px;
+	height:20px;
+	width:20px;
 	background-color:AquaMarine ;
 	display:inline-block;
 }
 #pickblack {
-	height:15px;
-	width:15px;
+	height:20px;
+	width:20px;
 	background-color:Black ;
 	display:inline-block;
 }
 #pickdarkcyan {
-	height:15px;
-	width:15px;
+	height:20px;
+	width:20px;
 	background-color:DarkCyan ;
 	display:inline-block;
 }
 #pickSilver {
-	height:15px;
-	width:15px;
+	height:20px;
+	width:20px;
 	background-color:Silver ;
 	display:inline-block;
 }
@@ -76,12 +99,29 @@
 	height:50px;
 	display:inline-block;
 	color:black;
+	position: relative;
+    bottom: 20px;
 	}
-
+.pickclose {
+	height: 15px;
+    width: 15px;
+    background-color: #c30000;
+    display: inline-block;
+    color: #fff;
+    padding: 0px;
+    font-size: 5px;
+    border-radius: 10px;
+    margin-left: 10px;
+	border:1px solid white !important;
+	position: relative;
+    top: -37px;
+}
 .buttons input {
 	border:1px solid;
 }
-
+buttons-MI {
+	display:none;
+}
 input:hover {
 	opacity:0.7;
 }
@@ -90,20 +130,24 @@ input:hover {
 }
 .buttons {
 	padding:5px;
+	margin-bottom:5px;
 }
 .buttons p {
-    line-height: 0.1;
+    line-height: 1;
 }
 .buzo {
 	text-align:center;
 	margin:0 auto;
 	width:25%;
+	padding-top:143px;
 }
 
 @media (max-width: 768px) {
 	.buzo {
 		width:102%;
 		height:102%;
+		padding-top:50px;
+
 	}
 }
 
