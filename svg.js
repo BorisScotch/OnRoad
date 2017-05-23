@@ -384,60 +384,102 @@ function resetsall() {
  document.getElementById("arrugasmangaizquierda").setAttribute("fill", "black");
  document.getElementById("arrugasmangaizquierda2").setAttribute("fill", "black");
  document.getElementById("arrugasmangaderecha").setAttribute("fill", "black");
- document.getElementById("arrugasmangaderecha2").setAttribute("fill", "black");
+ document.getElementById("arrugasmangaderecha2").setAttribute("fill", "black"); 
+ document.getElementById("bolsilloizquierdo").setAttribute("fill", "white ");
+ document.getElementById("bolsilloizquierdoagujero").setAttribute("fill", "Black ");
  document.getElementById("bolsilloderecho").setAttribute("fill", "white ");
- document.getElementById("bolsilloizquierdo").setAttribute("fill", "white "); 
+ document.getElementById("bolsilloderechoagujero").setAttribute("fill", "Black ");
 }
+
 //------------------------------------------ MENU COLORES ------------------------------------------
-var MainMenu = (function() {
-    var MainMenu = function(config) {
-        config = config || {};
-        this.toggleBtn = $(config.toggleBtn);
-        this.menu = $(config.menu);
-        this.close = $(config.close);
-
-        this.init();
-        config = null;
-    };
-    // public interface
-    MainMenu.prototype = {
-        constructor: MainMenu,
-        init: function() {
-            this.eventManager();
-        },
-        eventManager: function() {
-            this.toggleBtn.on('click.openMenu', onButtonClickHandler.bind(this));
-            this.close.on('click.closeMenu', onCloseClickHandler.bind(this));
-        }
-    };
-    // private interface
-    function onButtonClickHandler(menu, evt) {
-        if (!this.menu.hasClass('open')) {
-            this.menu.addClass('open');
-        };
-
-    }
-
-    function onCloseClickHandler(evt) {
-        this.menu.removeClass('open')
-    }
-
-    function onDocumentClickHandler(evt) {
-        var $target = $(evt.target);
-
-        if (!$target.closest(this.menuForm).length && !$target.closest(this.menuContent).length && this.menu.hasClass('open')) {
-            this.menu.removeClass('open')
-        }
-    }
-
-    return MainMenu;
-})();
 
 
 $(document).ready(function() {
-    var mainMenu = new MainMenu({
-        menu: '.main-menu',
-        toggleBtn: '.main-menu-btn',
-        close: '.main-menu-close'
+    $('.mangaizquierda-path').on( "click", function() {
+    $('.buttons-MI').toggle('slow');
     });
-});
+})
+$(document).ready(function() {
+    $('.mangaderecha-path').on( "click", function() {
+    $('.buttons-MD').toggle('slow');
+    });
+})
+
+$(document).ready(function() {
+	$('.MI-X').on( "click", function() {
+    $('.buttons-MI').toggle('slow');
+    });
+})
+$(document).ready(function() {
+    $('.MD-X').on( "click", function() {
+    $('.buttons-MD').toggle('slow');
+    });
+})
+
+$(document).ready(function() {
+    $('.interiorizquierdo-path').on( "click", function() {
+    $('.buttons-II').toggle('slow');
+    });
+})
+$(document).ready(function() {
+    $('.II-X').on( "click", function() {
+    $('.buttons-II').toggle('slow');
+    });
+})
+
+$(document).ready(function() {
+    $('.interiorderecho-path').on( "click", function() {
+    $('.buttons-ID').toggle('slow');
+    });
+})
+$(document).ready(function() {
+    $('.ID-X').on( "click", function() {
+    $('.buttons-ID').toggle('slow');
+    });
+})
+
+$(document).ready(function() {
+    $('.bolsilloizquierdo-path').on( "click", function() {
+    $('.buttons-BI').toggle('slow');
+    });
+})
+$(document).ready(function() {
+    $('.BI-X').on( "click", function() {
+    $('.buttons-BI').toggle('slow');
+    });
+})
+
+$(document).ready(function() {
+    $('.bolsilloderecho-path').on( "click", function() {
+    $('.buttons-BD').toggle('slow');
+    });
+})
+$(document).ready(function() {
+    $('.BD-X').on( "click", function() {
+    $('.buttons-BD').toggle('slow');
+    });
+})
+
+$(document).ready(function() {
+    $('.capucha-path, .capucha-path2, .capucha-path3, .capucha-path4').on( "click", function() {
+    $('.buttons-C').toggle('slow');
+    });
+})
+$(document).ready(function() {
+    $('.C-X').on( "click", function() {
+    $('.buttons-C').toggle('slow');
+    });
+})
+
+$(document).ready(function() {
+    $('.capuchainterior-path, .capuchainterior2-path').on( "click", function() {
+    $('.buttons-CI').toggle('slow');
+    });
+})
+$(document).ready(function() {
+    $('.CI-X').on( "click", function() {
+    $('.buttons-CI').toggle('slow');
+    });
+})
+
+
