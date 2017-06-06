@@ -1,100 +1,164 @@
 @charset "utf-8";
 /* CSS Document */
 .buttons-MI {
-	background:rgba(0, 105, 137, 0.4);
+	background:rgba(0, 105, 137, 0.7);
 }
 .buttons-MD {
-	background:rgba(0, 105, 137, 0.4);
+	background:rgba(0, 105, 137, 0.7);
 }
 .buttons-II {
-	background:rgba(0, 105, 137, 0.4);
+	background:rgba(0, 105, 137, 0.7);
 }
 .buttons-ID {
-	background:rgba(0, 105, 137, 0.4);
+	background:rgba(0, 105, 137, 0.7);
 }
 .buttons-BD {
-	background:rgba(0, 105, 137, 0.4);
+	background:rgba(0, 105, 137, 0.7);
 }
 .buttons-BI {
-	background:rgba(0, 105, 137, 0.4);
+	background:rgba(0, 105, 137, 0.7);
 }
 .buttons-C {
-	background:rgba(0, 105, 137, 0.4);
+	background:rgba(0, 105, 137, 0.7);
 }
 .buttons-CI {
-	background:rgba(0, 105, 137, 0.4);
+	background:rgba(0, 105, 137, 0.7);
 }
-#pickred {
+#pickcrudo {
 	height:20px;
 	width:20px;
-	background-color:DarkRed ;
+	background-color:#fff8d4 ;
+	display:inline-block;
+	
+	}
+#pickbeige {
+	height:20px;
+	width:20px;
+	background-color:#e8e3c8 ;
+		display:inline-block;
+	}
+#picktopo {
+	height:20px;
+	width:20px;
+	background-color:#424245 ;
 		display:inline-block;
 	
 	}
-#pickblue {
+#pickperla {
 	height:20px;
 	width:20px;
-	background-color:DarkBlue ;
+	background-color:#bdc3c3 ;
 		display:inline-block;
 	}
-#pickgreen {
+#pickfucsia {
 	height:20px;
 	width:20px;
-	background-color:DarkGreen ;
-		display:inline-block;
-	
-	}
-#pickyellow {
-	height:20px;
-	width:20px;
-	background-color:GoldenRod ;
-		display:inline-block;
-	}
-#pickDarkViolet {
-	height:20px;
-	width:20px;
-	background-color:DarkViolet ;
+	background-color:#d4305e ;
 		display:inline-block;
 	
 }
-#pickDarkorange {
+#pickuva {
 	height:20px;
 	width:20px;
-	background-color:DarkOrange ;
+	background-color:#511024 ;
 		display:inline-block;
 }
-#pickaquamarine {
+#pickvioleta {
 	height:20px;
 	width:20px;
-	background-color:AquaMarine ;
+	background-color:#5a2a5e ;
 	display:inline-block;
 }
-#pickaquamarine {
+#pickcoral {
 	height:20px;
 	width:20px;
-	background-color:AquaMarine ;
+	background-color:#f78b86 ;
 	display:inline-block;
 }
-#pickblack {
+#pickbordo {
 	height:20px;
 	width:20px;
-	background-color:Black ;
+	background-color:#b81c3e ;
 	display:inline-block;
 }
-#pickdarkcyan {
+#pickrojo {
 	height:20px;
 	width:20px;
-	background-color:DarkCyan ;
+	background-color:#ed2c2d ;
 	display:inline-block;
 }
-#pickSilver {
+#picksalmon {
 	height:20px;
 	width:20px;
-	background-color:Silver ;
+	background-color:#d3543c ;
 	display:inline-block;
 }
-
-
+#pickazulpetroleo {
+	background-color:#134474;
+	height:20px;
+	width:20px;
+	display:inline-block;
+}
+#pickmarino  {
+	background-color:#120c3b;
+	height:20px;
+	width:20px;
+	display:inline-block;
+}
+#pickturquesa {
+	background-color:#009ccf;
+	height:20px;
+	width:20px;
+	display:inline-block;
+}
+#pickceleste {
+	background-color:#7ab8db;
+	height:20px;
+	width:20px;
+	display:inline-block;
+}
+#pickatlantis {
+	background-color:#1c9191;
+	height:20px;
+	width:20px;
+	display:inline-block;
+}
+#pickverdepetroleo {
+	background-color:#006b59;
+	height:20px;
+	width:20px;
+	display:inline-block;
+}
+#pickmarea {
+	background-color:#7ddbc9;
+	height:20px;
+	width:20px;
+	display:inline-block;
+}
+#pickingles {
+	background-color:#005b31;
+	height:20px;
+	width:20px;
+	display:inline-block;
+}
+#pickmilitar {
+	background-color:#535f2a;
+	height:20px;
+	width:20px;
+	display:inline-block;
+}
+#pickmanzana {
+	background-color:#92b175;
+	height:20px;
+	width:20px;
+	display:inline-block;
+}
+#pickbrasil {
+	background-color:#00a631;
+	height:20px;
+	width:20px;
+	display:inline-block;
+}
 #reset {
 	height:50px;
 	display:inline-block;
@@ -138,17 +202,44 @@ input:hover {
 .buzo {
 	text-align:center;
 	margin:0 auto;
-	width:25%;
-	padding-top:143px;
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+} 
+.img-responsive-buzo {
+	height: 500px;
+}
+.botonera {
+	position:absolute; 
+	top:200px; 
+	left:50px;
 }
 
 @media (max-width: 768px) {
 	.buzo {
 		width:100%;
 		height:100%;
-		padding-top:35px;
+		padding-top:50px;
 	}
-.img-responsive-buzo {
-	height: 350px;
+	.botonera {
+		left:0px;
+	}
+	.pickclose {
+
+    	left: 230px;
+		top:0px;
+
+	}
 }
+@media (max-height: 495px) {
+	.buzo {
+		max-height:400px;
+	}
+}
+@media (max-height: 496px) {
+	.buzo {
+		max-height:400px;
+	}
 }
