@@ -13,6 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/e379886307.js"></script>
   <script type="text/javascript" src="jquery.fullPage.min.js"></script>
+<script type="text/javascript"   src="https://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.extensions.min.js"></script>
 <script src="svg.js" type="text/javascript"></script>
 
   <script>
@@ -22,12 +23,6 @@ $(function() {
             $(".navbar-toggle").trigger( "click" );
         }
    });
-});
-
-$(document).ready(function(){
-    $(".navbar-toggle").click(function(){
-        $(".navbar-brand").toggle(1000);
-    });
 });
   </script>
 
@@ -72,8 +67,7 @@ $(document).ready(function(){
 <!-- ------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------- -->
     	<div data-anchor="uno" class="fp-section section1">
         	<div class="container">
-            	<div class="slide" data-anchor="slide1"> HOME </div>
-                <div class="slide" data-anchor="slide2"> BAUCHER </div>
+            	
             </div>
         </div>
         
@@ -81,20 +75,32 @@ $(document).ready(function(){
         
         
         <div class="fp-section section2" data-anchor="dos">
-            <div style="position:absolute; top:200px; left:50px;" class="botonera">
+            <div class="botonera">
                 <div style="display:none" class="buttons-MI">
                     <div class="buttons ">
                         <p>MANGA IZQUIERDA</p>
-                        <input id="pickred" type="button" onclick="redmangaizquierda()" />
-                        <input id="pickblue" type="button" onclick="bluemangaizquierda()" />
-                        <input id="pickgreen" type="button" onclick="greenmangaizquierda()" />
-                        <input id="pickyellow" type="button" onclick="yellowmangaizquierda()" />
-                        <input id="pickDarkViolet" type="button" onclick="DarkVioletmangaizquierda()" />
-                        <input id="pickDarkorange" type="button" onclick="Darkorangemangaizquierda()" />
-                        <input id="pickaquamarine" type="button" onclick="aquamarinemangaizquierda()" />
-                        <input id="pickblack" type="button" onclick="blackmangaizquierda()" />
-                        <input id="pickdarkcyan" type="button" onclick="DarkCyanmangaizquierda()" />
-                        <input id="pickSilver" type="button" onclick="Silvermangaizquierda()" />
+                        <input id="pickcrudo" type="button" onclick="crudoMI()" />
+                        <input id="pickbeige" type="button" onclick="beigeMI()" />
+                        <input id="picktopo" type="button" onclick="topoMI()" />
+                        <input id="pickperla" type="button" onclick="perlaMI()" />
+                        <input id="pickfucsia" type="button" onclick="fucsiaMI()" />
+                        <input id="pickuva" type="button" onclick="uvaMI()" />
+                        <input id="pickvioleta" type="button" onclick="violetaMI()" />
+                        <input id="pickcoral" type="button" onclick="coralMI()" />
+                        <input id="pickbordo" type="button" onclick="bordoMI()" />
+                        <input id="pickrojo" type="button" onclick="rojoMI()" />
+                        <input id="picksalmon" type="button" onclick="salmonMI()" />
+                        <input id="pickazulpetroleo" type="button" onclick="azulpetroleoMI()" />
+                        <input id="pickmarino" type="button" onclick="marinoMI()" />
+                        <input id="pickturquesa" type="button" onclick="turquesaMI()" />
+                        <input id="pickceleste" type="button" onclick="celesteMI()" />
+                        <input id="pickatlantis" type="button" onclick="atlantisMI()" />
+                        <input id="pickverdepetroleo" type="button" onclick="verdepetroleoMI()" />
+                        <input id="pickmarea" type="button" onclick="mareaMI()" />
+                        <input id="pickingles" type="button" onclick="inglesMI()" />
+                        <input id="pickmilitar" type="button" onclick="militarMI()" />
+                        <input id="pickmanzana" type="button" onclick="manzanaMI()" />
+                        <input id="pickbrasil" type="button" onclick="brasilMI()" />
                         <input value="X" class="MI-X pickclose " type="button" />
 
                     </div>
@@ -102,48 +108,84 @@ $(document).ready(function(){
                 <div style="display:none" class="buttons-MD">
                     <div class="buttons">
                         <p>MANGA DERECHA</p>
-                        <input id="pickred" type="button" onclick="redmangaderecha()" />
-                        <input id="pickblue" type="button" onclick="bluemangaderecha()" />
-                        <input id="pickgreen" type="button" onclick="greenmangaderecha()" />
-                        <input id="pickyellow" type="button" onclick="yellowmangaderecha()" />
-                        <input id="pickDarkViolet" type="button" onclick="DarkVioletmangaderecha()" />
-                        <input id="pickDarkorange" type="button" onclick="darkorangemangaderecha()" />
-                        <input id="pickaquamarine" type="button" onclick="aquamarinemangaderecha()" />
-                        <input id="pickblack" type="button" onclick="blackmangaderecha()" />
-                        <input id="pickdarkcyan" type="button" onclick="DarkCyanmangaderecha()" />
-                        <input id="pickSilver" type="button" onclick="Silvermangaderecha()" />
+                        <input id="pickcrudo" type="button" onclick="crudoMD()" />
+                        <input id="pickbeige" type="button" onclick="beigeMD()" />
+                        <input id="picktopo" type="button" onclick="topoMD()" />
+                        <input id="pickperla" type="button" onclick="perlaMD()" />
+                        <input id="pickfucsia" type="button" onclick="fucsiaMD()" />
+                        <input id="pickuva" type="button" onclick="uvaMD()" />
+                        <input id="pickvioleta" type="button" onclick="violetaMD()" />
+                        <input id="pickcoral" type="button" onclick="coralMD()" />
+                        <input id="pickbordo" type="button" onclick="bordoMD()" />
+                        <input id="pickrojo" type="button" onclick="rojoMD()" />
+                        <input id="picksalmon" type="button" onclick="salmonMD()" />
+                        <input id="pickazulpetroleo" type="button" onclick="azulpetroleoMD()" />
+                        <input id="pickmarino" type="button" onclick="marinoMD()" />
+                        <input id="pickturquesa" type="button" onclick="turquesaMD()" />
+                        <input id="pickceleste" type="button" onclick="celesteMD()" />
+                        <input id="pickatlantis" type="button" onclick="atlantisMD()" />
+                        <input id="pickverdepetroleo" type="button" onclick="verdepetroleoMD()" />
+                        <input id="pickmarea" type="button" onclick="mareaMD()" />
+                        <input id="pickingles" type="button" onclick="inglesMD()" />
+                        <input id="pickmilitar" type="button" onclick="militarMD()" />
+                        <input id="pickmanzana" type="button" onclick="manzanaMD()" />
+                        <input id="pickbrasil" type="button" onclick="brasilMD()" />
                         <input value="X" class="MD-X pickclose " type="button" />
                     </div>
                 </div> 
                 <div style="display:none" class="buttons-II">     
                     <div class="buttons">
                         <p>INTERIOR IZQUIERDO</p>
-                        <input id="pickred" type="button" onclick="redinteriorizquierdo()" />
-                        <input id="pickblue" type="button" onclick="blueinteriorizquierdo()" />
-                        <input id="pickgreen" type="button" onclick="greeninteriorizquierdo()" />
-                        <input id="pickyellow" type="button" onclick="yellowinteriorizquierdo()" />
-                        <input id="pickDarkViolet" type="button" onclick="darkvioletinteriorizquierdo()" />
-                        <input id="pickDarkorange" type="button" onclick="darkorangeinteriorizquierdo()" />
-                        <input id="pickaquamarine" type="button" onclick="aquamarineinteriorizquierdo()" />
-                        <input id="pickblack" type="button" onclick="blackinteriorizquierdo()" />
-                        <input id="pickdarkcyan" type="button" onclick="darkcyaninteriorizquierdo()" />
-                        <input id="pickSilver" type="button" onclick="silverinteriorizquierdo()" />
+                        <input id="pickcrudo" type="button" onclick="crudoII()" />
+                        <input id="pickbeige" type="button" onclick="beigeII()" />
+                        <input id="picktopo" type="button" onclick="topoII()" />
+                        <input id="pickperla" type="button" onclick="perlaII()" />
+                        <input id="pickfucsia" type="button" onclick="fucsiaII()" />
+                        <input id="pickuva" type="button" onclick="uvaII()" />
+                        <input id="pickvioleta" type="button" onclick="violetaII()" />
+                        <input id="pickcoral" type="button" onclick="coralII()" />
+                        <input id="pickbordo" type="button" onclick="bordoII()" />
+                        <input id="pickrojo" type="button" onclick="rojoII()" />
+                        <input id="picksalmon" type="button" onclick="salmonII()" />
+                        <input id="pickazulpetroleo" type="button" onclick="azulpetroleoII()" />
+                        <input id="pickmarino" type="button" onclick="marinoII()" />
+                        <input id="pickturquesa" type="button" onclick="turquesaII()" />
+                        <input id="pickceleste" type="button" onclick="celesteII()" />
+                        <input id="pickatlantis" type="button" onclick="atlantisII()" />
+                        <input id="pickverdepetroleo" type="button" onclick="verdepetroleoII()" />
+                        <input id="pickmarea" type="button" onclick="mareaII()" />
+                        <input id="pickingles" type="button" onclick="inglesII()" />
+                        <input id="pickmilitar" type="button" onclick="militarII()" />
+                        <input id="pickmanzana" type="button" onclick="manzanaII()" />
+                        <input id="pickbrasil" type="button" onclick="brasilII()" />
                         <input value="X" class="II-X pickclose " type="button" />
                     </div>
                 </div>
                 <div style="display:none" class="buttons-ID">
 	                <div class="buttons">
                         <p>INTERIOR DERECHO</p>
-                        <input id="pickred" type="button" onclick="redinteriorderecho()" />
-                        <input id="pickblue" type="button" onclick="blueinteriorderecho()" />
-                        <input id="pickgreen" type="button" onclick="greeninteriorderecho()" />
-                        <input id="pickyellow" type="button" onclick="yellowinteriorderecho()" />
-                        <input id="pickDarkViolet" type="button" onclick="darkvioletinteriorderecho()" />
-                        <input id="pickDarkorange" type="button" onclick="darkorangeinteriorderecho()" />
-                        <input id="pickaquamarine" type="button" onclick="aquamarineinteriorderecho()" />
-                        <input id="pickblack" type="button" onclick="blackinteriorderecho()" />
-                        <input id="pickdarkcyan" type="button" onclick="darkcyaninteriorderecho()" />
-                        <input id="pickSilver" type="button" onclick="silverinteriorderecho()" />
+                        <input id="pickcrudo" type="button" onclick="crudoID()" />
+                        <input id="pickbeige" type="button" onclick="beigeID()" />
+                        <input id="picktopo" type="button" onclick="topoID()" />
+                        <input id="pickperla" type="button" onclick="perlaID()" />
+                        <input id="pickfucsia" type="button" onclick="fucsiaID()" />
+                        <input id="pickuva" type="button" onclick="uvaID()" />
+                        <input id="pickvioleta" type="button" onclick="violetaID()" />
+                        <input id="pickcoral" type="button" onclick="coralID()" />
+                        <input id="pickbordo" type="button" onclick="bordoID()" />
+                        <input id="pickrojo" type="button" onclick="rojoID()" />
+                        <input id="picksalmon" type="button" onclick="salmonID()" />
+                        <input id="pickazulpetroleo" type="button" onclick="azulpetroleoID()" />
+                        <input id="pickmarino" type="button" onclick="marinoID()" />
+                        <input id="pickturquesa" type="button" onclick="turquesaID()" />
+                        <input id="pickceleste" type="button" onclick="celesteID()" />
+                        <input id="pickatlantis" type="button" onclick="atlantisID()" />
+                        <input id="pickverdepetroleo" type="button" onclick="verdepetroleoID()" />
+                        <input id="pickmarea" type="button" onclick="mareaID()" />
+                        <input id="pickingles" type="button" onclick="inglesID()" />
+                        <input id="pickmilitar" type="button" onclick="militarID()" />
+                        <input id="pickmanzana" type="button" onclick="manzanaID()" />
+                        <input id="pickbrasil" type="button" onclick="brasilID()" />
                         <input value="X" class="ID-X pickclose " type="button" />
                     </div>
                 </div>
@@ -151,33 +193,57 @@ $(document).ready(function(){
 				<div style="display:none" class="buttons-BI">                        
                 	<div class="buttons">
                         <p>BOLSILLO IZQUIERDO</p>
-                        <input id="pickred" type="button" onclick="redbolsilloizquierdo()" />
-                        <input id="pickblue" type="button" onclick="bluebolsilloizquierdo()" />
-                        <input id="pickgreen" type="button" onclick="greenbolsilloizquierdo()" />
-                        <input id="pickyellow" type="button" onclick="yellowbolsilloizquierdo()" />
-                        <input id="pickDarkViolet" type="button" onclick="darkvioletbolsilloizquierdo()" />
-                        <input id="pickDarkorange" type="button" onclick="darkorangebolsilloizquierdo()" />
-                        <input id="pickaquamarine" type="button" onclick="aquamarinebolsilloizquierdo()" />
-                        <input id="pickblack" type="button" onclick="blackinterbolsilloizquierdo()" />
-                        <input id="pickdarkcyan" type="button" onclick="darkcyanbolsilloizquierdo()" />
-                        <input id="pickSilver" type="button" onclick="silverbolsilloizquierdo()" />
+                        <input id="pickcrudo" type="button" onclick="crudoBI()" />
+                        <input id="pickbeige" type="button" onclick="beigeBI()" />
+                        <input id="picktopo" type="button" onclick="topoBI()" />
+                        <input id="pickperla" type="button" onclick="perlaBI()" />
+                        <input id="pickfucsia" type="button" onclick="fucsiaBI()" />
+                        <input id="pickuva" type="button" onclick="uvaBI()" />
+                        <input id="pickvioleta" type="button" onclick="violetaBI()" />
+                        <input id="pickcoral" type="button" onclick="coralBI()" />
+                        <input id="pickbordo" type="button" onclick="bordoBI()" />
+                        <input id="pickrojo" type="button" onclick="rojoBI()" />
+                        <input id="picksalmon" type="button" onclick="salmonBI()" />
+                        <input id="pickazulpetroleo" type="button" onclick="azulpetroleoBI()" />
+                        <input id="pickmarino" type="button" onclick="marinoBI()" />
+                        <input id="pickturquesa" type="button" onclick="turquesaBI()" />
+                        <input id="pickceleste" type="button" onclick="celesteBI()" />
+                        <input id="pickatlantis" type="button" onclick="atlantisBI()" />
+                        <input id="pickverdepetroleo" type="button" onclick="verdepetroleoBI()" />
+                        <input id="pickmarea" type="button" onclick="mareaBI()" />
+                        <input id="pickingles" type="button" onclick="inglesBI()" />
+                        <input id="pickmilitar" type="button" onclick="militarBI()" />
+                        <input id="pickmanzana" type="button" onclick="manzanaBI()" />
+                        <input id="pickbrasil" type="button" onclick="brasilBI()" />
                         <input value="X" class="BI-X pickclose " type="button" />
                     </div>
                 </div>
-                        
+                
                 <div style="display:none" class="buttons-BD">	
                     <div class="buttons">
                     <p>BOLSILLO DERECHO</p>
-                        <input id="pickred" type="button" onclick="redbolsilloderecho()" />
-                        <input id="pickblue" type="button" onclick="bluebolsilloderecho()" />
-                        <input id="pickgreen" type="button" onclick="greenbolsilloderecho()" />
-                        <input id="pickyellow" type="button" onclick="yellowbolsilloderecho()" />
-                        <input id="pickDarkViolet" type="button" onclick="darkvioletbolsilloderecho()" />
-                        <input id="pickDarkorange" type="button" onclick="darkorangebolsilloderecho()" />
-                        <input id="pickaquamarine" type="button" onclick="aquamarinebolsilloderecho()" />
-                        <input id="pickblack" type="button" onclick="blackinterbolsilloderecho()" />
-                        <input id="pickdarkcyan" type="button" onclick="darkcyanbolsilloderecho()" />
-                        <input id="pickSilver" type="button" onclick="silverbolsilloderecho()" />
+                        <input id="pickcrudo" type="button" onclick="crudoBD()" />
+                        <input id="pickbeige" type="button" onclick="beigeBD()" />
+                        <input id="picktopo" type="button" onclick="topoBD()" />
+                        <input id="pickperla" type="button" onclick="perlaBD()" />
+                        <input id="pickfucsia" type="button" onclick="fucsiaBD()" />
+                        <input id="pickuva" type="button" onclick="uvaBD()" />
+                        <input id="pickvioleta" type="button" onclick="violetaBD()" />
+                        <input id="pickcoral" type="button" onclick="coralBD()" />
+                        <input id="pickbordo" type="button" onclick="bordoBD()" />
+                        <input id="pickrojo" type="button" onclick="rojoBD()" />
+                        <input id="picksalmon" type="button" onclick="salmonBD()" />
+                        <input id="pickazulpetroleo" type="button" onclick="azulpetroleoBD()" />
+                        <input id="pickmarino" type="button" onclick="marinoBD()" />
+                        <input id="pickturquesa" type="button" onclick="turquesaBD()" />
+                        <input id="pickceleste" type="button" onclick="celesteBD()" />
+                        <input id="pickatlantis" type="button" onclick="atlantisBD()" />
+                        <input id="pickverdepetroleo" type="button" onclick="verdepetroleoBD()" />
+                        <input id="pickmarea" type="button" onclick="mareaBD()" />
+                        <input id="pickingles" type="button" onclick="inglesBD()" />
+                        <input id="pickmilitar" type="button" onclick="militarBD()" />
+                        <input id="pickmanzana" type="button" onclick="manzanaBD()" />
+                        <input id="pickbrasil" type="button" onclick="brasilBD()" />
                         <input value="X" class="BD-X pickclose " type="button" />
                     </div>
                 </div>
@@ -185,16 +251,28 @@ $(document).ready(function(){
                 <div style="display:none" class="buttons-C">
 	                <div class="buttons">
                         <p>CAPUCHA</p>
-                        <input id="pickred" type="button" onclick="redcapucha()" />
-                        <input id="pickblue" type="button" onclick="bluecapucha()" />
-                        <input id="pickgreen" type="button" onclick="greencapucha()" />
-                        <input id="pickyellow" type="button" onclick="yellowcapucha()" />
-                        <input id="pickDarkViolet" type="button" onclick="darkvioletcapucha()" />
-                        <input id="pickDarkorange" type="button" onclick="darkorangecapucha()" />
-                        <input id="pickaquamarine" type="button" onclick="aquamarinecapucha()" />
-                        <input id="pickblack" type="button" onclick="blackcapucha()" />
-                        <input id="pickdarkcyan" type="button" onclick="darkcyancapucha()" />
-                        <input id="pickSilver" type="button" onclick="silvercapucha()" />
+                        <input id="pickcrudo" type="button" onclick="crudoC()" />
+                        <input id="pickbeige" type="button" onclick="beigeC()" />
+                        <input id="picktopo" type="button" onclick="topoC()" />
+                        <input id="pickperla" type="button" onclick="perlaC()" />
+                        <input id="pickfucsia" type="button" onclick="fucsiaC()" />
+                        <input id="pickuva" type="button" onclick="uvaC()" />
+                        <input id="pickvioleta" type="button" onclick="violetaC()" />
+                        <input id="pickcoral" type="button" onclick="coralC()" />
+                        <input id="pickbordo" type="button" onclick="bordoC()" />
+                        <input id="pickrojo" type="button" onclick="rojoC()" />
+                        <input id="picksalmon" type="button" onclick="salmonC()" />
+                        <input id="pickazulpetroleo" type="button" onclick="azulpetroleoC()" />
+                        <input id="pickmarino" type="button" onclick="marinoC()" />
+                        <input id="pickturquesa" type="button" onclick="turquesaC()" />
+                        <input id="pickceleste" type="button" onclick="celesteC()" />
+                        <input id="pickatlantis" type="button" onclick="atlantisC()" />
+                        <input id="pickverdepetroleo" type="button" onclick="verdepetroleoC()" />
+                        <input id="pickmarea" type="button" onclick="mareaC()" />
+                        <input id="pickingles" type="button" onclick="inglesC()" />
+                        <input id="pickmilitar" type="button" onclick="militarC()" />
+                        <input id="pickmanzana" type="button" onclick="manzanaC()" />
+                        <input id="pickbrasil" type="button" onclick="brasilC()" />
                         <input value="X" class="C-X pickclose " type="button" />
                     </div>
                 </div>
@@ -202,25 +280,37 @@ $(document).ready(function(){
                 <div style="display:none" class="buttons-CI">
 	                <div class="buttons">
                         <p>CAPUCHA INTERIOR</p>
-                        <input id="pickred" type="button" onclick="redcapuchainterior()" />
-                        <input id="pickblue" type="button" onclick="bluecapuchainterior()" />
-                        <input id="pickgreen" type="button" onclick="greencapuchainterior()" />
-                        <input id="pickyellow" type="button" onclick="yellowcapuchainterior()" />
-                        <input id="pickDarkViolet" type="button" onclick="darkvioletcapuchainterior()" />
-                        <input id="pickDarkorange" type="button" onclick="darkorangecapuchainterior()" />
-                        <input id="pickaquamarine" type="button" onclick="aquamarinecapuchainterior()" />
-                        <input id="pickblack" type="button" onclick="blackcapuchainterior()" />
-                        <input id="pickdarkcyan" type="button" onclick="darkcyancapuchainterior()" />
-                        <input id="pickSilver" type="button" onclick="silvercapuchainterior()" />
+                        <input id="pickcrudo" type="button" onclick="crudoCI()" />
+                        <input id="pickbeige" type="button" onclick="beigeCI()" />
+                        <input id="picktopo" type="button" onclick="topoCI()" />
+                        <input id="pickperla" type="button" onclick="perlaCI()" />
+                        <input id="pickfucsia" type="button" onclick="fucsiaCI()" />
+                        <input id="pickuva" type="button" onclick="uvaCI()" />
+                        <input id="pickvioleta" type="button" onclick="violetaCI()" />
+                        <input id="pickcoral" type="button" onclick="coralCI()" />
+                        <input id="pickbordo" type="button" onclick="bordoCI()" />
+                        <input id="pickrojo" type="button" onclick="rojoCI()" />
+                        <input id="picksalmon" type="button" onclick="salmonCI()" />
+                        <input id="pickazulpetroleo" type="button" onclick="azulpetroleoCI()" />
+                        <input id="pickmarino" type="button" onclick="marinoCI()" />
+                        <input id="pickturquesa" type="button" onclick="turquesaCI()" />
+                        <input id="pickceleste" type="button" onclick="celesteCI()" />
+                        <input id="pickatlantis" type="button" onclick="atlantisCI()" />
+                        <input id="pickverdepetroleo" type="button" onclick="verdepetroleoCI()" />
+                        <input id="pickmarea" type="button" onclick="mareaCI()" />
+                        <input id="pickingles" type="button" onclick="inglesCI()" />
+                        <input id="pickmilitar" type="button" onclick="militarCI()" />
+                        <input id="pickmanzana" type="button" onclick="manzanaCI()" />
+                        <input id="pickbrasil" type="button" onclick="brasilCI()" />
                         <input value="X" class="CI-X pickclose " type="button" />
                     </div>
                 </div>
                 
 			</div>
             <div class="buzo">
-            <h3>Hacé Click en la parte que queres colorear</h3>
-	<div class="img-center">
-            <svg class="img-responsive-buzo" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" version="1.1" id="Layer_1" x="0px" y="0px"  viewBox="0 0 280.8 358.5" enable-background="new 0 0 280.8 358.5" xml:space="preserve">
+            <h3 class="titulo-seccion">Hacé Click en la parte que queres colorear</h3>
+			<div class="img-center buzo2">
+            <svg  class="img-responsive-buzo" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" version="1.1" id="Layer_1" x="0px" y="0px"  viewBox="0 0 280.8 358.5" enable-background="new 0 0 280.8 358.5" xml:space="preserve">
             
             <g>
                 <path fill="#333333" d="M223.2,336c4.7,3.7,17,5.4,24.7,1.9s4.6-17.4,4.6-17.4l-32-0.5C220.5,320,218.5,332.3,223.2,336z"/>
@@ -278,6 +368,7 @@ $(document).ready(function(){
                     <path class="mangaizquierda-path" id="mangaizquierda" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M62,136.2c-9.2,10.2-41,63.8-40,83.2    c1,19.4,4.4,84.6,4.4,86.5c0,1.9-0.8,9,4.3,16.2s23.8,4.9,31-2.1c7.2-7-1.5-68.4-1.2-87.1c0.1-5.8,6.5-28.2,10.2-35.7    c4.2-8.5,7.4-12,7.4-12s3.3-7.1,6.3-13.4c0.2-0.5,0.5-1.1,0.7-1.6c0.3-0.6,0.6-1.3,0.9-1.9c0.2-0.4,0.4-0.8,0.6-1.2    c1.2-2.6,2.2-4.5,2.3-4.7c0.2-0.4,0.5-1.5,1.6-3c0.4-0.6,0.6-1.4,1.1-2c0.3-0.4,0.6-1.1,0.9-1.6c0.5-0.8,0.9-1.8,1.6-2.8    c0.8-1.2,1.4-2.5,2-3.3c1.4-1.6,1.7-1.9,3-3.3c0.7-0.8,1.7-1.7,2.6-2.4c1.6-1.3,3-2.3,3.6-2.8c0.7-0.5,0.2,0.2,2.3-1.6    c0.3-0.3,1-0.5,1.5-0.9c0.1-0.1,0.1,0-0.1-0.2c-0.5-0.4,0-0.1-0.5-0.4c-0.3-0.2-0.5-0.4-1.1-1c-2.6-2.5-4.3-4.2-5.1-5.3    c-1.7-2.4-7.7-5-8.9-8.5c-0.7-2-8.9,2.3-10.8,2.8C77.7,127.1,63.3,134.8,62,136.2z"/>
                     <path id="arrugasmangaizquierda" d="M42.9,227.7c-0.4-0.1-0.7,0.1-0.9,0.4c-0.1,0.4,0.1,0.7,0.4,0.9c2.8,1,10.7,3.2,14.7,3.2c1.2,0,2-0.2,2.3-0.7    c0.5-0.9-0.6-1.7-1-2c-4.1-3-18-9-18.6-9.3c-0.3-0.1-0.7,0-0.9,0.4c-0.1,0.3,0,0.7,0.4,0.9c0.1,0.1,14.4,6.2,18.4,9.1    c0.1,0.1,0.2,0.1,0.3,0.2C55.8,231.1,48.6,229.8,42.9,227.7z"/>
                     <path id="arrugasmangaizquierda2" d="M51.2,233c-6,0.1-13.7-1.8-13.8-1.8c-0.4-0.1-0.7,0.1-0.8,0.5c-0.1,0.4,0.1,0.7,0.5,0.8c0.3,0.1,7.6,1.8,13.6,1.8    c0.2,0,0.3,0,0.5,0c0.4,0,0.7-0.3,0.7-0.7C51.9,233.3,51.6,233,51.2,233C51.2,233,51.2,233,51.2,233z"/>
+                    
                 </g>
                 <g>
                     <path d="M218,319.6c-0.1,0.7-3.4,16.1,6.2,20.4c3.1,1.4,7.1,2.2,11.4,2.2c6.5,0,12.8-1.7,16.2-4.4c5.6-4.5,4-16.3,3.6-18.6    c-0.2-1.3-1.4-2.3-2.7-2.3c0,0,0,0,0,0l-32,0.5C219.4,317.5,218.3,318.4,218,319.6z M220.7,320.2l32-0.5c0,0,2,12.3-2.6,16.1    c-2.9,2.3-8.7,3.8-14.5,3.8c-3.6,0-7.3-0.6-10.2-1.9C217.6,334.1,220.7,320.2,220.7,320.2z"/>
@@ -328,7 +419,7 @@ $(document).ready(function(){
             </g>
             
             </svg>
-		</div>
+       		</div>
             <input class="btn btn-primary" id="reset" type="button" value="RESETEAR" onclick="resetsall()" />
 
     </div>
@@ -359,6 +450,14 @@ $(document).ready(function() {
 	navigation: true,
 	resetSliders:true,
 	navigationPosition: 'right',
+	loopBottom: true,
+	parallax: true,
+	parallaxOptions: {
+					type: 'reveal',
+					percentage: 62,
+					property: 'translate'
+				},
+	scrollHorizontally: false,
 
 	});
 });
