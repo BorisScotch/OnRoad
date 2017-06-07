@@ -71,6 +71,7 @@ ul, menu, dir {
 	border-radius:10px;
 	-webkit-transition: all ease-out 0.5s;
 	transition:all ease-in-out 0.5s;
+	background-color:none;
 }
 .nav>li>a:focus {
 	background-color:transparent !important;
