@@ -258,6 +258,7 @@ li.active a {
 	background-color:#dd2c8c;
 	border-radius:10px;
 	color:#fff;
+	box-shadow:-5px -5px 0px #fff;
 }
 /* ----------------------------------------------ANIMACIONES---------------------------------------------- */
 .section2 > .fp-tableCell .buzo2 {
