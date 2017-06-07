@@ -25,139 +25,139 @@
 	background:rgba(0, 105, 137, 0.7);
 }
 #pickcrudo {
-	height:20px;
-	width:20px;
+	height:30px;
+	width:30px;
 	background-color:#fff8d4 ;
-	display:inline-block;
-	
+	border-radius: 50%;	
 	}
 #pickbeige {
-	height:20px;
-	width:20px;
+	height:30px;
+	width:30px;
 	background-color:#e8e3c8 ;
-		display:inline-block;
+	border-radius: 50%;	
 	}
 #picktopo {
-	height:20px;
-	width:20px;
+	height:30px;
+	width:30px;
 	background-color:#424245 ;
-		display:inline-block;
+	border-radius: 50%;	
 	
 	}
 #pickperla {
-	height:20px;
-	width:20px;
+	height:30px;
+	width:30px;
 	background-color:#bdc3c3 ;
-		display:inline-block;
+	border-radius: 50%;	
 	}
 #pickfucsia {
-	height:20px;
-	width:20px;
+	height:30px;
+	width:30px;
 	background-color:#d4305e ;
-		display:inline-block;
+	border-radius: 50%;	
 	
 }
 #pickuva {
-	height:20px;
-	width:20px;
+	height:30px;
+	width:30px;
 	background-color:#511024 ;
-		display:inline-block;
+	border-radius: 50%;	
 }
 #pickvioleta {
-	height:20px;
-	width:20px;
+	height:30px;
+	width:30px;
 	background-color:#5a2a5e ;
-	display:inline-block;
+	border-radius: 50%;	
 }
 #pickcoral {
-	height:20px;
-	width:20px;
+	height:30px;
+	width:30px;
 	background-color:#f78b86 ;
-	display:inline-block;
+	border-radius: 50%;	
 }
 #pickbordo {
-	height:20px;
-	width:20px;
+	height:30px;
+	width:30px;
 	background-color:#b81c3e ;
-	display:inline-block;
+	border-radius: 50%;	
 }
 #pickrojo {
-	height:20px;
-	width:20px;
+	height:30px;
+	width:30px;
 	background-color:#ed2c2d ;
-	display:inline-block;
+	border-radius: 50%;	
 }
 #picksalmon {
-	height:20px;
-	width:20px;
+	height:30px;
+	width:30px;
 	background-color:#d3543c ;
-	display:inline-block;
+	border-radius: 50%;	
 }
 #pickazulpetroleo {
 	background-color:#134474;
-	height:20px;
-	width:20px;
-	display:inline-block;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
 }
 #pickmarino  {
 	background-color:#120c3b;
-	height:20px;
-	width:20px;
-	display:inline-block;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
 }
 #pickturquesa {
 	background-color:#009ccf;
-	height:20px;
-	width:20px;
-	display:inline-block;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
 }
 #pickceleste {
 	background-color:#7ab8db;
-	height:20px;
-	width:20px;
+	height:30px;
+	width:30px;
 	display:inline-block;
+	border-radius: 50%;	
 }
 #pickatlantis {
 	background-color:#1c9191;
-	height:20px;
-	width:20px;
-	display:inline-block;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
 }
 #pickverdepetroleo {
 	background-color:#006b59;
-	height:20px;
-	width:20px;
-	display:inline-block;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
 }
 #pickmarea {
 	background-color:#7ddbc9;
-	height:20px;
-	width:20px;
-	display:inline-block;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
 }
 #pickingles {
 	background-color:#005b31;
-	height:20px;
-	width:20px;
-	display:inline-block;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
 }
 #pickmilitar {
 	background-color:#535f2a;
-	height:20px;
-	width:20px;
-	display:inline-block;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
 }
 #pickmanzana {
 	background-color:#92b175;
-	height:20px;
-	width:20px;
-	display:inline-block;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
 }
 #pickbrasil {
 	background-color:#00a631;
-	height:20px;
-	width:20px;
-	display:inline-block;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
 }
 #reset {
 	height:50px;
@@ -165,6 +165,7 @@
 	color:black;
 	position: relative;
     bottom: 20px;
+	margin-top:30px;
 	}
 .pickclose {
 	height: 15px;
@@ -178,7 +179,7 @@
     margin-left: 10px;
 	border:1px solid white !important;
 	position: relative;
-    top: -37px;
+    top: -85px;
 }
 .buttons input {
 	border:1px solid;
@@ -195,9 +196,12 @@ input:hover {
 .buttons {
 	padding:5px;
 	margin-bottom:5px;
+	
 }
 .buttons p {
     line-height: 1;
+	padding:7px;
+	text-align:center;
 }
 .buzo {
 	text-align:center;
@@ -215,6 +219,7 @@ input:hover {
 	position:absolute; 
 	top:200px; 
 	left:50px;
+	z-index:999;
 }
 
 @media (max-width: 768px) {
@@ -226,12 +231,7 @@ input:hover {
 	.botonera {
 		left:0px;
 	}
-	.pickclose {
 
-    	left: 230px;
-		top:0px;
-
-	}
 }
 @media (max-height: 495px) {
 	.buzo {
