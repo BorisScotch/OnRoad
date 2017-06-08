@@ -284,13 +284,13 @@ li.active a {
 	transform: translateX(0);
 	opacity: 1;
 }
-.section2 > .fp-tableCell .btn {
+.section2 > .fp-tableCell #reset.btn  {
 	transform: translateY(1000px);
 	opacity: 0;
 	transition: transform 2s cubic-bezier(0.16, 0.68, 0.43, 0.99) ,
 				opacity 2s ease-in-out;
 }
-.section2.active > .fp-tableCell .btn {
+.section2.active > .fp-tableCell #reset.btn  {
 	transform: translateY(0px);
 	opacity: 1;
 }
