@@ -204,6 +204,7 @@ input:hover {
 } 
 .img-responsive-buzo {
 	height: 500px;
+	cursor:pointer;
 }
 .botonera {
 	position:absolute; 
