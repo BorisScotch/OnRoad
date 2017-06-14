@@ -16,7 +16,7 @@ a:focus, a:hover {
 }
 .section2 {
 	background-color:whitesmoke ;
-	background-image:url(bottom-center-background.png);
+	background-image:url(bottom-center-background.png);	
 	background-position:bottom center;
 	background-repeat:repeat-x;
 }
@@ -117,154 +117,49 @@ ul, menu, dir {
 	height:100vh;
 	
 }
-.titulo-seccion {
-	margin-top:130px;
+.rows {
+	text-align:center;
+	box-shadow:-5px -5px 0px #dd2c8c;
+	background-color:#0fa2c6;
 }
-
-/*home page cards */
-.frontpage_square{
-position:relative;
-overflow:hidden;
-padding-bottom:100%;
-}
-.frontpage_square img{
-position:absolute;
-}
-.gridsquares {
-	padding-bottom: 20px;
-}
-.squares {
-	padding:0px;
+.rows-text {
+	padding:5px 0px 10px 0px;
+	background-color:#f5f5f5;
+	color:#dd2c8c;
+	text-shadow:-2px -2px 0 #0fa2c6;
+	border:3px solid #0fa2c6;
 	margin:0px;
 }
-.thumbnail {
-	margin-bottom:0px;
-	border-radius:0px;
+.rows-text:hover {
+	text-shadow:none;
 }
-.marca {
-	margin:5px 0px 0px 0px;
+/* ----------------------------------------------ARMA TU BUZO---------------------------------------------- */
+.titulo-armatubuzo {
+	padding-top:130px;
+	margin:0px;
 }
-.navbar {
-	margin-bottom:0px;
+.armatubuzo {
+	background-color: whitesmoke;
+	height:100vh;
 }
-
-.shortcut span.fa {
-    padding-top: 32px;
-    font-size: 48px;
-    top: 0px;}
-	
-.color-minibar {
-    width: 100vw;
-    height: 6px;
-    background-color: #fcda59;
-	margin-left: -50vw;
-	left: 50%;
+.nav-goback {
+}
+.goback {
+	color:#0080B8;
 	position:relative;
-	}
-
-
-.animate {
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	}
-.info-card {
-	width: 100%;
-	border: 1px solid white;
-	position: relative;
-	overflow: hidden;
+	top:10px;
+	left:10px;
+	text-shadow:-2px -2px 0px #dd2c8c;
 }
-.info-card > img {
-	width: 100px;
-	/*margin-bottom: 60px;*/
-}
-.info-card .info-card-details,
-.info-card .info-card-details .info-card-header  {
-	color:white;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	bottom: -100%;
-	left: 0;
-	padding: 0 15px;
-	background:#0080B8;
-}
-.info-card .info-card-details::-webkit-scrollbar {
-	width: 8px;
-}
-.info-card .info-card-details::-webkit-scrollbar-button {
-	width: 8px;
-	height: 0px;
-}
-.info-card .info-card-details::-webkit-scrollbar-track {
-	background: transparent;
-}
-.info-card .info-card-details::-webkit-scrollbar-thumb {
-	background: rgb(160, 160, 160);
-}
-.info-card .info-card-details::-webkit-scrollbar-thumb:hover {
-	background: rgb(130, 130, 130);
-}           
-.info-card .info-card-details .info-card-header {
-	color:white;
-	height: auto;		
-	bottom: 100%;
-	padding: 10px 5px;
-}
-.info-card:hover .info-card-details {
-	bottom: 0px;
-	overflow: auto;
-	padding-bottom: 25px;
-}
-.info-card:hover .info-card-details .info-card-header {
-	position: relative;
-	bottom: 0px;
-	padding-top: 20px;
-	padding-bottom: 25px;
-}
-.info-card .info-card-details .info-card-header h1,	
-.info-card .info-card-details .info-card-header h3 {
+.goback:hover {
+	color:#dd2c8c;
+	text-shadow:-2px -2px 0px #0fa2c6;
 	
-	font-size: 22px;
-	font-weight: 900;
-	margin: 0 !important;
-	padding: 0 !important;
+
 }
-.info-card .info-card-details .info-card-header h3 {
-	font-size: 15px;
-	font-weight: 400;
-	margin-top: 5px;
-}
-.info-card .info-card-details .info-card-detail .social {
-	list-style: none;
-	padding: 0px;
-	margin-top: 25px;
-}
-.info-card .info-card-details .info-card-detail .social a {
-	position: relative;
-	display: inline-block;
-	min-width: 40px;
-	padding: 10px 0px;
-	margin: 0px 5px;
-	overflow: hidden;
-	background-color: rgb(215, 215, 215);
-	border-radius: 40px;
-}
-.buttons p {
-	color:#fff;
-	text-shadow:2px 2px #000000;
-	font-size:17px;
-}
-li.active a {
-	background-color:#dd2c8c;
-	border-radius:10px;
-	color:#fff;
-	box-shadow:-5px -5px 0px #fff;
-}
+
 /* ----------------------------------------------ANIMACIONES---------------------------------------------- */
-.section2 > .fp-tableCell .buzo2 {
+/*.section2 > .fp-tableCell .buzo2 {
 	transform: translateX(-1000px);
 	opacity: 0;
 	transition: transform 2s cubic-bezier(1,1.24,.82,1.24),
@@ -294,7 +189,7 @@ li.active a {
 	transform: translateY(0px);
 	opacity: 1;
 }
-
+*/
 @media (max-width: 1025px)  {
 	.navbar-nav {
 		margin: 7.5px -15px;
@@ -348,6 +243,15 @@ width: 35px;
 	font-size:20px;
 }
 
+.rows-img {
+	display:none;
+}
+.section {
+	background-size:50%;
+}
+.section2 {
+	background-size:50%;
+}
 }
 @media screen and (max-width: 880px) {
 	.navbar a {
