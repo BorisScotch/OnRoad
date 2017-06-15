@@ -232,37 +232,50 @@ ul, menu, dir {
 }
 
 /* ----------------------------------------------ANIMACIONES---------------------------------------------- */
-/*.section2 > .fp-tableCell .buzo2 {
+.section2 > .fp-tableCell .animation-izq1 {
 	transform: translateX(-1000px);
 	opacity: 0;
-	transition: transform 2s cubic-bezier(1,1.24,.82,1.24),
-				opacity 2s ease-in-out;
+	transition: transform 1s ease-in-out,
+				opacity 1s ease-in-out;
+				
 }
-.section2.active > .fp-tableCell .buzo2 {
+.section2.active > .fp-tableCell .animation-izq1 {
 	transform: translateX(0);
 	opacity: 1;
 }
-.section2 > .fp-tableCell h3 {
+.section2 > .fp-tableCell .animation-izq2 {
+	
+	transform: translateX(-1000px);
+	opacity: 0;
+	transition: transform 1s ease-in-out,
+				opacity 1s ease-in-out;
+}
+.section2.active > .fp-tableCell .animation-izq2 {
+	transition-delay: 0.5s;
+	transform: translateX(0);
+	opacity: 1;
+}
+.section2 > .fp-tableCell .animation-der1 {
 	transform: translateX(1000px);
 	opacity: 0;
-	transition: transform 2s cubic-bezier(1,1.24,.82,1.24),
-				opacity 2s ease-in-out;
+	transition: transform 1s ease-in-out,
+				opacity 1s ease-in-out;
 }
-.section2.active > .fp-tableCell h3 {
+.section2.active > .fp-tableCell .animation-der1 {
 	transform: translateX(0);
 	opacity: 1;
 }
-.section2 > .fp-tableCell #reset.btn  {
-	transform: translateY(1000px);
+.section2 > .fp-tableCell .animation-der2 {
+	transform: translateX(1000px);
 	opacity: 0;
-	transition: transform 2s cubic-bezier(0.16, 0.68, 0.43, 0.99) ,
-				opacity 2s ease-in-out;
+	transition: transform 1s ease-in-out,
+				opacity 1s ease-in-out;
 }
-.section2.active > .fp-tableCell #reset.btn  {
-	transform: translateY(0px);
+.section2.active > .fp-tableCell .animation-der2 {
+	transition-delay: 0.5s;
+	transform: translateX(0);
 	opacity: 1;
 }
-*/
 @media (max-width: 1025px)  {
 	.navbar-nav {
 		margin: 7.5px -15px;
