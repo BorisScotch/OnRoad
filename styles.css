@@ -10,9 +10,6 @@ a:focus, a:hover {
 }
 .section1 {
 	background-color: SkyBlue;
-	background-image:url(top-right-background.png),url(bottom-left-background.png);
-	background-position:top right, bottom left;
-	background-repeat:no-repeat;
 }
 .section2 {
 	background-color:whitesmoke ;
