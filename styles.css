@@ -51,6 +51,7 @@ a:focus, a:hover {
 }
 .img-center {
 	margin:0px auto;
+	text-align:center;
 }
 .nav-center {
 	text-align:center;
@@ -289,10 +290,7 @@ ul, menu, dir {
 	color:whitesmoke;
 }
 /* ----------------------------------------------ARMA TU BUZO---------------------------------------------- */
-.titulo-armatubuzo {
-	padding-top:130px;
-	margin:0px;
-}
+
 .armatubuzo {
 	background-color: whitesmoke;
 	height:100vh;
