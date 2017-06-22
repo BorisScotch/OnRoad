@@ -494,6 +494,9 @@ width: 35px;
 .navbar-brand>img.brand2 {
 	display:block;
 }
+	#fp-nav{
+    display:none;
+}
 	}
 @media (max-width: 812px) and (min-width: 300px) {
 .navbar-nav {
