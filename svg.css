@@ -1,41 +1,20 @@
 @charset "utf-8";
 /* CSS Document */
-.buttons-MI {
-	background:rgba(0, 105, 137, 0.7);
-}
-.buttons-MD {
-	background:rgba(0, 105, 137, 0.7);
-}
-.buttons-II {
-	background:rgba(0, 105, 137, 0.7);
-}
-.buttons-ID {
-	background:rgba(0, 105, 137, 0.7);
-}
-.buttons-BD {
-	background:rgba(0, 105, 137, 0.7);
-}
-.buttons-BI {
-	background:rgba(0, 105, 137, 0.7);
-}
-.buttons-C {
-	background:rgba(0, 105, 137, 0.7);
-}
-.buttons-CI {
-	background:rgba(0, 105, 137, 0.7);
-}
+
 #pickcrudo {
 	height:30px;
 	width:30px;
 	background-color:#fff8d4 ;
 	border-radius: 50%;	
 	}
+
 #pickbeige {
 	height:30px;
 	width:30px;
 	background-color:#e8e3c8 ;
 	border-radius: 50%;	
 	}
+
 #picktopo {
 	height:30px;
 	width:30px;
@@ -60,6 +39,12 @@
 	height:30px;
 	width:30px;
 	background-color:#511024 ;
+	border-radius: 50%;	
+}
+#pickmarron {
+	background-color:#361d09;
+	height:30px;
+	width:30px;
 	border-radius: 50%;	
 }
 #pickvioleta {
@@ -110,6 +95,12 @@
 	width:30px;
 	border-radius: 50%;	
 }
+#pickturquesaclaro {
+	background-color:#bee1e5;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
+}
 #pickceleste {
 	background-color:#7ab8db;
 	height:30px;
@@ -147,6 +138,12 @@
 	width:30px;
 	border-radius: 50%;	
 }
+#pickverde {
+	background-color:#007b3f;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
+}
 #pickmanzana {
 	background-color:#92b175;
 	height:30px;
@@ -155,6 +152,37 @@
 }
 #pickbrasil {
 	background-color:#00a631;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
+}
+#picknegro {
+	background-color:#000;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
+}
+#pickblanco {
+	background-color:#FFFFFF;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
+}
+#pickamarillo {
+	background-color:#fee277;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
+}
+
+#picknaranja {
+	background-color:#f5b120;
+	height:30px;
+	width:30px;
+	border-radius: 50%;	
+}
+#picknaranjaoscuro {
+	background-color:#e6592e;
 	height:30px;
 	width:30px;
 	border-radius: 50%;	
@@ -173,64 +201,31 @@ input.btn.btn-danger {
     margin-top: 45px; }
 .buttons input {
 	border:1px solid;
-}
-buttons-MI {
-	display:none;
-}
-input:hover {
-	opacity:0.7;
-}
-.buttonsDERECHA {
-	display:inline-block;
-}
-.buttons {
-	padding:5px;
-	margin-bottom:5px;
-	box-shadow: -5px -5px 0px #dd2c8c;
+	margin:2px;
 }
 .buttons p {
     line-height: 1;
 	padding:7px;
 	text-align:center;
 }
-.buzo {
+.titulo-armatubuzo {
 	text-align:center;
-	margin:0 auto;
-	user-select: none;
-	-moz-user-select: none;
-	-khtml-user-select: none;
-	-webkit-user-select: none;
-	-o-user-select: none;
-} 
-.img-responsive-buzo {
-	height: 500px;
-	cursor:pointer;
+}
+.buttons {
+    position: relative;
+	text-align:center;
 }
 .botonera {
-	position:absolute; 
-	top:200px; 
-	left:50px;
-	z-index:999;
+	text-align:center;
+	margin:0 auto;
 }
-
-@media (max-width: 768px) {
-	.buzo {
-		width:100%;
-		height:100%;
-		padding-top:50px;
-	}
-	.botonera {
-		left:0px;
-	}
+.coloreable {
+	opacity:1;
+	fill-opacity:1;
+	
 
 }
-@media (max-height: 495px) {
-	.buzo {
-		max-height:400px;
-	}
-}
-@media (max-height: 496px) {
-	.buzo {
-		max-height:400px;
-	}
+
+svg {
+	cursor:pointer;
 }
