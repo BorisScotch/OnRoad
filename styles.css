@@ -294,6 +294,10 @@ ul, menu, dir {
 .armatubuzo {
 	background-color: whitesmoke;
 	height:100vh;
+	position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .nav-goback {
 }
