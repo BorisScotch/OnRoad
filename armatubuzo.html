@@ -21,11 +21,11 @@
 </head>
 <body>
 	<div class="armatubuzo">
-   	    <div class="nav-goback pull-left"><a href="index.html"><i class="fa fa-arrow-left goback fa-5x" aria-hidden="true"></i></a></div>
+   	    <div class="nav-goback pull-left"><a href="index2.html"><i class="fa fa-arrow-left goback fa-5x" aria-hidden="true"></i></a></div>
 	    <div class="container">
         <div class="botonera">
-            <h3 class="titulo-armatubuzo">Hacé <strong style="color:#dd2c8c; text-shadow:-2px -2px 0px #0fa2c6">Click</strong> en la parte que queres <strong style="color:#0fa2c6; text-shadow:-2px -2px 0px #dd2c8c; ">colorear</strong></h3>
-				<div class="buttons">
+            
+				<div class="buttons col-md-2 col-sm-12 col-xs-12">
                     <input class="col-md-1" title="Crudo" id="pickcrudo" type="button" onclick="crudo()" />
                     <input class="col-md-1" title="Beige" id="pickbeige" type="button" onclick="beige()" />
                     <input class="col-md-1" title="Topo" id="picktopo" type="button" onclick="topo()" />
@@ -56,9 +56,11 @@
                     <input class="col-md-1" title="Naranja Oscuro" id="picknaranjaoscuro" type="button" onclick="naranjaoscuro()" />
                     <input class="col-md-1" title="Negro" id="picknegro" type="button" onclick="negro()" />
                     <input class="col-md-1" title="Blanco" id="pickblanco" type="button" onclick="blanco()" />
+                    <input class="reset btn btn-primary"  value="RESETEAR" id="reset" type="button" onclick="resetall()" />
                 </div>
 			</div>
-
+		<div class="col-md-10 col-sm-12 col-xs-12">
+        <h3 class="titulo-armatubuzo">Hacé <strong style="color:#dd2c8c; text-shadow:-2px -2px 0px #0fa2c6">Click</strong> en la parte que queres <strong style="color:#0fa2c6; text-shadow:-2px -2px 0px #dd2c8c; ">colorear</strong></h3>
         <svg class="img-responsive img-center" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="900px" height="850px" viewBox="0 0 900 850" enable-background="new 0 0 900 850" xml:space="preserve">
             <g>
                 <g id="campera-canguro-capucha-exterior">
@@ -693,11 +695,10 @@
                     c-13.64,17.749-33.271,36.261-57.322,46.461C687.936,118.101,683.565,114.107,686.956,111.702z"/>
             </g>
         </svg>
-		<div class="reset img-center">
-        	<input class=" btn btn-primary"  value="RESETEAR" id="reset" type="button" onclick="resetall()" />
-        </div>
+		</div>
 </div>
 </div>
 <!--  -->
 </body>
 </html>
+
