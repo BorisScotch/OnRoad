@@ -1,418 +1,703 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
+  <title>OnRoad</title>
   <meta charset="utf-8">
-  <title>Arma tu Buzo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
   <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="svg.css">
+  <link type="text/css" rel="stylesheet" href="armatubuzo.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/e379886307.js"></script>
-  <script src="svg.js" type="text/javascript"></script>
+  <script type="text/javascript" src="jquery.fullPage.min.js"></script>
+<script type="text/javascript"   src="https://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.extensions.min.js"></script>
+<script src="svg2.js" type="text/javascript"></script>
+
 
 
 </head>
-
 <body>
 	<div class="armatubuzo">
-    <div class="nav-goback"><a href="index.html"><i class="fa fa-arrow-left goback fa-5x" aria-hidden="true"></i></a></div>
+   	    <div class="nav-goback pull-left"><a href="index2.html"><i class="fa fa-arrow-left goback fa-5x" aria-hidden="true"></i></a></div>
+	    <div class="container">
         <div class="botonera">
-            <div style="display:none" class="buttons-MI">
-                <div class="buttons ">
-                    <p>Manga Izquierda</p>
-                    <input class="col-md-1" title="Crudo" id="pickcrudo" type="button" onclick="crudoMI()" />
-                    <input class="col-md-1" title="Beige" id="pickbeige" type="button" onclick="beigeMI()" />
-                    <input class="col-md-1" title="Topo" id="picktopo" type="button" onclick="topoMI()" />
-                    <input class="col-md-1" title="Perla" id="pickperla" type="button" onclick="perlaMI()" />
-                    <input class="col-md-1" title="Fucsia" id="pickfucsia" type="button" onclick="fucsiaMI()" />
-                    <input class="col-md-1" title="Uva" id="pickuva" type="button" onclick="uvaMI()" />
-                    <input class="col-md-1" title="Violeta" id="pickvioleta" type="button" onclick="violetaMI()" />
-                    <input class="col-md-1" title="Coral" id="pickcoral" type="button" onclick="coralMI()" />
-                    <input class="col-md-1" title="Bordo" id="pickbordo" type="button" onclick="bordoMI()" />
-                    <input class="col-md-1" title="Rojo" id="pickrojo" type="button" onclick="rojoMI()" />
-                    <input class="col-md-1" title="Salmón" id="picksalmon" picksalmon"" type="button" onclick="salmonMI()" />
-                    <input class="col-md-1" title="Azul Petroleo" id="pickazulpetroleo" type="button" onclick="azulpetroleoMI()" /> 
-                    <input class="col-md-1" title="Marino" id="pickmarino" type="button" onclick="marinoMI()" />
-                    <input class="col-md-1" title="Turquesa" id="pickturquesa" type="button" onclick="turquesaMI()" />	
-                    <input class="col-md-1" title="Celeste" id="pickceleste" type="button" onclick="celesteMI()" />
-                    <input class="col-md-1" title="Atlantis" id="pickatlantis" type="button" onclick="atlantisMI()" />
-                    <input class="col-md-1" title="Petroleo" id="pickverdepetroleo" type="button" onclick="verdepetroleoMI()" />
-                    <input class="col-md-1" title="Marea" id="pickmarea" type="button" onclick="mareaMI()" />
-                    <input class="col-md-1" title="Inglés" id="pickingles" type="button" onclick="inglesMI()" />
-                    <input class="col-md-1" title="Militar" id="pickmilitar" type="button" onclick="militarMI()" />
-                    <input class="col-md-1" title="Manzana" id="pickmanzana" type="button" onclick="manzanaMI()" />
-                    <input class="col-md-1" title="Brasil" id="pickbrasil" type="button" onclick="brasilMI()" />
-                    <input value="X" class="MI-X btn btn-danger" type="button" />
-    
+            <h3 class="titulo-armatubuzo">Hacé <strong style="color:#dd2c8c; text-shadow:-2px -2px 0px #0fa2c6">Click</strong> en la parte que queres <strong style="color:#0fa2c6; text-shadow:-2px -2px 0px #dd2c8c; ">colorear</strong></h3>
+				<div class="buttons">
+                    <input class="col-md-1" title="Crudo" id="pickcrudo" type="button" onclick="crudo()" />
+                    <input class="col-md-1" title="Beige" id="pickbeige" type="button" onclick="beige()" />
+                    <input class="col-md-1" title="Topo" id="picktopo" type="button" onclick="topo()" />
+                    <input class="col-md-1" title="Perla" id="pickperla" type="button" onclick="perla()" />
+                    <input class="col-md-1" title="Fucsia" id="pickfucsia" type="button" onclick="fucsia()" />
+                    <input class="col-md-1" title="Uva" id="pickuva" type="button" onclick="uva()" />
+                    <input class="col-md-1" title="Marron" id="pickmarron" type="button" onclick="marron()" />
+                    <input class="col-md-1" title="Violeta" id="pickvioleta" type="button" onclick="violeta()" />
+                    <input class="col-md-1" title="Coral" id="pickcoral" type="button" onclick="coral()" />
+                    <input class="col-md-1" title="Bordo" id="pickbordo" type="button" onclick="bordo()" />
+                    <input class="col-md-1" title="Rojo" id="pickrojo" type="button" onclick="rojo()" />
+                    <input class="col-md-1" title="Salmón" id="picksalmon" picksalmon"" type="button" onclick="salmon()" />
+                    <input class="col-md-1" title="Azul Petroleo" id="pickazulpetroleo" type="button" onclick="azulpetroleo()" /> 
+                    <input class="col-md-1" title="Marino" id="pickmarino" type="button" onclick="marino()" />
+                    <input class="col-md-1" title="Turquesa" id="pickturquesa" type="button" onclick="turquesa()" />  
+                    <input class="col-md-1" title="Turquesa Claro" id="pickturquesaclaro" type="button" onclick="turquesaclaro()" />  
+                    <input class="col-md-1" title="Celeste" id="pickceleste" type="button" onclick="celeste()" />
+                    <input class="col-md-1" title="Atlantis" id="pickatlantis" type="button" onclick="atlantis()" />
+                    <input class="col-md-1" title="Petroleo" id="pickverdepetroleo" type="button" onclick="verdepetroleo()" />
+                    <input class="col-md-1" title="Marea" id="pickmarea" type="button" onclick="marea()" />
+                    <input class="col-md-1" title="Inglés" id="pickingles" type="button" onclick="ingles()" />
+                    <input class="col-md-1" title="Militar" id="pickmilitar" type="button" onclick="militar()" />
+                    <input class="col-md-1" title="Verde" id="pickverde" type="button" onclick="verde()" />
+                    <input class="col-md-1" title="Manzana" id="pickmanzana" type="button" onclick="manzana()" />
+                    <input class="col-md-1" title="Brasil" id="pickbrasil" type="button" onclick="brasil()" />
+                    <input class="col-md-1" title="Amarillo" id="pickamarillo" type="button" onclick="amarillo()" />
+                    <input class="col-md-1" title="Naranja" id="picknaranja" type="button" onclick="naranja()" />
+                    <input class="col-md-1" title="Naranja Oscuro" id="picknaranjaoscuro" type="button" onclick="naranjaoscuro()" />
+                    <input class="col-md-1" title="Negro" id="picknegro" type="button" onclick="negro()" />
+                    <input class="col-md-1" title="Blanco" id="pickblanco" type="button" onclick="blanco()" />
                 </div>
-            </div>
-            <div style="display:none" class="buttons-MD">
-                <div class="buttons">
-                    <p>Manga Derecha</p>
-                    <input class="col-md-1" title="Crudo" id="pickcrudo" type="button" onclick="crudoMD()" />
-                    <input class="col-md-1" title="Beige" id="pickbeige" type="button" onclick="beigeMD()" />
-                    <input class="col-md-1" title="Topo" id="picktopo" type="button" onclick="topoMD()" />
-                    <input class="col-md-1" title="Perla" id="pickperla" type="button" onclick="perlaMD()" />
-                    <input class="col-md-1" title="Fucsia" id="pickfucsia" type="button" onclick="fucsiaMD()" />
-                    <input class="col-md-1" title="Uva" id="pickuva" type="button" onclick="uvaMD()" />
-                    <input class="col-md-1" title="Violeta" id="pickvioleta" type="button" onclick="violetaMD()" />
-                    <input class="col-md-1" title="Coral" id="pickcoral" type="button" onclick="coralMD()" />
-                    <input class="col-md-1" title="Bordo" id="pickbordo" type="button" onclick="bordoMD()" />
-                    <input class="col-md-1" title="Rojo" id="pickrojo" type="button" onclick="rojoMD()" />
-                    <input class="col-md-1" title="Salmón" id="picksalmon" picksalmon"" type="button" onclick="salmonMD()" />
-                    <input class="col-md-1" title="Azul Petroleo" id="pickazulpetroleo" type="button" onclick="azulpetroleoMD()" />
-                    <input class="col-md-1" title="Marino" id="pickmarino" type="button" onclick="marinoMD()" />
-                    <input class="col-md-1" title="Turquesa" id="pickturquesa" type="button" onclick="turquesaMD()" />
-                    <input class="col-md-1" title="Celeste" id="pickceleste" type="button" onclick="celesteMD()" />
-                    <input class="col-md-1" title="Atlantis" id="pickatlantis" type="button" onclick="atlantisMD()" />
-                    <input class="col-md-1" title="Petroleo" id="pickverdepetroleo" type="button" onclick="verdepetroleoMD()" />
-                    <input class="col-md-1" title="Marea" id="pickmarea" type="button" onclick="mareaMD()" />
-                    <input class="col-md-1" title="Inglés" id="pickingles" type="button" onclick="inglesMD()" />
-                    <input class="col-md-1" title="Militar" id="pickmilitar" type="button" onclick="militarMD()" />
-                    <input class="col-md-1" title="Manzana" id="pickmanzana" type="button" onclick="manzanaMD()" />
-                    <input class="col-md-1" title="Brasil" id="pickbrasil" type="button" onclick="brasilMD()" />
-                    <input value="X" class="MD-X btn btn-danger" type="button" />
-                </div>
-            </div> 
-            <div style="display:none" class="buttons-II">     
-                <div class="buttons">
-                    <p>Interior Izquierdo</p>
-                    <input class="col-md-1" title="Crudo" id="pickcrudo" type="button" onclick="crudoII()" />
-                    <input class="col-md-1" title="Beige" id="pickbeige" type="button" onclick="beigeII()" />
-                    <input class="col-md-1" title="Topo" id="picktopo" type="button" onclick="topoII()" />
-                    <input class="col-md-1" title="Perla" id="pickperla" type="button" onclick="perlaII()" />
-                    <input class="col-md-1" title="Fucsia" id="pickfucsia" type="button" onclick="fucsiaII()" />
-                    <input class="col-md-1" title="Uva" id="pickuva" type="button" onclick="uvaII()" />
-                    <input class="col-md-1" title="Violeta" id="pickvioleta" type="button" onclick="violetaII()" />
-                    <input class="col-md-1" title="Coral" id="pickcoral" type="button" onclick="coralII()" />
-                    <input class="col-md-1" title="Bordo" id="pickbordo" type="button" onclick="bordoII()" />
-                    <input class="col-md-1" title="Rojo" id="pickrojo" type="button" onclick="rojoII()" />
-                    <input class="col-md-1" title="Salmón" id="picksalmon" picksalmon"" type="button" onclick="salmonII()" />
-                    <input class="col-md-1" title="Azul Petroleo" id="pickazulpetroleo" type="button" onclick="azulpetroleoII()" />
-                    <input class="col-md-1" title="Marino" id="pickmarino" type="button" onclick="marinoII()" />
-                    <input class="col-md-1" title="Turquesa" id="pickturquesa" type="button" onclick="turquesaII()" />
-                    <input class="col-md-1" title="Celeste" id="pickceleste" type="button" onclick="celesteII()" />
-                    <input class="col-md-1" title="Atlantis" id="pickatlantis" type="button" onclick="atlantisII()" />
-                    <input class="col-md-1" title="Petroleo" id="pickverdepetroleo" type="button" onclick="verdepetroleoII()" />
-                    <input class="col-md-1" title="Marea" id="pickmarea" type="button" onclick="mareaII()" />
-                    <input class="col-md-1" title="Inglés" id="pickingles" type="button" onclick="inglesII()" />
-                    <input class="col-md-1" title="Militar" id="pickmilitar" type="button" onclick="militarII()" />
-                    <input class="col-md-1" title="Manzana" id="pickmanzana" type="button" onclick="manzanaII()" />
-                    <input class="col-md-1" title="Brasil" id="pickbrasil" type="button" onclick="brasilII()" />
-                    <input value="X" class="II-X btn btn-danger" type="button" />
-                </div>
-            </div>
-            <div style="display:none" class="buttons-ID">
-                <div class="buttons">
-                    <p>Interior Derecho</p>
-                    <input class="col-md-1" title="Crudo" id="pickcrudo" type="button" onclick="crudoID()" />
-                    <input class="col-md-1" title="Beige" id="pickbeige" type="button" onclick="beigeID()" />
-                    <input class="col-md-1" title="Topo" id="picktopo" type="button" onclick="topoID()" />
-                    <input class="col-md-1" title="Perla" id="pickperla" type="button" onclick="perlaID()" />
-                    <input class="col-md-1" title="Fucsia" id="pickfucsia" type="button" onclick="fucsiaID()" />
-                    <input class="col-md-1" title="Uva" id="pickuva" type="button" onclick="uvaID()" />
-                    <input class="col-md-1" title="Violeta" id="pickvioleta" type="button" onclick="violetaID()" />
-                    <input class="col-md-1" title="Coral" id="pickcoral" type="button" onclick="coralID()" />
-                    <input class="col-md-1" title="Bordo" id="pickbordo" type="button" onclick="bordoID()" />
-                    <input class="col-md-1" title="Rojo" id="pickrojo" type="button" onclick="rojoID()" />
-                    <input class="col-md-1" title="Salmón" id="picksalmon" picksalmon"" type="button" onclick="salmonID()" />
-                    <input class="col-md-1" title="Azul Petroleo" id="pickazulpetroleo" type="button" onclick="azulpetroleoID()" />
-                    <input class="col-md-1" title="Marino" id="pickmarino" type="button" onclick="marinoID()" />
-                    <input class="col-md-1" title="Turquesa" id="pickturquesa" type="button" onclick="turquesaID()" />
-                    <input class="col-md-1" title="Celeste" id="pickceleste" type="button" onclick="celesteID()" />
-                    <input class="col-md-1" title="Atlantis" id="pickatlantis" type="button" onclick="atlantisID()" />
-                    <input class="col-md-1" title="Petroleo" id="pickverdepetroleo" type="button" onclick="verdepetroleoID()" />
-                    <input class="col-md-1" title="Marea" id="pickmarea" type="button" onclick="mareaID()" />
-                    <input class="col-md-1" title="Inglés" id="pickingles" type="button" onclick="inglesID()" />
-                    <input class="col-md-1" title="Militar" id="pickmilitar" type="button" onclick="militarID()" />
-                    <input class="col-md-1" title="Manzana" id="pickmanzana" type="button" onclick="manzanaID()" />
-                    <input class="col-md-1" title="Brasil" id="pickbrasil" type="button" onclick="brasilID()" />
-                    <input value="X" class="ID-X btn btn-danger" type="button" />
-                </div>
-            </div>
-                
-            <div style="display:none" class="buttons-BI">                        
-                <div class="buttons">
-                    <p>Bolsillo Izquierdo</p>
-                    <input class="col-md-1" title="Crudo" id="pickcrudo" type="button" onclick="crudoBI()" />
-                    <input class="col-md-1" title="Beige" id="pickbeige" type="button" onclick="beigeBI()" />
-                    <input class="col-md-1" title="Topo" id="picktopo" type="button" onclick="topoBI()" />
-                    <input class="col-md-1" title="Perla" id="pickperla" type="button" onclick="perlaBI()" />
-                    <input class="col-md-1" title="Fucsia" id="pickfucsia" type="button" onclick="fucsiaBI()" />
-                    <input class="col-md-1" title="Uva" id="pickuva" type="button" onclick="uvaBI()" />
-                    <input class="col-md-1" title="Violeta" id="pickvioleta" type="button" onclick="violetaBI()" />
-                    <input class="col-md-1" title="Coral" id="pickcoral" type="button" onclick="coralBI()" />
-                    <input class="col-md-1" title="Bordo" id="pickbordo" type="button" onclick="bordoBI()" />
-                    <input class="col-md-1" title="Rojo" id="pickrojo" type="button" onclick="rojoBI()" />
-                    <input class="col-md-1" title="Salmón" id="picksalmon" picksalmon"" type="button" onclick="salmonBI()" />
-                    <input class="col-md-1" title="Azul Petroleo" id="pickazulpetroleo" type="button" onclick="azulpetroleoBI()" />
-                    <input class="col-md-1" title="Marino" id="pickmarino" type="button" onclick="marinoBI()" />
-                    <input class="col-md-1" title="Turquesa" id="pickturquesa" type="button" onclick="turquesaBI()" />
-                    <input class="col-md-1" title="Celeste" id="pickceleste" type="button" onclick="celesteBI()" />
-                    <input class="col-md-1" title="Atlantis" id="pickatlantis" type="button" onclick="atlantisBI()" />
-                    <input class="col-md-1" title="Petroleo" id="pickverdepetroleo" type="button" onclick="verdepetroleoBI()" />
-                    <input class="col-md-1" title="Marea" id="pickmarea" type="button" onclick="mareaBI()" />
-                    <input class="col-md-1" title="Inglés" id="pickingles" type="button" onclick="inglesBI()" />
-                    <input class="col-md-1" title="Militar" id="pickmilitar" type="button" onclick="militarBI()" />
-                    <input class="col-md-1" title="Manzana" id="pickmanzana" type="button" onclick="manzanaBI()" />
-                    <input class="col-md-1" title="Brasil" id="pickbrasil" type="button" onclick="brasilBI()" />
-                    <input value="X" class="BI-X btn btn-danger" type="button" />
-                </div>
-            </div>
-            
-            <div style="display:none" class="buttons-BD">	
-                <div class="buttons">
-                <p>Bolsillo Derecho</p>
-                    <input class="col-md-1" title="Crudo" id="pickcrudo" type="button" onclick="crudoBD()" />
-                    <input class="col-md-1" title="Beige" id="pickbeige" type="button" onclick="beigeBD()" />
-                    <input class="col-md-1" title="Topo" id="picktopo" type="button" onclick="topoBD()" />
-                    <input class="col-md-1" title="Perla" id="pickperla" type="button" onclick="perlaBD()" />
-                    <input class="col-md-1" title="Fucsia" id="pickfucsia" type="button" onclick="fucsiaBD()" />
-                    <input class="col-md-1" title="Uva" id="pickuva" type="button" onclick="uvaBD()" />
-                    <input class="col-md-1" title="Violeta" id="pickvioleta" type="button" onclick="violetaBD()" />
-                    <input class="col-md-1" title="Coral" id="pickcoral" type="button" onclick="coralBD()" />
-                    <input class="col-md-1" title="Bordo" id="pickbordo" type="button" onclick="bordoBD()" />
-                    <input class="col-md-1" title="Rojo" id="pickrojo" type="button" onclick="rojoBD()" />
-                    <input class="col-md-1" title="Salmón" id="picksalmon" picksalmon"" type="button" onclick="salmonBD()" />
-                    <input class="col-md-1" title="Azul Petroleo" id="pickazulpetroleo" type="button" onclick="azulpetroleoBD()" />
-                    <input class="col-md-1" title="Marino" id="pickmarino" type="button" onclick="marinoBD()" />
-                    <input class="col-md-1" title="Turquesa" id="pickturquesa" type="button" onclick="turquesaBD()" />
-                    <input class="col-md-1" title="Celeste" id="pickceleste" type="button" onclick="celesteBD()" />
-                    <input class="col-md-1" title="Atlantis" id="pickatlantis" type="button" onclick="atlantisBD()" />
-                    <input class="col-md-1" title="Petroleo" id="pickverdepetroleo" type="button" onclick="verdepetroleoBD()" />
-                    <input class="col-md-1" title="Marea" id="pickmarea" type="button" onclick="mareaBD()" />
-                    <input class="col-md-1" title="Inglés" id="pickingles" type="button" onclick="inglesBD()" />
-                    <input class="col-md-1" title="Militar" id="pickmilitar" type="button" onclick="militarBD()" />
-                    <input class="col-md-1" title="Manzana" id="pickmanzana" type="button" onclick="manzanaBD()" />
-                    <input class="col-md-1" title="Brasil" id="pickbrasil" type="button" onclick="brasilBD()" />
-                    <input value="X" class="BD-X btn btn-danger" type="button" />
-                </div>
-            </div>
-        
-            <div style="display:none" class="buttons-C">
-                <div class="buttons">
-                    <p>Capucha</p>
-                    <input class="col-md-1" title="Crudo" id="pickcrudo" type="button" onclick="crudoC()" />
-                    <input class="col-md-1" title="Beige" id="pickbeige" type="button" onclick="beigeC()" />
-                    <input class="col-md-1" title="Topo" id="picktopo" type="button" onclick="topoC()" />
-                    <input class="col-md-1" title="Perla" id="pickperla" type="button" onclick="perlaC()" />
-                    <input class="col-md-1" title="Fucsia" id="pickfucsia" type="button" onclick="fucsiaC()" />
-                    <input class="col-md-1" title="Uva" id="pickuva" type="button" onclick="uvaC()" />
-                    <input class="col-md-1" title="Violeta" id="pickvioleta" type="button" onclick="violetaC()" />
-                    <input class="col-md-1" title="Coral" id="pickcoral" type="button" onclick="coralC()" />
-                    <input class="col-md-1" title="Bordo" id="pickbordo" type="button" onclick="bordoC()" />
-                    <input class="col-md-1" title="Rojo" id="pickrojo" type="button" onclick="rojoC()" />
-                    <input class="col-md-1" title="Salmón" id="picksalmon" picksalmon"" type="button" onclick="salmonC()" />
-                    <input class="col-md-1" title="Azul Petroleo" id="pickazulpetroleo" type="button" onclick="azulpetroleoC()" />
-                    <input class="col-md-1" title="Marino" id="pickmarino" type="button" onclick="marinoC()" />
-                    <input class="col-md-1" title="Turquesa" id="pickturquesa" type="button" onclick="turquesaC()" />
-                    <input class="col-md-1" title="Celeste" id="pickceleste" type="button" onclick="celesteC()" />
-                    <input class="col-md-1" title="Atlantis" id="pickatlantis" type="button" onclick="atlantisC()" />
-                    <input class="col-md-1" title="Petroleo" id="pickverdepetroleo" type="button" onclick="verdepetroleoC()" />
-                    <input class="col-md-1" title="Marea" id="pickmarea" type="button" onclick="mareaC()" />
-                    <input class="col-md-1" title="Inglés" id="pickingles" type="button" onclick="inglesC()" />
-                    <input class="col-md-1" title="Militar" id="pickmilitar" type="button" onclick="militarC()" />
-                    <input class="col-md-1" title="Manzana" id="pickmanzana" type="button" onclick="manzanaC()" />
-                    <input class="col-md-1" title="Brasil" id="pickbrasil" type="button" onclick="brasilC()" />
-                    <input value="X" class="C-X btn btn-danger" type="button" />
-                </div>
-            </div>
-                   
-            <div style="display:none" class="buttons-CI">
-                <div class="buttons">
-                    <p>Capucha Interior</p>
-                    <input class="col-md-1" title="Crudo" id="pickcrudo" type="button" onclick="crudoCI()" />
-                    <input class="col-md-1" title="Beige" id="pickbeige" type="button" onclick="beigeCI()" />
-                    <input class="col-md-1" title="Topo" id="picktopo" type="button" onclick="topoCI()" />
-                    <input class="col-md-1" title="Perla" id="pickperla" type="button" onclick="perlaCI()" />
-                    <input class="col-md-1" title="Fucsia" id="pickfucsia" type="button" onclick="fucsiaCI()" />
-                    <input class="col-md-1" title="Uva" id="pickuva" type="button" onclick="uvaCI()" />
-                    <input class="col-md-1" title="Violeta" id="pickvioleta" type="button" onclick="violetaCI()" />
-                    <input class="col-md-1" title="Coral" id="pickcoral" type="button" onclick="coralCI()" />
-                    <input class="col-md-1" title="Bordo" id="pickbordo" type="button" onclick="bordoCI()" />
-                    <input class="col-md-1" title="Rojo" id="pickrojo" type="button" onclick="rojoCI()" />
-                    <input class="col-md-1" title="Salmón" id="picksalmon" picksalmon"" type="button" onclick="salmonCI()" />
-                    <input class="col-md-1" title="Azul Petroleo" id="pickazulpetroleo" type="button" onclick="azulpetroleoCI()" />
-                    <input class="col-md-1" title="Marino" id="pickmarino" type="button" onclick="marinoCI()" />
-                    <input class="col-md-1" title="Turquesa" id="pickturquesa" type="button" onclick="turquesaCI()" />
-                    <input class="col-md-1" title="Celeste" id="pickceleste" type="button" onclick="celesteCI()" />
-                    <input class="col-md-1" title="Atlantis" id="pickatlantis" type="button" onclick="atlantisCI()" />
-                    <input class="col-md-1" title="Petroleo" id="pickverdepetroleo" type="button" onclick="verdepetroleoCI()" />
-                    <input class="col-md-1" title="Marea" id="pickmarea" type="button" onclick="mareaCI()" />
-                    <input class="col-md-1" title="Inglés" id="pickingles" type="button" onclick="inglesCI()" />
-                    <input class="col-md-1" title="Militar" id="pickmilitar" type="button" onclick="militarCI()" />
-                    <input class="col-md-1" title="Manzana" id="pickmanzana" type="button" onclick="manzanaCI()" />
-                    <input class="col-md-1" title="Brasil" id="pickbrasil" type="button" onclick="brasilCI()" />
-                    <input value="X" class="CI-X btn btn-danger" type="button" />
-                </div>
-            </div>
-                
-		</div>
-		<div class="buzo">
-			<h3 class="titulo-armatubuzo">Hacé <strong style="color:#dd2c8c; text-shadow:-2px -2px 0px #0fa2c6">Click</strong> en la parte que queres <strong style="color:#0fa2c6; text-shadow:-2px -2px 0px #dd2c8c; ">colorear</strong></h3>
-			<div class="img-center buzo2">
-            	<svg class="img-responsive-buzo img-responsive img-center" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="471.047px" height="373.841px" viewBox="-100.304 -20.108 471.047 373.841" enable-background="new -100.304 -20.108 471.047 373.841" xml:space="preserve">
-					<g>
-                		<path fill="#333333" d="M223.2,336c4.7,3.7,17,5.4,24.7,1.9s4.6-17.4,4.6-17.4l-32-0.5C220.5,320,218.5,332.3,223.2,336z"/>
-                		<path fill="#333333" d="M30.8,334.3c4.7,3.7,17,5.4,24.7,1.9c7.7-3.5,4.6-17.4,4.6-17.4l-32-0.5C28.1,318.2,26.1,330.6,30.8,334.3z   "/>
-                			<g>
-                    			<path fill="#333333" d="M85.4,318.6c0,0-3.8,5.6,0.8,9.4c4.6,3.7,38,2.3,66,3.7c28,1.5,41.5-7.7,41.5-7.7s-0.5-8-0.8-12    C192.7,308,85.4,318.6,85.4,318.6z"/>
-			                    <path d="M185.6,308.7c-24.1,0-97.3,7.2-100.4,7.5c-0.7,0.1-1.3,0.5-1.7,1c-1.7,2.6-3.7,8.5,1.3,12.5c3.5,2.8,15.4,3.1,37.8,3.5    c9.8,0.1,19.9,0.3,29.6,0.8c2,0.1,4.1,0.2,6.1,0.2c24.4,0,36.4-7.9,36.9-8.2c0.7-0.5,1.1-1.3,1-2.1l-0.8-12    C195.2,308.8,191.5,308.7,185.6,308.7z M158.3,331.8c-1.9,0-3.9,0-6-0.2c-28-1.5-61.4,0-66-3.7c-4.6-3.7-0.8-9.4-0.8-9.4    s75.9-7.5,100.2-7.5c4.6,0,7.3,0.3,7.4,0.9c0.3,4,0.8,12,0.8,12S182.2,331.8,158.3,331.8z"/>
-							</g>
-							<g a:adobe-knockout="true">
-								<path a:adobe-knockout="false" d="M89.6,319.5c-0.3-0.2-0.6,0-0.8,0.3c-0.1,0.2-2.3,4.4-0.1,8.9c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.1-7.8,0.1-7.8C90.1,320,89.9,319.6,89.6,319.5z"/>
-                                <path a:adobe-knockout="false" d="M93.5,319.4c-0.3-0.2-0.7,0-0.8,0.3c-0.1,0.2-2.3,4.4-0.1,8.9c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.1-7.8,0.1-7.8C93.9,319.9,93.8,319.6,93.5,319.4z"/>
-                                <path a:adobe-knockout="false" d="M97.3,319.3c-0.3-0.1-0.7,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.1,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C97.7,319.7,97.6,319.4,97.3,319.3z"/>
-                                <path a:adobe-knockout="false" d="M101.1,319.2c-0.3-0.1-0.6,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.1,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C101.6,319.7,101.4,319.3,101.1,319.2z"/>
-                                <path a:adobe-knockout="false" d="M105,319.2c-0.3-0.1-0.6,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.1,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C105.4,319.6,105.3,319.3,105,319.2z"/>
-                                <path a:adobe-knockout="false" d="M108.8,319.1c-0.3-0.1-0.7,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.1,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C109.3,319.6,109.1,319.2,108.8,319.1z"/>
-                                <path a:adobe-knockout="false" d="M112.7,319c-0.3-0.1-0.6,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.1,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C113.1,319.5,113,319.2,112.7,319z"/>
-                                <path a:adobe-knockout="false" d="M116.5,319c-0.3-0.1-0.6,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.1,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C117,319.4,116.8,319.1,116.5,319z"/>
-                                <path a:adobe-knockout="false" d="M120.4,318.9c-0.3-0.1-0.6,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.1,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C120.8,319.4,120.7,319,120.4,318.9z"/>
-                                <path a:adobe-knockout="false" d="M124.2,318.9c-0.3-0.1-0.6,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.1,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C124.7,319.3,124.5,319,124.2,318.9z"/>
-                                <path a:adobe-knockout="false" d="M128.1,318.8c-0.3-0.1-0.6,0-0.8,0.3c-1.7,3.4-0.7,10.2-0.2,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-0.4-0.9-1.4-7.2,0.2-10.2C128.6,319.3,128.4,319,128.1,318.8z"/>
-                                <path a:adobe-knockout="false" d="M131.9,318.7c-0.3-0.1-0.6,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.1,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C132.4,319.2,132.2,318.8,131.9,318.7z"/>
-                                <path a:adobe-knockout="false" d="M135.8,318.7c-0.3-0.1-0.6,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.1,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C136.2,319.1,136.1,318.8,135.8,318.7z"/>
-                                <path a:adobe-knockout="false" d="M139.6,318.6c-0.3-0.1-0.6,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.1,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C140.1,319,139.9,318.7,139.6,318.6z"/>
-                                <path a:adobe-knockout="false" d="M143.4,318.5c-0.3-0.1-0.6,0.1-0.7,0.4c-0.1,0.4-2.3,9.2-0.2,13.5c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-4,0.2-12.6,0.3-12.7C143.9,318.9,143.7,318.6,143.4,318.5z"/>
-                                <path a:adobe-knockout="false" d="M147.3,318.5c-0.3-0.1-0.6,0.1-0.7,0.4c-0.1,0.4-2.3,9.2-0.2,13.5c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-4,0.2-12.6,0.3-12.7C147.8,318.9,147.6,318.5,147.3,318.5z"/>
-                                <path a:adobe-knockout="false" d="M151.1,318.4c-0.3-0.1-0.6,0.1-0.7,0.4c-0.1,0.4-2.3,9.2-0.2,13.5c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-4,0.2-12.6,0.3-12.7C151.6,318.8,151.4,318.5,151.1,318.4z"/>
-                                <path a:adobe-knockout="false" d="M155,318.3c-0.3-0.1-0.6,0.1-0.7,0.4c-0.1,0.4-2.3,9.2-0.2,13.5c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-4,0.2-12.6,0.3-12.7C155.5,318.7,155.3,318.4,155,318.3z"/>
-                                <path a:adobe-knockout="false" d="M158.8,318.3c-0.3-0.1-0.6,0.1-0.7,0.4c-0.1,0.4-2.3,9.2-0.2,13.5c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-4,0.2-12.6,0.3-12.7C159.3,318.7,159.1,318.4,158.8,318.3z"/>
-                                <path a:adobe-knockout="false" d="M162.7,318.2c-0.3-0.1-0.6,0.1-0.7,0.4c-0.1,0.4-2.3,9.2-0.2,13.5c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-4,0.2-12.6,0.3-12.7C163.2,318.6,163,318.3,162.7,318.2z"/>
-                                <path a:adobe-knockout="false" d="M166.6,318.2c-0.3-0.2-0.7,0-0.8,0.3c-1.7,3.3-0.8,12.5-0.2,13.6c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-0.4-0.9-1.3-9.6,0.2-12.6C167,318.7,166.9,318.3,166.6,318.2z"/>
-                                <path a:adobe-knockout="false" d="M170.4,318.1c-0.3-0.1-0.6,0.1-0.7,0.4c-0.1,0.4-2.3,9.2-0.2,13.5c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-4,0.2-12.6,0.3-12.7C170.9,318.5,170.7,318.2,170.4,318.1z"/>
-                                <path a:adobe-knockout="false" d="M174.2,318c-0.3-0.1-0.7,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.1,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C174.7,318.5,174.6,318.1,174.2,318z"/>
-                                <path a:adobe-knockout="false" d="M178.1,318c-0.3-0.1-0.6,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.1,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C178.6,318.4,178.4,318.1,178.1,318z"/>
-                                <path a:adobe-knockout="false" d="M181.9,317.9c-0.3-0.1-0.6,0.1-0.8,0.4c-0.1,0.3-2.2,6.8-0.2,11.2c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.2-10.2,0.2-10.3C182.4,318.3,182.3,318,181.9,317.9z"/>
-                                <path a:adobe-knockout="false" d="M185.9,317.9c-0.3-0.2-0.6,0-0.8,0.3c-0.1,0.2-2.3,4.4-0.1,8.9c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.1-7.8,0.1-7.8C186.3,318.4,186.2,318,185.9,317.9z"/>
-                                <path a:adobe-knockout="false" d="M189.7,317.8c-0.3-0.2-0.7,0-0.8,0.3c-0.1,0.2-2.3,4.4-0.1,8.9c0.1,0.2,0.3,0.3,0.5,0.3    c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.4-0.5,0.3-0.8c-1.9-3.9,0.1-7.8,0.1-7.8C190.1,318.3,190,318,189.7,317.8z"/>
-							</g>
-                            <path class="interiorderecho-path" id="interiorderecho" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M188.3,157.5c3.1,5.5,8.9,16.8,11.5,22.6   c0.7,1.5,2.2,4.7,2.5,6.3c1,4.9-0.4,15-0.4,20c0,10.6,0.5,31.9,0.4,42.5c-0.1,8.2-0.4,24.6-1.1,32.8c-0.4,4.1-1.9,12.2-2.5,16.3   c-0.5,3.8-1.5,11.6-3.3,15c-1.6,2.9-6.2,8.2-9.3,9.4c-6.9,2.7-22.6,2.3-30.2,2.4c-3.6,0-11.8,3-14.4,0.5c-3.4-3.3,0-14.4,0-19.1   c0-7.3,0.1-21.9,0-29.3c-0.1-8.7-0.6-26-0.6-34.7c0-8.9,0.5-26.8,0.6-35.8c0.1-6.9,0-20.8,0-27.8c0-4.4-0.6-13.2,0.2-17.6   c0.3-1.8,1.2-3.6,3.8-6.2c2.4-2.4,7.5-8.9,10.5-10.4c3.7-1.9,8.5-3.7,11.5-4.2c1.3-0.2,5.4-0.1,5.4-0.1l8.8,7.2   C181.6,147.3,186.8,154.8,188.3,157.5z"/>
-                            <path class="interiorizquierdo-path" id="interiorizquierdo" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M90.4,158.6l-11,22.7l-2.5,6.2v20L76.4,250   l1.1,32.8l2.5,16.3c0,0,1.5,11.6,3.3,15c1.6,2.9,6.2,8.2,9.3,9.4c6.9,2.7,29.7,1.2,29.7,1.2l15,0.7c0,0-1.1-13.5-1.2-18   c-0.1-7.3,1.2-29.3,1.2-29.3l-0.6-34.8l0.6-35.8v-27.8l-0.2-17.6c0,0-1.2-3.6-3.8-6.2c-2.4-2.4-7.5-8.9-10.5-10.4   c-3.7-1.9-8.2-4.9-11.3-5.3c-1.4-0.2-4.1-0.3-5.4,0.3c-2.6,1.2-7.2,5.8-9.1,7.9C95,150.7,90.4,158.6,90.4,158.6z"/>
-                            <path d="M240.4,341.7c0.1,0,0.2,0,0.2,0c0.3,0,0.6-0.3,0.6-0.7l-0.9-13.8c0-0.3-0.3-0.6-0.7-0.6c-0.3,0-0.6,0.3-0.6,0.7l0.9,13.8   C240,341.4,240.1,341.6,240.4,341.7z"/>
-                            <path d="M245.1,341c0.1,0,0.2,0,0.2,0c0.3,0,0.6-0.4,0.6-0.7l-1.6-13.7c0-0.3-0.4-0.6-0.7-0.6c-0.3,0-0.6,0.4-0.6,0.7l1.6,13.7   C244.7,340.7,244.9,340.9,245.1,341z"/>
-                            <path d="M250.1,336.9c0.1,0,0.1,0,0.2,0c0.3,0,0.5-0.3,0.5-0.6l-1.7-11.5c0-0.3-0.3-0.5-0.6-0.5c-0.3,0-0.5,0.3-0.5,0.6l1.7,11.5   C249.7,336.7,249.9,336.8,250.1,336.9z"/>
-                            <path d="M234.1,340.7c0.1,0,0.1,0,0.2,0.1c0.3,0,0.6-0.2,0.7-0.6l0.7-13.8c0-0.3-0.2-0.6-0.6-0.7c-0.3,0-0.6,0.2-0.7,0.6l-0.7,13.8   C233.7,340.4,233.9,340.6,234.1,340.7z"/>
-                            <path d="M229.6,339.7c0.1,0,0.1,0.1,0.2,0.1c0.3,0,0.6-0.2,0.7-0.6l0.7-13.8c0-0.3-0.3-0.6-0.6-0.7c-0.3,0-0.6,0.2-0.7,0.6   l-0.7,13.8C229.2,339.3,229.3,339.6,229.6,339.7z"/>
-                            <path d="M224.1,339.5c0.1,0,0.1,0.1,0.2,0.1c0.3,0,0.6-0.3,0.7-0.6l0.7-13.8c0-0.3-0.3-0.6-0.6-0.7c-0.3,0-0.6,0.2-0.7,0.6   l-0.7,13.8C223.8,339.2,223.9,339.4,224.1,339.5z"/>
-                            <path d="M47.3,339.8c0.1,0,0.2,0,0.2,0c0.3,0,0.6-0.3,0.6-0.7l-0.9-13.8c0-0.3-0.3-0.6-0.7-0.6c-0.3,0-0.6,0.3-0.6,0.7l0.9,13.8   C46.9,339.5,47.1,339.8,47.3,339.8z"/>
-                            <path d="M52,339.1c0.1,0,0.2,0,0.2,0c0.3,0,0.6-0.4,0.6-0.7l-1.6-13.7c0-0.3-0.4-0.6-0.7-0.6c-0.3,0-0.6,0.4-0.6,0.7l1.6,13.7   C51.6,338.9,51.8,339.1,52,339.1z"/>
-                            <path d="M57.1,335.1c0.1,0,0.1,0,0.2,0c0.3,0,0.5-0.3,0.5-0.6L56.1,323c0-0.3-0.3-0.5-0.6-0.5c-0.3,0-0.5,0.3-0.5,0.6l1.7,11.5   C56.7,334.8,56.8,335,57.1,335.1z"/>
-                            <path d="M41,338.9c0.1,0,0.1,0,0.2,0.1c0.3,0,0.6-0.2,0.7-0.6l0.7-13.8c0-0.3-0.2-0.6-0.6-0.7c-0.3,0-0.6,0.2-0.7,0.6l-0.7,13.8   C40.6,338.5,40.8,338.8,41,338.9z"/>
-                            <path d="M36.5,337.8c0.1,0,0.1,0.1,0.2,0.1c0.3,0,0.6-0.2,0.7-0.6l0.7-13.8c0-0.3-0.3-0.6-0.6-0.7c-0.3,0-0.6,0.2-0.7,0.6   l-0.7,13.8C36.1,337.5,36.2,337.7,36.5,337.8z"/>
-                            <path d="M31.1,337.7c0.1,0,0.1,0.1,0.2,0.1c0.3,0,0.6-0.3,0.7-0.6l0.7-13.8c0-0.3-0.3-0.6-0.6-0.7c-0.3,0-0.6,0.2-0.7,0.6   l-0.7,13.8C30.7,337.3,30.8,337.6,31.1,337.7z"/>
-                            <g>
-                                <path d="M60.2,316l-32-0.5c0,0,0,0,0,0c-1.3,0-2.5,1-2.7,2.3c-0.4,2.3-2,14.1,3.6,18.6c3.3,2.7,9.7,4.4,16.2,4.4    c4.3,0,8.2-0.8,11.4-2.2c9.6-4.4,6.3-19.8,6.2-20.4C62.6,316.9,61.5,316.1,60.2,316z M55.5,336.1c-3,1.3-6.6,1.9-10.2,1.9    c-5.8,0-11.6-1.5-14.5-3.8c-4.7-3.7-2.6-16.1-2.6-16.1l32,0.5C60.2,318.8,63.2,332.6,55.5,336.1z"/>
-			                    <path class="mangaizquierda-path" id="mangaizquierda" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M62,136.2c-9.2,10.2-41,63.8-40,83.2    c1,19.4,4.4,84.6,4.4,86.5c0,1.9-0.8,9,4.3,16.2s23.8,4.9,31-2.1c7.2-7-1.5-68.4-1.2-87.1c0.1-5.8,6.5-28.2,10.2-35.7    c4.2-8.5,7.4-12,7.4-12s3.3-7.1,6.3-13.4c0.2-0.5,0.5-1.1,0.7-1.6c0.3-0.6,0.6-1.3,0.9-1.9c0.2-0.4,0.4-0.8,0.6-1.2    c1.2-2.6,2.2-4.5,2.3-4.7c0.2-0.4,0.5-1.5,1.6-3c0.4-0.6,0.6-1.4,1.1-2c0.3-0.4,0.6-1.1,0.9-1.6c0.5-0.8,0.9-1.8,1.6-2.8    c0.8-1.2,1.4-2.5,2-3.3c1.4-1.6,1.7-1.9,3-3.3c0.7-0.8,1.7-1.7,2.6-2.4c1.6-1.3,3-2.3,3.6-2.8c0.7-0.5,0.2,0.2,2.3-1.6    c0.3-0.3,1-0.5,1.5-0.9c0.1-0.1,0.1,0-0.1-0.2c-0.5-0.4,0-0.1-0.5-0.4c-0.3-0.2-0.5-0.4-1.1-1c-2.6-2.5-4.3-4.2-5.1-5.3    c-1.7-2.4-7.7-5-8.9-8.5c-0.7-2-8.9,2.3-10.8,2.8C77.7,127.1,63.3,134.8,62,136.2z"/>
-            			        <path id="arrugasmangaizquierda" d="M42.9,227.7c-0.4-0.1-0.7,0.1-0.9,0.4c-0.1,0.4,0.1,0.7,0.4,0.9c2.8,1,10.7,3.2,14.7,3.2c1.2,0,2-0.2,2.3-0.7    c0.5-0.9-0.6-1.7-1-2c-4.1-3-18-9-18.6-9.3c-0.3-0.1-0.7,0-0.9,0.4c-0.1,0.3,0,0.7,0.4,0.9c0.1,0.1,14.4,6.2,18.4,9.1    c0.1,0.1,0.2,0.1,0.3,0.2C55.8,231.1,48.6,229.8,42.9,227.7z"/>
-			                    <path id="arrugasmangaizquierda2" d="M51.2,233c-6,0.1-13.7-1.8-13.8-1.8c-0.4-0.1-0.7,0.1-0.8,0.5c-0.1,0.4,0.1,0.7,0.5,0.8c0.3,0.1,7.6,1.8,13.6,1.8    c0.2,0,0.3,0,0.5,0c0.4,0,0.7-0.3,0.7-0.7C51.9,233.3,51.6,233,51.2,233C51.2,233,51.2,233,51.2,233z"/>
-			                </g>
-							<g>
-								<path d="M218,319.6c-0.1,0.7-3.4,16.1,6.2,20.4c3.1,1.4,7.1,2.2,11.4,2.2c6.5,0,12.8-1.7,16.2-4.4c5.6-4.5,4-16.3,3.6-18.6    c-0.2-1.3-1.4-2.3-2.7-2.3c0,0,0,0,0,0l-32,0.5C219.4,317.5,218.3,318.4,218,319.6z M220.7,320.2l32-0.5c0,0,2,12.3-2.6,16.1    c-2.9,2.3-8.7,3.8-14.5,3.8c-3.6,0-7.3-0.6-10.2-1.9C217.6,334.1,220.7,320.2,220.7,320.2z"/>
-									<g>
-                    
-										<path class="mangaderecha-path" id="mangaderecha" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M218.8,137.6c9.2,10.2,41,63.8,40,83.2 c-1,19.4-4.4,84.6-4.4,86.5c0,1.9,0.8,9-4.3,16.2s-23.8,4.9-31-2.1c-7.2-7,1.5-68.4,1.2-87.1c-0.1-5.8-6.5-28.2-10.2-35.7     c-4.2-8.5-7.4-12-7.4-12s-3.3-7.1-6.3-13.4c-0.2-0.5-0.5-1.1-0.7-1.6c-0.3-0.6-0.6-1.3-0.9-1.9c-0.2-0.4-0.4-0.8-0.6-1.2     c-1.2-2.6-2.2-4.5-2.3-4.7c-0.2-0.4-0.5-1.5-1.6-3c-0.4-0.6-0.6-1.4-1.1-2c-0.3-0.4-0.6-1.1-0.9-1.6c-0.5-0.8-0.9-1.8-1.6-2.8     c-0.8-1.2-1.4-2.5-2-3.3c-1.4-1.6-1.7-1.9-3-3.3c-0.7-0.8-1.7-1.7-2.6-2.4c-1.6-1.3-3-2.3-3.6-2.8c-0.7-0.5-0.2,0.2-2.3-1.6     c-0.3-0.3-1-0.5-1.5-0.9c-0.1-0.1-0.1,0,0.1-0.2c0.5-0.4,0-0.1,0.5-0.4c0.3-0.2,0.5-0.4,1.1-1c2.6-2.5,4.3-4.2,5.1-5.3     c1.7-2.4,8.1-6.5,9.3-10c0.7-2,8.5,3.5,10.4,4.2C203.4,129.3,217.5,136.2,218.8,137.6z"/>
-										<path id="arrugasmangaderecha" d="M238,229.1c0.4-0.1,0.7,0.1,0.9,0.4c0.1,0.4-0.1,0.7-0.4,0.9c-2.8,1-10.7,3.2-14.7,3.2c-1.2,0-2-0.2-2.3-0.7     c-0.5-0.9,0.6-1.7,1-2c4.1-3,18-9,18.6-9.3c0.3-0.1,0.7,0,0.9,0.4c0.1,0.3,0,0.7-0.4,0.9c-0.1,0.1-14.4,6.2-18.4,9.1     c-0.1,0.1-0.2,0.1-0.3,0.2C225,232.5,232.2,231.2,238,229.1z"/>
-										<path id="arrugasmangaderecha2" d="M229.6,234.4c6,0.1,13.7-1.8,13.8-1.8c0.4-0.1,0.7,0.1,0.8,0.5c0.1,0.4-0.1,0.7-0.5,0.8c-0.3,0.1-7.6,1.8-13.6,1.8     c-0.2,0-0.3,0-0.5,0c-0.4,0-0.7-0.3-0.7-0.7C228.9,234.7,229.3,234.4,229.6,234.4C229.6,234.4,229.6,234.4,229.6,234.4z"/>
-									</g>
-								</g>
-								<path d="M181.9,322.2c0.6,0.4,1.9-0.9,2.3-1.6c8.7-17,3-30.6,2.7-31.3c-1.8-2.5-17.7-24.4-25.5-22.3c-3.4,0.9-12.8,1-22,1.1   c-10.9,0.1-21.2,0.2-24.1,1.5c-5.4,2.4-23.1,20.8-23.8,21.6c-0.2,0.2-0.3,0.4-0.4,0.7c-0.1,0.3-1.7,7.9,0.4,17   c2,8.8,2.3,10.2,2.3,10.2c0.1,0.6,0.8,4,1.3,4c0.1,0,0.9,0,1,0c0.7-0.2,0.2-3.9,0-4.6c0,0-0.3-1.4-2.3-10.3   c-1.6-7.3-0.7-13.7-0.4-15.3c5.2-5.5,18.7-19,22.8-20.8c2.5-1.1,13.5-1.2,23.2-1.3c9.7-0.1,18.9-0.2,22.6-1.2   c4.8-1.3,16.7,12.5,23,21.2c0.2,0.5,5.2,13.4-2.8,28.9C181.7,320.5,181.3,321.9,181.9,322.2z"/>
-								<path d="M89.5,321.4c0.1,0,0.2,0.1,0.3,0.1c0.2,0,0.4-0.1,0.6-0.4c1.3-3.1,0-7.7-1.6-12.9c-0.2-0.8-0.5-1.7-0.7-2.6   c-1.7-5.9-0.7-11.2-0.7-11.2c0.1-0.4-0.1-0.7-0.5-0.8c-0.3-0.1-0.6,0.2-0.7,0.5c0,0.2-1,5.7,0.8,11.9c0.2,0.9,0.5,1.7,0.7,2.6   c1.5,5,2.7,9.3,1.6,11.9C89,320.8,89.2,321.2,89.5,321.4z"/>
-								<path d="M188.1,318.6c0.1,0.1,0.8-0.6,0.9-0.6c0.2,0,0.5-1,0.7-1.2c6-9.9,3-23.1,2.9-23.6c-0.1-0.4-0.4-0.6-0.7-0.5   c-0.3,0.1-0.5,0.5-0.4,0.8c0,0.1,3,13.1-2.7,22.5C188.4,316.4,187.8,318.4,188.1,318.6z"/>
-								<g>
-									<circle cx="147.6" cy="148.9" r="2.6"/>
-									<circle cx="129.9" cy="148.6" r="2.6"/>
-										<g>
-											<g>
-												<path fill="#FFFFFF" d="M134.3,175.3c0-2.8-1.2-5.7-3.4-8.7c-1.5-2-2-5.1-1.9-8.1c0.1-5,1.6-9.8,1.6-9.8l-1.3-0.4 c0,0-1.5,4.9-1.6,10.2c0,3.1,0.4,6.4,2.2,8.9c2.1,2.9,3.2,5.5,3.1,7.9c0,2.4-1.2,4.8-3.7,7.5c-2.7,2.8-3.5,5.4-3.5,7.3      c0,1.9,0.7,3,0.7,3.1l1.2-0.7c0,0-0.5-0.8-0.5-2.4c0-1.5,0.6-3.7,3.1-6.4C132.9,180.9,134.2,178.2,134.3,175.3z"/>
-												<path d="M135.6,175.4c0-3-1.1-6-3.7-9.5c-1.1-1.6-1.7-4.1-1.7-7.2c0.1-3.8,1-7.4,1.5-9.3c0.1-0.2,0.2-0.9-0.3-1.4      c-0.2-0.2-0.4-0.3-0.6-0.4l-1.3-0.4c-0.1,0-0.3-0.1-0.4-0.1c-0.6,0-1.1,0.4-1.3,0.9c0,0-1.6,5.2-1.7,10.6      c-0.1,4.2,0.7,7.3,2.4,9.7c2,2.7,2.9,5,2.9,7.1c0,2.1-1.1,4.2-3.3,6.5c-3.2,3.3-3.9,6.3-3.9,8.2c0,2.1,0.7,3.4,0.9,3.8      c0.2,0.3,0.5,0.5,0.8,0.6c0.1,0,0.2,0,0.3,0c0.2,0,0.5-0.1,0.7-0.2l1.2-0.7c0.3-0.2,0.5-0.5,0.6-0.9s0-0.7-0.2-1      c0,0-0.3-0.6-0.3-1.6c0-1.7,1-3.6,2.8-5.4C134.1,181.6,135.6,178.5,135.6,175.4z M127,190.1c0,1.5,0.5,2.4,0.5,2.4l-1.2,0.7      c0-0.1-0.7-1.2-0.7-3.1c0-1.9,0.8-4.5,3.5-7.3c2.6-2.7,3.7-5,3.7-7.5c0-2.4-1-5-3.1-7.9c-1.8-2.4-2.2-5.7-2.2-8.9      c0.1-5.2,1.6-10.1,1.6-10.2l1.3,0.4c0,0-1.5,4.8-1.6,9.8c-0.1,3,0.4,6,1.9,8.1c2.2,3,3.5,5.9,3.4,8.7c0,2.8-1.4,5.6-4.1,8.4      C127.6,186.3,127.1,188.5,127,190.1z"/>
-											</g>
-										</g>
-										<g>
-											<g>
-                                                <path fill="#FFFFFF" d="M152,175.6c0-2.8-1.2-5.7-3.4-8.7c-1.5-2-2-5.1-1.9-8.1c0.1-5,1.6-9.8,1.6-9.8l-1.3-0.4      c0,0-1.5,4.9-1.6,10.2c0,3.1,0.4,6.4,2.2,8.9c2.1,2.9,3.2,5.5,3.1,7.9c0,2.4-1.2,4.8-3.7,7.5c-2.7,2.8-3.5,5.4-3.5,7.3      c0,1.9,0.7,3,0.7,3.1l1.2-0.7c0,0-0.5-0.8-0.5-2.4c0-1.5,0.6-3.7,3.1-6.4C150.6,181.2,151.9,178.5,152,175.6z"/>
-                                                <path d="M153.3,175.6c0-3-1.1-6-3.7-9.5c-1.1-1.6-1.7-4.1-1.7-7.2c0.1-3.8,1-7.4,1.5-9.3c0.1-0.2,0.2-0.9-0.3-1.4      c-0.2-0.2-0.4-0.3-0.6-0.4l-1.3-0.4c-0.1,0-0.3-0.1-0.4-0.1c-0.6,0-1.1,0.4-1.3,0.9c0,0-1.6,5.2-1.7,10.6      c-0.1,4.2,0.7,7.3,2.4,9.7c2,2.7,2.9,5,2.9,7.1c0,2.1-1.1,4.2-3.3,6.5c-3.2,3.3-3.9,6.3-3.9,8.2c0,2.1,0.7,3.4,0.9,3.8      c0.2,0.3,0.5,0.5,0.8,0.6c0.1,0,0.2,0,0.3,0c0.2,0,0.5-0.1,0.7-0.2l1.2-0.7c0.3-0.2,0.5-0.5,0.6-0.9s0-0.7-0.2-1l0,0      c0,0-0.3-0.6-0.3-1.6c0-1.7,1-3.6,2.8-5.4C151.8,181.9,153.3,178.8,153.3,175.6z M144.7,190.4c0,1.5,0.5,2.4,0.5,2.4l-1.2,0.7      c0-0.1-0.7-1.2-0.7-3.1c0-1.9,0.8-4.5,3.5-7.3c2.6-2.7,3.7-5,3.7-7.5c0-2.4-1-5-3.1-7.9c-1.8-2.5-2.2-5.7-2.2-8.9      c0.1-5.2,1.6-10.1,1.6-10.2l1.3,0.4c0,0-1.5,4.8-1.6,9.8c-0.1,3,0.4,6,1.9,8.1c2.2,3,3.4,5.9,3.4,8.7c0,2.8-1.4,5.6-4.1,8.4      C145.3,186.6,144.8,188.8,144.7,190.4z"/>
-                                            </g>
-                                        </g>
-                                    </g>
-                                    <g>
-                                    <path fill="#A5A4A4" d="M102.6,57.3c-0.4,0.8-0.3,1.9-0.5,3.2c-0.2,1.3-0.3,2.6-0.4,4.2c-0.2,3.4-0.5,7.1-0.3,10    c0.1,2.8,0,4.8,0,4.8s0.8,16.7,2.1,22.1c0.6,2.8,1.4,8.2,3.2,12.9c2.4,6.1,6,11.3,6,11.3l10.3,17l7.7,11.8l6.4,7.8l4.1-5.3l8-7.8    l13.2-19.5c0,0,4.5-5.1,7.6-11.6c2.4-5.1,3.4-11.4,4.3-14.4c0.9-3.4,1.4-14,1.4-14l-0.2-11.8l-0.6-9.6l-0.6-6.1    c0,0-7.4-7.7-10.2-9.9c-2.5-2-7.7-5.8-10.6-7.1c-4.7-2.1-15.1-4.5-20.3-4.3c-4.4,0.2-12.8,3.2-16.7,5.1c-1.8,0.9-4,2.5-6.5,4.3    c-1.6,1.2-3.3,2.3-4.6,3.6C104.2,55,103.1,56.2,102.6,57.3z"/>
-                                    <path class="capuchainterior2-path" id="capuchainterior2" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M177.3,66.3c0,0-0.3-1.2-1.1-2.6    c-0.8-1.4-2.2-3.2-2.2-3.2s1,7.6,1,8.5s0.8,14.2,0.8,14.2s-0.1,15.3-1,18.5c-0.9,3.2-2.1,10.9-4.3,15.5s-0.9,2.5-7,11.1    c-3.9,5.4-7.5,10-7.7,10.1c-0.3,0.1-5.9,10.1-5.9,10.1s-3.6,4.4-5,5.6c-1.1,1-3.6,2.6-4.6,3.8c-0.9,1-2.9,4.7-2.9,4.7    s2.5-3.3,3.5-4.3c1.1-1.1,3.6-2.7,4.7-3.8c0.9-0.8,3.4-3.7,3.4-3.7l3.8-4.7c0,0,1.2-0.5,3.3-1.7c0.9-0.5,2.2-1.2,3.6-1.7    c1.3-0.5,2.5-1.2,4.2-1.7c3.4-1,5.8-1.6,8.3-2.9c3.4-1.7,4.4-4.3,6.1-6.3c3.1-3.5,4.9-16.4,4.9-16.4s0.5-14.5-0.7-20.9    s-0.4-11-1-14s-3.1-11.2-3.1-11.2L177.3,66.3z"/>
-                                    <path class="capuchainterior-path" id="capuchainterior" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M96.2,61.6c0,0,2.9-2.8,4.4-3.3    s1.9-1.5,1.9-1.5s-1.1,10.3-1.1,11.3s-0.1,14.3-0.1,14.3s1.2,15,1.9,18.3c0.7,3.2,1.3,9.9,3.4,13.8c2.7,4.9,1.7,4.3,5.3,10.2    c3.3,5.4,7.6,11.7,7.9,11.8c0.3,0.1,5.2,10.7,5.2,10.7l5,5.8c0,0,3.5,3.1,4.4,4.3c0.9,1.2,2.9,5.3,2.9,5.3s-2.1-3.9-3.1-5.1    c-1-1.2-4.4-4.4-4.4-4.4l-3.4-3.9l-4.2-4.4c0,0-1.5-0.9-4.7-2.4c-1.7-0.8-3.6-2.3-6.4-2.7c-3.5-0.5-5.8-1.6-8.3-2.9    c-3.4-1.7-4.4-4.3-6.1-6.3c-1.3-1.5-3.4-4.5-4.7-7.7c-1.7-4.1-2-8.5-2-8.5s-0.9-14.8,0.3-21.1s1.4-11,2-14s1.9-11.8,1.9-11.8    L96.2,61.6z"/>
-                                    <path class="capucha-path" id="capucha" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M89.3,70c0,0-2.8,9.3-4,14.7    c-1.2,5.3-2.6,17.5-2.5,18.7c0.1,1.1-1.1,4.7-0.2,10.1c0.9,4.7,3.4,10.5,9.8,16c13.8,11.7,5.7,3,5.7,3l-4.8-7.3c0,0-2.3-2.8-2.9-8    c-0.6-5.2-1.1-2.6-0.7-15.3s2.4-21.6,2.4-21.6l1.7-11.8l1.8-4.9L89.3,70z"/>
-                                    <path class="capucha-path4" id="capucha4" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M182.8,74.2c0,0,3.6,7.9,4.8,13.3    c1.2,5.3,2.6,17.5,2.5,18.7c-0.1,1.1,1.1,4.7,0.2,10.1c-0.9,4.7-3.4,10.5-9.8,16c-13.8,11.7-5.7,3-5.7,3l4.8-7.3    c0,0,2.3-2.8,2.9-8c0.6-5.2,1.1-2.6,0.7-15.3s-2.4-21.6-2.4-21.6l-1.7-11.8l-1.8-4.9L182.8,74.2z"/>
-                                    <path class="capucha-path3" id="capucha3" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M94.6,54.5l-2.2,6.3l-2,6.1l-1,3.5l8.5-9.3    c0,0,7.4-7.3,9.5-8.8c2.9-1.9,7-5.9,13.8-8.4s14-4,19.4-3.1s15,4.8,17.1,6.1c2.6,1.6,11.2,9,13,10.9c1.6,1.6,5.2,4.7,9.1,11.3    c3.9,6.5,5.4,9.4,5.4,9.4l-3-12.8c0,0-0.3-0.6-1.6-2.4c-0.4-0.6-1.3-1.8-1.8-2.4c-0.6-0.8-1.3-1.9-2-2.8c-1.1-1.3-2.3-3-3.5-4.3    c-1.3-1.2-2.4-2.9-3.7-3.8c-1.8-1.2-3.1-2.4-4.5-3.5c-1.4-1.1-2.6-2.1-4.2-3.1c-0.9-0.6-1.4-1-2.6-1.6c-2.1-1.1-4.7-3.4-7.9-4.5    c-1.5-0.5-3.1-0.9-4.4-1.3c-1.2-0.3-4.1-0.8-5.1-1c-1.8-0.3-4.6-0.8-6-0.7c-3,0.1-2.7,0.1-5.4,0.7c-3.4,0.7-8.4,1.8-12.3,3.7    c-2.2,1.1-4.1,2.3-5.2,3.1c-3.2,2.1-8.8,5-12.9,8.3C94.9,53.5,94.6,54.5,94.6,54.5z"/>
-                                    <path class="capucha-path2" id="capucha2" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M95,53.8l0.6-1.5l0.8-1.6l2-4.1    c0,0,4.8-7.3,6.8-9.5c3.6-3.9,2.9-3.4,10.8-9c7.6-5.5,13.3-8.9,19.1-10.3c5.8-1.5,12.3-3.4,20,3.3s15.7,16.9,17.1,20    c1.4,3.1,8.5,12.8,9.7,21.1c0.1,1,0.3,3.2,0.4,3.8c0.6,4.4-0.5-0.8-0.5-0.8l-1.6-2l-3.2-4.3l-5.6-6.9c0,0-3.9-3.5-10.5-8.1    c-6.6-4.6-8.6-6-12.1-6.7c-1.5-0.3-5.1-2.1-12-2.4c-4.5-0.2-2.6-0.6-10.9,1.2c-2.2,0.5-3.9,0.9-5.3,1.3c-1.3,0.4-2.6,1.1-3.4,1.5    c-1.5,0.7-1.9,1-3.3,1.8c-1.8,1.1-7.3,4.5-7.3,4.5l-6.8,5.1l-2.5,1.8L96,53L95,53.8z"/>
-                                </g>
-                                <g>
-                                    <path class="bolsilloizquierdo-path" id="bolsilloizquierdo" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M95.6,323.7c0,0-0.1-1.7-0.2-2.3    c-0.1-0.6-0.4-1.8-0.5-2.5c-0.2-0.8-0.6-2.5-0.8-3.3c-0.2-1.1-0.7-3.3-0.9-4.4c-0.2-0.9-0.7-2.6-0.8-3.5c-0.1-0.7-0.4-2-0.4-2.7    c-0.1-0.8-0.2-2.5-0.3-3.4c0-1.1,0-3.4,0-4.5c0-0.7,0-2.6,0-2.6l0.4-2.6c0,0,1.6-1.7,2.2-2.3c0.8-0.8,3.2-3.3,3.2-3.3l3.8-3.7    l2.9-2.8l2.6-2.3l2.4-2.2l2.4-2.3c0,0,2.1-1.5,2.9-2c0.5-0.3,1.5-1,2.1-1.1c0.7-0.2,2.9-0.3,2.9-0.3l3.5-0.3l2.9-0.2l3.2-0.2h3.2    h2.3l2.6,0.2c0,0,0.3,3.2,0.3,4.3c0,1.1-0.1,3.3-0.2,4.4c0,1.1-0.1,3.4-0.1,4.5c0,1.2-0.2,3.5-0.2,4.7c-0.1,1.1-0.2,3.4-0.2,4.6    c0,1-0.1,3.1-0.2,4.1c0,1-0.1,3.1-0.2,4.2c0,1.7-0.1,6.9-0.1,6.9l0.2,4.7l0.3,5l0.3,4.3l0.3,3.8c0,0-5.5-0.2-7.4-0.2    c-1.1,0-3.4-0.1-4.5-0.2c-0.9,0-2.8-0.1-3.7-0.1c-1.1,0-3.3-0.1-4.4-0.1c-1.3,0-3.8,0-5-0.1c-1,0-3.1-0.1-4.2-0.2    c-1.2-0.1-3.7-0.2-5-0.2c-0.7,0-2.1,0-2.7,0C99.2,323.7,95.6,323.7,95.6,323.7z"/>
-                                    <path id="bolsilloizquierdoagujero" d="M121.9,269.3c-8.2,6.6-30.7,28.8-30.9,29.1c-0.3,0.2-0.3,0.7-0.1,1c0.1,0.2,0.3,0.2,0.5,0.2c0.1,0,0.3-0.1,0.4-0.2    c0.2-0.2,22.6-22.4,30.8-29c0.3-0.2,0.3-0.6,0.1-0.9C122.5,269.1,122.1,269.1,121.9,269.3z"/>
-                                </g>
-                                <g>
-                                    <path class="bolsilloderecho-path" id="bolsilloderecho" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M141.5,303.8c0-2.1,0.6-8.4,0.6-8.4v-6.2v-6.7    l0-5.6l-0.1-3.8l-0.1-3.6c0,0,5.3,0,7,0c1.2,0,3.7,0.1,4.9,0c1.2-0.1,3.5-0.4,4.7-0.5c0.8-0.1,2.5-0.2,3.3-0.4    c0.5-0.1,1.6-0.2,2.6,0.1c0.6,0.2,3.2,1.6,3.2,1.6l2.5,1.9l3,2.5l2.2,2.1l2.2,2.7l2.6,2.6l2.4,3.2l3.2,3.7l1.1,1.9    c0,0,1,3.2,0.9,4.4s0.4,3.4,0.4,4.5c-0.1,1,0,3.9,0,3.9s-0.1,4.7-0.6,5.5c-0.7,1.2-1,4.2-1.3,5.1c-0.3,1-1.3,3.9-1.3,3.9l-1.6,3.2    l-0.2,2l-7.6,0.9l-6.3,0.4l-5.9,0.2l-5.7,0.1h-5.5l-6.8,0.2l-3.1,0.1l-0.7-6.2v-5.7l-0.1-5C141.5,308.4,141.5,304.9,141.5,303.8z"/>
-                                    <path id="bolsilloderechoagujero" d="M159.3,269.3c-0.3-0.2-0.6-0.2-0.9,0.1c-0.2,0.3-0.2,0.7,0.1,1c2.6,2.4,25.6,23.7,27.5,24.4c0.1,0,0.1,0,0.2,0    c0.2,0,0.5-0.2,0.6-0.4c0.1-0.3,0-0.7-0.4-0.9C185.1,292.9,169.5,278.7,159.3,269.3z"/>
-                                </g>
-                            </g>
-                            <g>
-                            <path fill="#DE2A8C" d="M309.737,219.194c-0.476,7.878-2.051,15.487-4.733,22.907c-0.303,0.839,0.486,1.711,1.348,1.525
-                                c2.643-0.576,5.255-1.28,7.834-2.088c3.604,12.049,6.549,24.282,8.711,36.676c1.922,11.02,4.711,23.824,0.679,34.695
-                                c-4.833,13.029-19.309,15.398-31.044,10.703c-11.176-4.47-22.688-13.468-26.54-25.171c-0.199-0.605-1.073-0.444-0.981,0.208
-                                c1.642,11.716,13.895,20.834,23.754,25.732c10.278,5.105,24.061,6.12,32.477-3.039c7.885-8.582,7.168-21.557,5.748-32.299
-                                c-2.16-16.335-5.811-32.468-10.541-48.244c1.865-0.635,3.713-1.322,5.539-2.063c1.507-0.446,3.008-0.93,4.502-1.456
-                                c0.803-0.283,0.732-1.304,0.355-1.851c-4.329-6.273-9.313-11.904-15.025-16.953C311.083,217.831,309.804,218.074,309.737,219.194z
-                                 M310.984,228.807c0.664-0.115,1.323-0.205,1.978-0.268c-0.69,0.294-1.386,0.576-2.089,0.848
-                                C310.909,229.193,310.949,229,310.984,228.807z M313.052,231.811c-0.985,0.402-1.967,0.818-2.942,1.252
-                                c0.087-0.379,0.175-0.755,0.257-1.131c0.06,0.007,0.113,0.029,0.178,0.025C311.38,231.909,312.216,231.858,313.052,231.811z
-                                 M310.041,235.648c0.59-0.075,1.181-0.135,1.771-0.2c-0.771,0.234-1.541,0.467-2.312,0.699c-0.067,0.02-0.127,0.047-0.187,0.075
-                                c0.059-0.214,0.115-0.43,0.172-0.646C309.657,235.637,309.839,235.674,310.041,235.648z M309.984,238.441
-                                c1.078-0.19,2.15-0.346,3.22-0.468c-1.533,0.419-3.065,0.839-4.599,1.254c-0.079,0.021-0.131,0.063-0.199,0.095
-                                c0.141-0.449,0.275-0.896,0.41-1.346C309.037,238.314,309.435,238.537,309.984,238.441z M323.55,235.764
-                                c-0.176-0.188-0.426-0.318-0.758-0.34c-0.836-0.054-1.665-0.071-2.494-0.089c0.527-0.157,1.054-0.317,1.58-0.477
-                                c0.501-0.149,0.787-0.589,0.861-1.049c0.445,0.591,0.884,1.188,1.316,1.789C323.888,235.655,323.718,235.707,323.55,235.764z
-                                 M317.419,232.653c1.148-0.421,2.305-0.827,3.475-1.209c0.295,0.366,0.592,0.729,0.882,1.099c-0.024-0.001-0.042-0.012-0.067-0.012
-                                C320.273,232.537,318.845,232.586,317.419,232.653z M317.302,229.19c0.4-0.196,0.801-0.395,1.201-0.599
-                                c0.146,0.167,0.289,0.336,0.434,0.506C318.392,229.129,317.847,229.159,317.302,229.19z"/>
-                            <path fill="#DE2A8C" d="M-46.788,212.078c-0.165-0.181-0.331-0.358-0.495-0.539c-0.335-0.368-1.045-0.408-1.385-0.02 c-0.128,0.147-0.259,0.292-0.387,0.438c-0.322-0.392-0.897-0.553-1.398-0.084c-9.225,8.658-18.45,17.313-27.718,25.924 c-0.76,0.707,0.222,2.098,1.111,1.488c1.739-1.19,3.456-2.41,5.162-3.646c-2.542,2.652-5.109,5.28-7.706,7.881 c-0.829,0.83,0.417,2.107,1.267,1.304c3.925-3.705,7.811-7.453,11.633-11.268c-2.886,3.489-5.658,7.076-8.229,10.839 c-0.589,0.864,0.663,1.711,1.384,1.086c3.313-2.878,6.537-5.852,9.684-8.903c-0.307,0.437-0.621,0.868-0.923,1.306 c-0.378,0.546,0.336,1.148,0.859,0.878l2.746-1.424c0.69-0.358,0.102-1.385-0.587-1.048c-0.139,0.067-0.277,0.136-0.415,0.203 c2.172-2.91,4.421-5.75,6.75-8.518c1.057-1.14,2.098-2.293,3.131-3.453c0.038,1.487,0.11,2.97,0.221,4.442 c-0.755,10.047,1.908,19.146,6.637,27.463c9.346,22.09,27.617,39.944,51.234,48.436c0.973,0.349,1.673-1.273,0.71-1.698 c-0.954-0.421-1.898-0.859-2.834-1.313c-0.045-0.106-0.113-0.209-0.225-0.3c-2.104-1.725-4.318-3.487-6.593-5.287 c2.501,1.33,5.029,2.608,7.563,3.85c1.163,0.585,2.333,1.155,3.515,1.7c0.471,0.22,0.91,0.004,1.146-0.331 c0.12,0.062,0.238,0.126,0.357,0.19c1.053,0.545,1.995-1.048,0.936-1.597c-1.513-0.798-3.018-1.624-4.52-2.469 c-5.753-3.282-11.26-7.027-16.378-11.203c5.964,3.985,12.485,7.192,19.43,9.44c0.708,0.229,1-0.88,0.298-1.117 c-21.122-7.117-38.169-23.538-47.138-43.605c-3.216-7.52-5.273-15.595-5.908-24.148c1.861,1.481,3.699,2.992,5.501,4.545 c4.148,4.239,8.458,8.316,12.939,12.229c0.411,0.358,0.895,0.297,1.234,0.05c1.169,1.21,2.33,2.432,3.511,3.633 c0.893,0.907,2.254-0.434,1.411-1.374c-1.449-1.618-2.92-3.213-4.401-4.802c0.258-0.12,0.472-0.36,0.572-0.653 c0.398,0.271,0.796,0.544,1.194,0.815c0.942,0.643,1.994-0.767,1.221-1.558c-8.436-8.633-16.679-17.439-24.811-26.357 C-44.672,212.642-45.89,211.366-46.788,212.078z M-48.687,220.396c0.029-0.032,0.058-0.063,0.087-0.095 c0.34,0.398,0.679,0.8,1.021,1.194c-0.366-0.247-0.73-0.498-1.098-0.745C-48.678,220.632-48.685,220.514-48.687,220.396z M-50.007,218.642c-0.176,0.19-0.353,0.381-0.53,0.572c-0.081-0.142-0.194-0.243-0.326-0.316c0.221-0.225,0.442-0.444,0.663-0.669 C-50.169,218.367-50.11,218.505-50.007,218.642z M-52.3,220.633c-0.003,0.161,0,0.32-0.001,0.479 c-3.503,3.731-7.05,7.421-10.621,11.087c-0.872,0.883-1.744,1.767-2.616,2.649c4.124-4.979,8.546-9.705,13.08-14.332 C-52.405,220.556-52.353,220.596-52.3,220.633z M-46.74,215.075c0.009,0.004,0.018,0.012,0.026,0.018 c-0.669,0.729-1.345,1.447-2.017,2.173c-0.119-0.079-0.238-0.131-0.359-0.154c0.719-0.721,1.439-1.438,2.16-2.154 C-46.866,214.994-46.807,215.031-46.74,215.075z M-34.849,270.97c1.235,1.684,2.551,3.282,3.924,4.816 c3.405,4.46,7.194,8.628,11.328,12.434c-6.882-5.75-12.793-12.521-17.545-20.039c0.586,0.694,1.188,1.382,1.796,2.065 C-35.175,270.486-35.024,270.73-34.849,270.97z M-23.127,276.88c-1.759-1.649-3.46-3.354-5.1-5.11 c-1.325-1.982-2.572-4.019-3.747-6.097C-29.322,269.606-26.357,273.347-23.127,276.88z M-43.507,256.091 c-1.481-3.456-2.727-7.021-3.748-10.669c1.188,3.212,2.565,6.337,4.121,9.369c0.515,1.209,1.049,2.41,1.611,3.599 c0.264,0.721,0.534,1.44,0.831,2.153C-41.698,259.086-42.635,257.601-43.507,256.091z M-42.23,245.861 c1.612,5.537,3.708,10.899,6.252,16.03c-3.471-5.648-5.594-11.623-6.878-17.869C-42.654,244.637-42.45,245.253-42.23,245.861z M-44.989,244.076c-1.983-6.716-3.216-13.678-3.593-20.749c0.595,0.444,1.185,0.894,1.775,1.344 C-46.651,231.314-46.225,237.813-44.989,244.076z M-39.38,223.091c-1.649-1.522-3.315-3.03-5.01-4.508 c-0.836-0.73-1.916,0.103-1.663,0.977c-0.336-0.293-0.672-0.587-1.008-0.878c0.651-0.674,1.309-1.344,1.974-2.009 c0.56,0.684,1.088,1.417,1.616,1.996C-42.115,220.15-40.746,221.619-39.38,223.091z"/>
-                            <path fill="#12A3C7" d="M33.569,144.984c-4.07,0.352-8.986,5.076-12.769,4.547c-8.726-1.221-0.188-14.638,2.348-18.52
-                                c2.214-3.392,4.625-6.534,6.87-9.889c3.141-4.689,11.568-17.563,4.32-19.354c-6.728-1.663-17.954,6.682-24.461,11.637
-                                c-9.501,7.235-18.362,16.417-27.379,25c-3.836,3.651-10.128,11.167-14.512,12.009c-9.005,1.73-4.945-8.74-3.002-12.987
-                                c0.738-1.615,1.594-3.219,2.476-4.726c2.632-4.5,5.75-8.476,8.912-12.267c9.968-11.951,20.682-21.69,31.271-32.271
-                                c5.917-5.912,11.292-15.196,6.569-22.454c-4.505-6.922-14.118-6.247-21.255-4.201c-6.04,1.73-11.669,6.316-17.636,8.536
-                                c-9.392,3.492-13.536-5.75-13.672-16.888c-0.079-6.443,0.427-15.274,4.668-21c7.101-9.587,20.21-15.574,25.942-24.406
-                                c0.049-0.033,0.098-0.068,0.147-0.102c-1.87,4.925-3.084,10.268-2.836,15.098c0.089,1.748,2.133,1.256,2.346-0.595
-                                C-7.313,15.463-6.36,9.784-3.207,3.581c0.469-0.92,0.313-1.795-0.108-2.22c0.011-0.017,0.023-0.034,0.035-0.049
-                                c0.399-0.538,0.086-1.493-0.425-0.991c-1.022,1.003-2.01,2.072-2.973,3.186c-3.58,3.158-6.877,3.001-10.772,2.733
-                                c0.001,0.019,0.002,0.037,0.003,0.053c-0.753,0.085-1.387,1.472-0.712,2.151c1.81,1.822,4.32,1.949,6.893,1.079
-                                c-5.45,8.07-24.481,15.117-26.942,24.931c-3.059,12.203-4.557,27.861,1.404,36.094c6.682,9.227,17.149-0.519,26.004-4.241
-                                c6.45-2.712,14.052-3.854,19.581-0.789c5.274,2.922,5.462,8.882,0.925,16.487c-2.547,4.27-8.407,8.166-11.726,11.348
-                                c-10.465,10.034-21.741,21.097-30.433,34.292c-4.31,6.542-13.813,26.204-3.415,27.149c3.731,0.341,7.799-2.918,11.224-5.878
-                                c5.462-4.72,10.737-10,16.045-15.118c10.248-9.881,20.882-20.062,32.347-25.343c2.995-1.381,10.808-6.107,9.457,1.976
-                                c-0.653,3.906-6.367,10.484-8.267,13.156c-3.945,5.551-8.713,11.945-10.465,19.176c-1.157,4.775-0.283,8.667,2.774,10.128
-                                c4.881,2.333,10.647-3.624,15.829-4.066C34.847,148.671,35.351,144.831,33.569,144.984z"/>
-                            <path fill="#DE2A8C" d="M222.18,4.641c-2.801-0.411-5.701-0.299-8.528-0.356c-1.345-0.027-4.602-0.784-5.613,0.667
-                                c-0.849,1.216,0.416,3.031,0.893,4.104c1.292,2.91,2.529,5.847,3.911,8.716c0.303,0.629,1.367,0.175,1.127-0.485
-                                c-0.726-1.997-1.519-3.968-2.282-5.951c-0.155-0.402-1.305-2.95-1.723-4.245c9.525,8.215,19.761,19.254,19.858,32.776
-                                c0.103,14.342-17.592,25.509-30.611,21.029c-0.637-0.219-1.067,0.853-0.438,1.116c12.705,5.302,28.961-4.105,32.583-17.078
-                                c1.986-7.121-0.711-14.49-3.935-20.81c-3.413-6.695-8.471-13.924-15.105-17.904c1.252,0.11,2.592,0.308,3.034,0.325
-                                c2.19,0.08,4.426,0.285,6.612,0.091C223.029,6.543,223.385,4.818,222.18,4.641z"/>
-                            <path fill="#12A3C7" d="M259.296,36.6c4.223-5.609,8.447-10.436,11.741-17.31c1.364-2.848,3.026-11.183,5.562-12.271
-                                c2.565-1.1,3.553,3.847,4.438,6.161c2.928,7.671,5.758,15.421,8.34,23.333c0.456,1.396-0.984,2.634-1.497,1.225
-                                c-2.255-6.19-4.495-12.394-6.897-18.477c-0.505-1.28-1.894-5.989-2.754-6.805c-1.103-1.87-1.768-1.6-1.996,0.809
-                                c-0.167,0.479-0.36,0.94-0.536,1.415c0.69-0.596,1.749-0.237,1.702,1.232c-0.633,19.345-8.265,37.02-7.705,56.578
-                                c0.303,10.556,3.217,19.286,8.965,26.143c4.26,5.081,9.192,9.161,12.621,15.482c13.454,24.799-1.514,60.122-20.467,67.693
-                                c-0.958,0.383-1.344-1.642-0.409-2.074c10.81-4.986,19.567-17.376,22.491-32.891c1.768-9.373,1.36-19.93-2.246-28.386
-                                c-2.957-6.934-8.085-11.245-12.471-16.188c-20.31-22.89-5.548-57.019-3.082-86.008c-0.12,0.305-0.226,0.621-0.35,0.923
-                                c-3.387,8.259-8.262,16.873-14.234,21.62C259.539,39.578,258.454,37.72,259.296,36.6z"/>
-                    </g>
-				</svg>
 			</div>
-			<input class="btn btn-primary" id="reset" type="button" value="RESETEAR" onclick="resetsall()" />
-		</div>
-	</div>
+
+        <svg class="img-responsive img-center" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="900px" height="850px" viewBox="0 0 900 850" enable-background="new 0 0 900 850" xml:space="preserve">
+            <g>
+                <g id="campera-canguro-capucha-exterior">
+                  
+                <path class="path" id="campera-canguro-capucha-exterior-path" fill="#FFFFFF" d="M562.788,218.427c-3.326,12.712-9.143,23.654-18.354,33.167
+                    c-17.131,17.692-35.806,32.955-59.701,40.478c-27.381,8.619-53.75,4.016-79.182-7.453c-12.408-5.597-24.693-11.76-36.199-18.994
+                    c-19.601-12.321-31.104-30.904-35.381-53.364c-1.137-5.966,2.151-12.773,3.408-19.194c0.482,0.067,35.06-72.924,35.979-74.257
+                    c0.769-1.114,34.612-57.661,34.495-57.198c4.032-5.624,23.512-34.594,49.428-32.379c0.278,0.129,10.501-0.299,28.122,13.129
+                    c0.005,0.004,17.618,14.852,23.5,28.141c8.243,18.627,23.314,46.733,32.491,64.568c0.982,0.605,14.655,25.491,19.536,36.889
+                    c9.49,20.785,5.926,26.622,5.472,33.456"/>
+                </g>
+                <g id="campera-canguro-capucha-interior">
+                    <path id="campera-canguro-capucha-interior-back" fill="#FFFFFF" d="M367.25,252.711c-0.021-2.764-1.425-4.418-3.639-6.151
+                        c-13.29-10.406-19.753-24.771-22.613-40.951c-0.434-2.452,0.311-5.357,1.239-7.772c16.798-43.694,36.123-86.04,68.802-120.584
+                        c6.646-7.024,14.881-12.746,23.014-18.11c9.17-6.051,19.562-4.408,29.549-2.021c14.396,3.439,27.478,9.902,39.688,18.227
+                        c3.334,2.272,5.129,5.098,6.184,9.115c1.332,5.064,3.302,10.194,6.084,14.609c16.119,25.566,29.646,52.476,40.527,80.583
+                        c6.957,17.97,2.514,36.075-8.313,50.682c-14.685,19.81-33.064,36.472-54.394,49.458c-25.238,15.369-50.508,16.129-75.761,0.212
+                        c-12.105-7.63-23.998-15.597-36.046-23.319c-4.376-2.805-8.787-5.83-14.491-4.138L367.25,252.711z"/>
+                    <g id="campera-canguro-capucha-interior-sombras">
+                        <path id="campera-canguro-capucha-interior-sombra-3" fill="#E8E8E8" d="M457.901,57.338c-2.783,0.466-3.306,2.457-3.193,4.815
+                            c0.557,11.836-0.375,23.652-1.154,35.422c-1.418,21.439-0.039,42.939-1.914,64.347c-0.29,3.313-0.741,6.613-1.168,9.912
+                            c-0.129,0.992-0.405,2.185-1.489,2.383c-1.576,0.288-1.902-1.163-2.105-2.249c-1.104-5.887-2.146-11.785-3.143-17.689
+                            c-2.354-13.948-4.218-27.991-8.22-41.615c-0.896-3.053-1.877-6.063-3.875-8.6c-1.049-1.332-2.309-2.512-4.186-2.301
+                            c-2.19,0.245-3.036,1.965-3.477,3.78c-1.457,6-2.331,12.104-2.245,18.281c0.11,8.016-0.66,15.948-1.842,23.851
+                            c-0.305,2.039-0.301,4.945-3.208,4.821c-2.448-0.104-2.451-2.89-2.847-4.724c-1.017-4.717-1.717-9.5-2.655-14.232
+                            c-0.715-3.604-1.691-7.155-3.688-10.299c-2.578-4.059-4.984-4.645-8.537-1.405c-16.493,15.037-28.57,32.771-32.872,55.111
+                            c-1.147,5.963-0.097,11.019,4.786,15.313c4.226,3.717,8.308,7.674,11.697,12.279c1.88,2.555,1.43,3.854-1.507,4.52
+                            c-7.383,1.67-11.938,6.928-16.085,12.676c-2.926,4.056-2.598,6.33,1.522,9.17c5.248,3.615,11.15,5.953,17.044,8.272
+                            c2.171,0.854,4.399,1.587,6.104,3.298c-3.262,1.709-6.986,0.492-10.301,1.577c-3.168,1.037-6.542,1.66-8.841,4.673
+                            c-1.088,1.426-3.042,2.356-4.996,0.795c-16.136-10.271-23.024-26.099-26.182-44.039c-0.376-2.137,0.427-4.668,1.247-6.801
+                            c16.867-43.873,36.375-86.273,69.014-121.143c7.077-7.561,14.964-14.225,24.484-18.686
+                            C441.833,55.216,449.79,55.183,457.901,57.338z"/>
+                        <path id="campera-canguro-capucha-interior-sombra-2" fill="#E8E8E8" d="M475.673,251.411c-5.621-2.461-11.233-0.269-16.713,0.46
+                            c-4.563,0.605-6.424-0.944-7.592-4.914c-3.603-12.232-2.646-24.766-2.537-37.229c0.029-3.39,2.25-3.326,4.416-1.66
+                            c1.008,0.773,1.836,1.979,2.354,3.162c4.718,10.735,13.902,14.344,24.582,15.021c11.658,0.741,23.277,0.159,34.775-2.345
+                            c8.115-1.768,13.346-6.285,15.566-14.356c1.766-6.423,4.192-12.696,5.518-19.202c2.061-10.131-0.553-19.842-4.102-29.294
+                            c-4.808-12.808-10.742-25.133-16.937-37.29c-7.34-14.408-10.985-29.541-11.186-45.609c2.715,0.884,3.088,3.307,3.496,5.574
+                            c1.231,6.85,4.479,12.703,8.102,18.574c15.904,25.797,29.285,52.876,40.313,81.111c1.942,4.974,1.661,10.094,1.147,15.255
+                            c-1.586,15.972-6.115,30.597-18.529,41.79c-3.067,2.77-5.821,5.889-8.721,8.846c-1.154,0.195-2.24,0.95-3.481,0.43
+                            c-3.601-3.674-8.31-4.822-13.111-5.801c-1.299-0.266-1.26,0.452-1.205,1.34c-0.127,0.838-0.531,1.474-1.201,1.953
+                            c-10.971-0.865-21.578,0.803-31.846,4.653C477.497,252.363,476.602,252.292,475.673,251.411z"/>
+                        <path id="campera-canguro-capucha-interior-sombra-1" fill="#D2D2D2" d="M511.745,247.378c1.719,1.561,0.637,1.938-0.848,1.711
+                            c-9.734-1.488-18.898,1.078-27.75,4.448c-19.634,7.479-39.957,10.679-60.717,8.671c-15.228-1.473-30.88-2.648-44.082-12.193
+                            c-3.679-2.66-5.317,0.23-6.597,3.211c-1.677,0.152-3.019,2.01-4.927,0.965c0.004-0.002,0.134,0.092,0.138,0.088
+                            c-1.591-1.078-0.382-2.496-0.457-3.758c3.825-0.9,5.607-4.928,9.469-5.97c4.867-1.313,9.755-1.088,14.668-1.073
+                            c-1.026,4.028-4.561,1.133-6.638,2.379c-1.225,0.734-3.524-0.023-3.952,1.513c-0.538,1.938,1.721,2.598,2.979,3.483
+                            c6.229,4.385,13.773,4.777,20.846,6.461c24.737,5.892,48.962,3.148,72.794-4.903c7.627-3.015,15.473-5.171,23.666-5.871
+                            C504.171,246.21,508.001,246.331,511.745,247.378z"/>
+                    </g>
+                    <path class="path" id="campera-canguro-capucha-interior-path" opacity="0.001" fill="#FFFFFF" d="M367.25,252.711
+                        c-0.021-2.764-1.425-4.418-3.639-6.151c-13.29-10.406-19.753-24.771-22.613-40.951c-0.434-2.452,0.311-5.357,1.239-7.772
+                        c16.798-43.694,36.123-86.04,68.802-120.584c6.646-7.024,14.881-12.746,23.014-18.11c9.17-6.051,19.562-4.408,29.549-2.021
+                        c14.396,3.439,27.478,9.902,39.688,18.227c3.334,2.272,5.129,5.098,6.184,9.115c1.332,5.064,3.302,10.194,6.084,14.609
+                        c16.119,25.566,29.646,52.476,40.527,80.583c6.957,17.97,2.514,36.075-8.313,50.682c-14.685,19.81-33.064,36.472-54.394,49.458
+                        c-25.238,15.369-50.508,16.129-75.761,0.212c-12.105-7.63-23.998-15.597-36.046-23.319c-4.376-2.805-8.787-5.83-14.491-4.138
+                        L367.25,252.711z"/>
+                </g>
+               	<g id="campera-canguro-botamanga-frente">
+                    <path id="campera-canguro-botamanga-frente-back-2" fill="#FFFFFF" d="M456.04,816.82c0-13.855,0-26.869,0-39.883
+                        c0.385-0.104,0.768-0.203,1.15-0.307c0.702,0.83,1.405,1.66,1.543,1.82c2.104-0.76,3.78-1.873,5.475-1.898
+                        c29.365-0.465,58.422-3.998,87.449-8.164c13.587-1.949,26.892-4.387,39.433-11.551c0,6.154,0.123,11.549-0.033,16.938
+                        c-0.166,5.645-0.899,11.289-0.799,16.922c0.058,3.252-1.041,5.094-3.926,5.941c-10.979,3.23-21.797,7.527-33.013,9.334
+                        c-26.412,4.254-53,7.445-79.56,10.738C467.884,817.441,461.839,816.82,456.04,816.82z"/>
+                    <path id="campera-canguro-botamanga-frente-path-1" fill="#FFFFFF" d="M305.301,755.727c1.679,0.482,2.996,0.684,4.155,1.225
+                        c19.942,9.313,41.541,11.582,62.917,14.65c15.788,2.268,31.624,4.293,47.495,5.848c7.549,0.738,15.233,0.127,23.063,0.127
+                        c0,8.227,0,17.176,0,26.123c-0.266,0.059-0.53,0.115-0.797,0.172c-0.535-0.994-1.071-1.988-1.608-2.982
+                        c-0.343,0.086-0.685,0.172-1.027,0.258c0.291,1.361,0.24,3.688,0.93,3.934c6.289,2.238,3.369,7.168,3.937,11.689
+                        c-8.953,0-17.606,0.717-26.097-0.15c-17.695-1.807-35.334-4.256-52.938-6.832c-9.037-1.324-17.941-3.537-26.921-5.262
+                        c-5.539-1.064-11.14-1.824-16.653-2.994c-3.542-0.752-7.039-1.838-10.446-3.076c-3.193-1.16-3.849-3.523-3.882-7.041
+                        c-0.086-9.129-1.007-18.25-1.594-27.373C305.662,761.406,305.496,758.771,305.301,755.727z"/>
+                    <g id="campera-canguro-botamanga-frente-sombras">
+                        <path id="campera-canguro-botamanga-frente-sombra-3" fill="#E8E8E8" d="M329.771,765.383c-4.5,7.063-6.511,15.1-9.074,22.934
+                            c-1.541,4.707,0.256,7.717,4.439,9.563c4.094,1.805,8.035,3.826,11.567,6.592c-6.41-0.934-12.85-1.693-19.22-2.846
+                            c-8.489-1.533-10.091-3.898-10.421-12.287c-0.328-8.309-1.225-16.598-1.854-24.895c-0.188-2.475-0.316-4.951-0.527-8.293
+                            C313.398,759.408,321.357,763.066,329.771,765.383z"/>
+                        <path id="campera-canguro-botamanga-frente-sombra-2" fill="#E8E8E8" d="M503.671,810.992c4.685-11.359-0.44-21.832-3.602-32.443
+                            c-0.375-1.262-2.203-2.154-3.359-3.219c10.994-0.973,21.988-1.947,32.982-2.92c-1.019,6.293-5.998,9.969-10.795,13.691
+                            c-5.099,3.955-7.943,16.875-4.535,21.957c0.444,0.662,1.635,0.9,2.479,1.336C512.542,810.559,508.093,810.688,503.671,810.992z"
+                            />
+                        <path id="campera-canguro-botamanga-frente-sombra-1" fill="#E7E7E7" d="M588.754,776.553
+                            c-1.563-5.439-4.598-10.047-8.143-14.361c2.809-1.543,5.91-4.482,8.631-3.225c1.315,0.609,0.725,5.756,0.649,8.842
+                            C589.824,770.738,590.004,773.754,588.754,776.553z"/>
+                    </g>
+                    <path class="path" id="campera-canguro-botamanga-frente-path-1" opacity="0.001" fill="#FFFFFF" d="M305.301,755.727
+                        c1.679,0.482,2.996,0.684,4.155,1.225c19.942,9.313,41.541,11.582,62.917,14.65c15.788,2.268,31.624,4.293,47.495,5.848
+                        c7.549,0.738,15.233,0.127,23.063,0.127c0,8.227,0,17.176,0,26.123c-0.266,0.059-0.53,0.115-0.797,0.172
+                        c-0.535-0.994-1.071-1.988-1.608-2.982c-0.343,0.086-0.685,0.172-1.027,0.258c0.291,1.361,0.24,3.688,0.93,3.934
+                        c6.289,2.238,3.369,7.168,3.937,11.689c-8.953,0-17.606,0.717-26.097-0.15c-17.695-1.807-35.334-4.256-52.938-6.832
+                        c-9.037-1.324-17.941-3.537-26.921-5.262c-5.539-1.064-11.14-1.824-16.653-2.994c-3.542-0.752-7.039-1.838-10.446-3.076
+                        c-3.193-1.16-3.849-3.523-3.882-7.041c-0.086-9.129-1.007-18.25-1.594-27.373C305.662,761.406,305.496,758.771,305.301,755.727z"
+                        />
+                    <path class="path" id="campera-canguro-botamanga-frente-path-2" opacity="0.001" fill="#FFFFFF" d="M456.04,816.82
+                        c0-13.855,0-26.869,0-39.883c0.385-0.104,0.768-0.203,1.15-0.307c0.702,0.83,1.405,1.66,1.543,1.82
+                        c2.104-0.76,3.78-1.873,5.475-1.898c29.365-0.465,58.422-3.998,87.449-8.164c13.587-1.949,26.892-4.387,39.433-11.551
+                        c0,6.154,0.123,11.549-0.033,16.938c-0.166,5.645-0.899,11.289-0.799,16.922c0.058,3.252-1.041,5.094-3.926,5.941
+                        c-10.979,3.23-21.797,7.527-33.013,9.334c-26.412,4.254-53,7.445-79.56,10.738C467.884,817.441,461.839,816.82,456.04,816.82z"/>
+                </g>
+                <g id="campera-canguro-frente-izquierdo">
+                <path id="campera-canguro-frente-izquierdo-back" fill="#FFFFFF" d="M443.058,301.402c0,155.938,0,313.317,0,470.79
+                    c-11.489,3.305-22.777,1.588-34.351-0.246c-21.018-3.328-42.352-4.746-63.292-8.449c-12.809-2.264-25.141-7.256-37.642-11.168
+                    c-1.265-0.396-2.368-1.666-3.287-2.75c-12.637-14.908-17.153-31.533-12.984-51.092c6.241-29.285,11.311-58.818,16.915-88.238
+                    c0.34-1.787,0.773-3.617,1.536-5.252c3.1-6.646,3.115-13.471,1.862-20.531c-0.546-3.076-1.219-6.592-0.278-9.387
+                    c3.279-9.756,1.789-19.479,0.62-29.188c-2.606-21.65-5.604-43.254-8.162-64.906c-0.513-4.344-0.313-8.926,0.458-13.234
+                    c2.931-16.352,2.96-32.779,2.118-49.276c-2.304-45.18-10.115-89.59-18.826-133.861c-0.896-4.555-0.293-6.555,4.503-8.228
+                    c18.372-6.409,36.515-13.473,54.804-20.126c1.521-0.553,4.236-0.576,5.143,0.361c13.64,14.154,31.064,22.335,48.557,29.973
+                    C414.221,292.474,428.542,296.407,443.058,301.402z"/>
+                <g id="campera-canguro-frente-izquierdo-sombras">
+                    <path id="campera-canguro-frente-izquierdo--sombra-5" fill="#E7E7E7" d="M364.429,629.326
+                        c-5.708,22.662-22.438,36.738-46.977,35.977c2.201-8.691,11.592-8.074,16.921-12.898c5.408-4.898,11.709-8.977,18.969-11.35
+                        c3.032-0.992,5.279-3.963,6.877-6.951C361.262,632.156,362.627,630.568,364.429,629.326z"/>
+                    <path id="campera-canguro-frente-izquierdo-sombra-4" fill="#E8E8E8" d="M420.485,773.525c1.92-0.195,3.839-0.393,6.253-0.639
+                        c-1.653-2.873-4.235-3.383-6.293-4.572c-4.371-2.525-4.803-4.922-1.384-8.703c1.45-1.605,3.052-3.076,4.549-4.643
+                        c1.312-1.371,2.456-2.93,1.554-4.898c-0.851-1.859-2.765-1.541-4.399-1.629c-13.653-0.732-27.213-2.102-40.377-6.084
+                        c-1.679-0.51-3.333-1.1-4.906-2.115c3.778-1.068,7.464-0.803,11.194-0.344c11.332,1.398,22.562-0.656,33.834-1.191
+                        c2.377-0.113,4.106-1.227,4.152-4.016c0.093-5.49,0.918-10.924,1.139-16.426c1.159-28.971,0.813-57.951,0.908-86.93
+                        c0.002-0.666-0.049-1.35,0.074-1.996c2.176-11.492,1.643-10.734-10.094-15.135c-16.844-6.313-33.52-13.072-50.582-18.789
+                        c-8.55-2.867-17.18-5.363-26.358-5.053c-1.391,0.049-3.531,0.416-3.729-1.506c-0.218-2.096,2.027-2.455,3.561-2.797
+                        c8.979-2,17.924-0.67,26.768,0.855c19.434,3.355,38.521,7.893,55.552,18.52c0.28,0.174,0.582,0.357,0.896,0.432
+                        c2.216,0.525,4.55,3.061,6.449,1.631c1.996-1.506,0.018-4.313-0.137-6.555c-0.033-0.496-0.269-0.994-0.23-1.479
+                        c0.953-12.184-1.877-24.119-2.344-36.234c-1.032-26.766-3.204-53.473-2.915-80.303c0.266-24.646,2.21-49.176,3.894-73.734
+                        c0.972-14.157-0.491-28.283-1.327-42.396c-0.807-13.604-2.408-27.16-3.455-40.755c-0.792-10.274-2.389-20.504-1.929-30.856
+                        c6.021,1.25,12.023,2.607,18.074,3.697c2.344,0.422,3.06,1.53,2.836,3.713c-0.117,1.152-0.018,2.328-0.018,3.494
+                        c0.002,99.101,0.002,198.2,0.002,297.297c0,54.432-0.056,108.863,0.104,163.295c0.013,4.324-1.055,6.217-5.489,6.369
+                        C431.038,773.238,425.813,774.934,420.485,773.525z"/>
+                    <path id="campera-canguro-frente-izquierdo-sombra-3" fill="#E8E8E8" d="M343.407,632.504c0.001-3.484-1.634-4.615-4.721-5.232
+                        c-12.463-2.496-23.788,7.148-27.334,18.551c-4.906,15.779-9.158,31.779-12.028,48.156c-1.921,10.955-2.604,22.072-1.202,33.227
+                        c0.855,6.807,3.173,12.783,7.836,17.566c2.197,2.254,4.63,4.611,2.96,8.58c-1.925-0.158-3.147-1.32-4.39-2.959
+                        c-11.225-14.809-15.549-31.207-11.873-50.564c5.619-29.592,10.214-59.42,15.538-89.082c1.332-7.418,4.895-14.371,3.572-22.309
+                        c4.166,11.385,10.329,20.334,20.555,26.594c4.222,2.584,8.772,3.797,12.831,6.4C347.307,625.547,346.618,629.928,343.407,632.504
+                        z"/>
+                    <path id="campera-canguro-frente-izquierdo-sombra-2" fill="#E8E8E8" d="M308.695,391.441c2.326,11.427,3.159,23.014,4.08,34.618
+                        c2.378,29.982,0.75,60.172,4.796,90.061c0.354,2.625,0.382,5.313,0.359,7.969c-0.104,12.576,7.079,20.494,16.772,27.07
+                        c9.522,6.461,19.646,11.861,29.598,17.574c1.217,0.697,3.399,1.127,2.908,2.887c-0.509,1.82-2.724,1.736-4.314,1.59
+                        c-10.419-0.959-20.855-1.822-31.229-3.166c-5.664-0.734-11.292-0.428-16.935-0.604c0.675-17.225-2.646-34.102-4.547-51.094
+                        c-1.496-13.377-3.605-26.686-5.41-40.029c-0.896-6.613,1.888-12.697,2.846-19.047c1.989-5.441,1.808-11.188,2.005-16.813
+                        c0.547-15.659-0.997-31.236-2.411-46.81C307.076,394.109,305.61,391.917,308.695,391.441z"/>
+                    <path id="campera-canguro-frente-izquierdo-sombra-1" fill="#E8E8E8" d="M359.686,264.435
+                        c-16.081,2.437-31.173,8.043-45.971,14.518c-6.631,2.9-13.943,4.57-18.857,10.686c-1.732,2.155-3.267,4.151-3.254,7.002
+                        c-0.162-0.287-0.414-0.561-0.471-0.869c-0.892-4.885-3.601-10.444-2.13-14.479c1.567-4.302,8.371-4.306,12.919-6.05
+                        c14.406-5.524,28.998-10.575,43.315-16.317c4.989-2.001,8.657-2.209,11.764,2.596
+                        C357.708,262.614,358.782,263.469,359.686,264.435z"/>
+                </g>
+                <path class="path" id="campera-canguro-frente-izquierdo-path" opacity="0.001" fill="#FFFFFF" d="M443.058,301.402
+                    c0,155.938,0,313.317,0,470.79c-11.489,3.305-22.777,1.588-34.351-0.246c-21.018-3.328-42.352-4.746-63.292-8.449
+                    c-12.809-2.264-25.141-7.256-37.642-11.168c-1.265-0.396-2.368-1.666-3.287-2.75c-12.637-14.908-17.153-31.533-12.984-51.092
+                    c6.241-29.285,11.311-58.818,16.915-88.238c0.34-1.787,0.773-3.617,1.536-5.252c3.1-6.646,3.115-13.471,1.862-20.531
+                    c-0.546-3.076-1.219-6.592-0.278-9.387c3.279-9.756,1.789-19.479,0.62-29.188c-2.606-21.65-5.604-43.254-8.162-64.906
+                    c-0.513-4.344-0.313-8.926,0.458-13.234c2.931-16.352,2.96-32.779,2.118-49.276c-2.304-45.18-10.115-89.59-18.826-133.861
+                    c-0.896-4.555-0.293-6.555,4.503-8.228c18.372-6.409,36.515-13.473,54.804-20.126c1.521-0.553,4.236-0.576,5.143,0.361
+                    c13.64,14.154,31.064,22.335,48.557,29.973C414.221,292.474,428.542,296.407,443.058,301.402z"/>
+            </g>
+               	<g id="campera-canguro-frente-derecho">
+		<path id="campera-canguro-frente-derecho-back" fill="#FFFFFF" d="M456.798,301.25c6.683-1.016,13.39-1.734,19.967-3.089
+			c24.847-5.117,45.298-18.356,62.607-36.197c6.307-6.499,11.205-7.122,19.104-3.838c16.43,6.829,33.309,12.572,49.997,18.774
+			c1.382,0.515,2.726,1.13,4.427,1.841c-2.377,12.729-4.845,25.272-7.047,37.858c-7.011,40.043-13.312,80.201-13.068,120.986
+			c0.068,11.388,2.709,22.739,3.502,34.153c0.373,5.369-0.711,10.863-1.352,16.277c-2.892,24.465-5.994,48.906-8.67,73.395
+			c-0.476,4.34,0.844,8.852,1.092,13.299c0.198,3.574,0.717,7.338-0.123,10.717c-1.396,5.605-0.793,10.381,1.317,15.873
+			c2.767,7.195,3.789,15.094,5.246,22.75c5.289,27.795,10.668,55.574,15.564,83.439c2.561,14.566-2.578,27.047-11.922,38.254
+			c-10.037,12.035-23.783,15.943-38.237,17.854c-24.748,3.271-49.57,6.018-74.396,8.66c-7.096,0.756-14.311,0.512-21.469,0.467
+			c-1.346-0.008-2.684-1.236-4.518-2.146c-0.135,0.234-0.689,1.207-2.023,3.543C456.798,615.518,456.798,458.406,456.798,301.25z"/>
+		<g id="campera-canguro-frente-derecho-sombras">
+			<path id="campera-canguro-frente-derecho-sombra-4" fill="#E8E8E8" d="M604.584,691.426
+				c-5.314-10.316-8.188-21.334-10.002-32.764c-2.75-17.316-13.248-30.104-25.354-41.881c-8.819-8.582-19.657-11.098-31.493-11.453
+				c-4.947-0.148-9.925-1.115-14.773-2.209c-9.813-2.213-19.697-3.074-29.729-2.74c-1.877,0.064-3.974,0.531-5.699-1.152
+				c1.471-1.391,3.182-0.684,4.713-0.771c22.879-1.318,45.76-2.572,68.639-3.895c4.975-0.287,9.944-0.717,14.901-1.219
+				c3.313-0.336,6.693-0.711,8.781-3.895c-0.646,4.441,0.432,8.391,2.465,12.445c3.557,7.098,3.664,15.133,5.127,22.795
+				c4.059,21.256,8.127,42.51,12.172,63.768C604.516,689.426,604.504,690.436,604.584,691.426z"/>
+			<path id="campera-canguro-frente-derecho-sombra-3" fill="#E8E8E8" d="M585.549,575.432c-12.623-5.4-25.896-8.197-39.439-9.994
+				c-3.445-0.457-6.832-1.365-10.238-2.094c-0.975-0.209-2.119-0.473-2.135-1.689c-0.017-1.506,1.348-1.764,2.455-2.004
+				c3.244-0.705,6.512-1.102,9.852-1.281c7.935-0.43,15.844-1.32,23.778-1.773c4.824-0.275,7.918-2.594,10.293-6.658
+				c1.912-3.271,3.494-6.816,6.338-9.484c-0.643,6.912-1.221,13.83-1.947,20.732C583.996,566.012,584.287,570.748,585.549,575.432z"
+				/>
+			<path id="campera-canguro-frente-derecho-sombra-2" fill="#E8E8E8" d="M607.83,295.755c-0.428-6.52-4.934-10.263-10.047-12.595
+				c-16.133-7.359-32.025-15.37-49.196-20.222c-2.873-0.813-5.752-1.646-8.795-1.471c5.797-6.613,5.797-6.611,13.937-3.586
+				c17.593,6.539,35.13,13.232,52.816,19.496c4.146,1.467,4.994,3.412,3.877,7.264C609.365,288.292,608.68,292.046,607.83,295.755z"
+				/>
+			<path id="campera-canguro-frente-derecho-sombra-1" fill="#E8E8E8" d="M586.857,663.816
+				c-13.088,0.104-25.407-2.379-35.933-10.789c-2.077-1.66-4.547-3.314-5.344-5.805c-3.599-11.252-10.31-21.404-11.798-33.391
+				c2.742,5.176,5.691,10.137,11.289,12.854c0.762,0.369,1.27,1.52,1.63,2.416c4.657,11.57,14.328,18.09,24.401,24.146
+				c4.688,2.818,9.598,5.271,14.318,8.041C586.146,661.715,586.392,662.955,586.857,663.816z"/>
+		</g>
+		<path class="path" id="campera-canguro-frente-derecho-path" opacity="0.001" fill="#FFFFFF" d="M456.798,301.25
+			c6.683-1.016,13.39-1.734,19.967-3.089c24.847-5.117,45.298-18.356,62.607-36.197c6.307-6.499,11.205-7.122,19.104-3.838
+			c16.43,6.829,33.309,12.572,49.997,18.774c1.382,0.515,2.726,1.13,4.427,1.841c-2.377,12.729-4.845,25.272-7.047,37.858
+			c-7.011,40.043-13.312,80.201-13.068,120.986c0.068,11.388,2.709,22.739,3.502,34.153c0.373,5.369-0.711,10.863-1.352,16.277
+			c-2.892,24.465-5.994,48.906-8.67,73.395c-0.476,4.34,0.844,8.852,1.092,13.299c0.198,3.574,0.717,7.338-0.123,10.717
+			c-1.396,5.605-0.793,10.381,1.317,15.873c2.767,7.195,3.789,15.094,5.246,22.75c5.289,27.795,10.668,55.574,15.564,83.439
+			c2.561,14.566-2.578,27.047-11.922,38.254c-10.037,12.035-23.783,15.943-38.237,17.854c-24.748,3.271-49.57,6.018-74.396,8.66
+			c-7.096,0.756-14.311,0.512-21.469,0.467c-1.346-0.008-2.684-1.236-4.518-2.146c-0.135,0.234-0.689,1.207-2.023,3.543
+			C456.798,615.518,456.798,458.406,456.798,301.25z"/>
+	</g>
+
+                	<g id="campera-canguro-botamanga-izquierda">
+		<path id="campera-canguro-botamanga-izquierda-back" fill="#FFFFFF" d="M175.122,758.982c11.059,2.5,20.971,5.5,31.1,6.748
+			c6.025,0.742,12.485-0.84,18.576-2.168c5.61-1.227,10.785-1.072,16.549,1.709c-8.3,14.58-8.852,31-11.291,47.023
+			c-1.314,8.637-2.812,9.566-10.813,6.314c-10.658-4.332-21.455-6.973-33.017-5.602c-0.982,0.115-1.996,0.012-2.992-0.043
+			c-8.153-0.436-8.273-0.855-8.166-8.988C175.262,789.053,175.122,774.125,175.122,758.982z"/>
+		<g id="campera-canguro-botamanga-izquierda-sombras">
+			<path id="campera-canguro-botamanga-izquierda-sombra" fill="#E8E8E8" d="M217.795,817.83c3.93-7.809,5.403-16.258,6.46-24.813
+				c0.601-4.855,3.522-8.9,4.649-13.584c2.117-8.793,1.435-10.023-7.151-12.42c-1.427-0.398-2.784-1.047-4.174-1.578
+				c6.66-2.02,13.235-4.375,20.349-1.566c1.969,0.777,2.844,1.318,1.774,3.377c-6.845,13.174-7.834,27.705-9.724,42.029
+				c-0.129,0.988-0.207,1.988-0.401,2.965C227.85,820.943,226.212,821.715,217.795,817.83z"/>
+		</g>
+		<path class="path" id="campera-canguro-botamanga-izquierda-path" opacity="0.001" fill="#FFFFFF" d="M175.122,758.982
+			c11.059,2.5,20.971,5.5,31.1,6.748c6.025,0.742,12.485-0.84,18.576-2.168c5.61-1.227,10.785-1.072,16.549,1.709
+			c-8.3,14.58-8.852,31-11.291,47.023c-1.314,8.637-2.812,9.566-10.813,6.314c-10.658-4.332-21.455-6.973-33.017-5.602
+			c-0.982,0.115-1.996,0.012-2.992-0.043c-8.153-0.436-8.273-0.855-8.166-8.988C175.262,789.053,175.122,774.125,175.122,758.982z"
+			/>
+	</g>
+
+              <g id="campera-canguro-manga-izquierda">
+                    <path id="campera-canguro-manga-izquierda-back" fill="#FFFFFF" d="M283.446,280.957c2.416,12.604,4.679,23.643,6.637,34.736
+                        c5.992,33.947,11.297,67.998,12.889,102.488c0.797,17.3,1.485,34.686-2.966,51.68c-3.496,13.346-7.403,26.582-11.121,39.869
+                        c-0.493,1.764-0.944,3.535-1.411,5.307c-2.281,8.664-4.01,17.588-11.221,23.945c-0.243,0.215-0.386,0.541-0.588,0.807
+                        c-8.227,10.764-12.614,21.762-7.839,36.004c2.25,6.709,0.127,15.08-0.755,22.611c-3.213,27.443-7.288,54.799-9.936,82.295
+                        c-1.512,15.703-0.838,31.613-1.253,47.428c-0.188,7.152-0.362,14.324-1.021,21.441c-0.76,8.217-8.469,12.695-16.621,10.916
+                        c-4.53-0.99-9.795-1.699-14.032-0.348c-11.041,3.521-21.625,2.744-32.34-0.65c-5.394-1.709-10.841-3.258-16.183-5.119
+                        c-7.539-2.625-10.197-6.297-9.313-14.152c1.919-17.037,4.339-34.016,6.325-51.045c0.475-4.07,1-8.531-0.132-12.326
+                        c-4.276-14.336-2.791-28.635-1.15-43.066c3.063-26.953,5.341-54.008,9.039-80.871c1.802-13.09,5.398-26.047,9.352-38.699
+                        c8.772-28.082,18.596-55.838,27.395-83.912c7.213-23.015,14.064-46.169,20.16-69.501c5.846-22.377,16.714-41.946,30.504-60.146
+                        C272.581,294.426,277.546,288.396,283.446,280.957z"/>
+                    <g id="campera-canguro-manga-izquierda-sombras">
+                        <path id="campera-canguro-manga-izquierda-3" fill="#E8E8E8" d="M240.7,761.225c8.597-13.938,11.951-28.619,6.357-44.582
+                            c-1.726-4.922-2.383-10.018-2.346-15.205c0.084-11.82,0.25-23.633-3.035-35.176c-2.547-8.945-6.261-17.148-13.219-23.652
+                            c-4.38-4.094-6.232-9.826-8.621-15.082c-11.093-24.416-21.594-49.082-27.179-75.479c-1.72-8.127-3.293-16.352-0.789-24.668
+                            c1.341-4.451,3.81-7.918,8.621-8.707c5.401-0.887,10.221,0.244,13.722,5.033c4.861,6.652,7.053,14.689,11.428,21.592
+                            c2.536,4.004,5.254,7.666,9.873,9.514c3.252,1.299,5.049,0.861,5.204-3.109c0.175-4.48,0.685-8.945,1.048-13.418
+                            c0.178-2.188,0.574-4.375,1.945-6.111c9.064-11.484,12.167-24.887,12.973-39.131c0.897-15.848,7.205-29.672,16.928-41.92
+                            c11.011-13.868,17.496-30.173,25.387-45.73c0.646-1.276,0.58-2.917,0.845-4.391c2.32,27.85,5.048,55.73-6.026,82.605
+                            c-5.416,9.746-8.778,20.305-11.652,30.975c-1.771,6.572-4.489,11.939-10.665,15.373c-4.916,2.732-5.188,7.898-5.17,12.695
+                            c0.013,3.633,0.026,7.213-0.626,10.783c-2.088,3.635-2.941,7.68-1.559,11.525c5.152,14.34,2.076,28.596,0.121,42.902
+                            c-3.447,25.232-7.283,50.438-9.135,75.84c-1.088,14.924-0.599,29.961-0.904,44.945c-0.137,6.654-0.312,13.318-0.775,19.959
+                            C252.815,757.658,250.053,760.25,240.7,761.225z"/>
+                        <path id="campera-canguro-manga-izquierda-2" fill="#E8E8E8" d="M255.586,317.198c-1.626,17.2-3.189,34.407-4.913,51.6
+                            c-0.599,5.974-1.925,11.813-4.269,17.397c-1.416,3.375-2.385,6.865-2.844,10.561c-0.85,6.831-4.33,12.588-8.693,17.685
+                            c-4.523,5.283-7.426,11.383-10.249,17.612c-4.47,9.857-9.22,19.567-17.045,27.345c5.438-18.854,10.854-37.715,16.317-56.562
+                            c4.957-17.099,9.975-34.179,14.948-51.272C242.455,339.144,248.13,327.739,255.586,317.198z"/>
+                        <path id="campera-canguro-manga-izquierda-1" fill="#E8E8E8" d="M171.631,639.285c0.874,10.385,5.938,19.342,9.869,28.664
+                            c5.18,12.283,10.98,24.422,11.691,37.982c0.441,8.43-0.035,16.9,1.518,25.271c1.579,8.506,2.984,17.029,2.156,25.752
+                            c-0.104,1.084,0.531,2.236,0.824,3.357c-8.301-1.863-16.529-3.947-24.215-7.73c-1.084-4.26,0.199-8.299,1.486-12.213
+                            c3.365-10.221,4.246-20.82,5.178-31.418c0.438-4.955-0.317-9.629-4.051-13.396c-1.943-1.959-2.473-4.479-2.451-7.152
+                            c0.866-7.229-0.688-14.197-2.48-21.09C168.705,657.893,170.116,648.604,171.631,639.285z"/>
+                    </g>
+                    <path class="path" id="campera-canguro-manga-izquierda-path" opacity="0.001" fill="#FFFFFF" d="M283.446,280.957
+                        c2.416,12.604,4.679,23.643,6.637,34.736c5.992,33.947,11.297,67.998,12.889,102.488c0.797,17.3,1.485,34.686-2.966,51.68
+                        c-3.496,13.346-7.403,26.582-11.121,39.869c-0.493,1.764-0.944,3.535-1.411,5.307c-2.281,8.664-4.01,17.588-11.221,23.945
+                        c-0.243,0.215-0.386,0.541-0.588,0.807c-8.227,10.764-12.614,21.762-7.839,36.004c2.25,6.709,0.127,15.08-0.755,22.611
+                        c-3.213,27.443-7.288,54.799-9.936,82.295c-1.512,15.703-0.838,31.613-1.253,47.428c-0.188,7.152-0.362,14.324-1.021,21.441
+                        c-0.76,8.217-8.469,12.695-16.621,10.916c-4.53-0.99-9.795-1.699-14.032-0.348c-11.041,3.521-21.625,2.744-32.34-0.65
+                        c-5.394-1.709-10.841-3.258-16.183-5.119c-7.539-2.625-10.197-6.297-9.313-14.152c1.919-17.037,4.339-34.016,6.325-51.045
+                        c0.475-4.07,1-8.531-0.132-12.326c-4.276-14.336-2.791-28.635-1.15-43.066c3.063-26.953,5.341-54.008,9.039-80.871
+                        c1.802-13.09,5.398-26.047,9.352-38.699c8.772-28.082,18.596-55.838,27.395-83.912c7.213-23.015,14.064-46.169,20.16-69.501
+                        c5.846-22.377,16.714-41.946,30.504-60.146C272.581,294.426,277.546,288.396,283.446,280.957z"/>
+                </g>
+               	<g id="campera-canguro-botamanga-derecha">
+		<path id="campera-canguro-botamanga-derecha-back" fill="#FFFFFF" d="M659.883,763.592c4.187,0,9.662-1.191,14.353,0.223
+			c14.194,4.283,27.598,1.652,41.041-2.723c2.666-0.867,5.342-1.711,9.323-2.986c0,15.719-0.116,30.738,0.045,45.758
+			c0.091,8.361-0.067,9.438-8.532,8.957c-13.256-0.752-25.711,1.402-37.894,6.545c-5.278,2.229-6.756,1.158-7.93-4.537
+			c-1.039-5.037-1.322-10.23-2.381-15.262C665.469,787.957,662.76,776.404,659.883,763.592z"/>
+		<g id="campera-canguro-botamanga-derecha-sombras">
+			<path id="campera-canguro-botamanga-derecha-sombra" fill="#E8E8E8" d="M681.771,766.086c-2.099,1.488-4.584,1.857-7.066,2.113
+				c-3.787,0.391-5.256,2.553-4.873,5.893c0.309,2.676,0.512,5.533,1.654,7.918c3.522,7.357,4.908,15.166,6.004,23.045
+				c0.565,4.066,3.426,7.244,4.262,11.162c-1.207,0.502-2.395,1.051-3.623,1.498c-4.27,1.549-6.754,0.072-7.412-4.174
+				c-1.096-7.078-2.166-14.16-3.159-21.252c-1.111-7.943-3.369-15.57-6.957-22.803c-1.353-2.725-1.726-4.057,2.241-5.219
+				C669.631,762.279,675.586,764.422,681.771,766.086z"/>
+		</g>
+		<path class="path" id="campera-canguro-botamanga-derecha-path" opacity="0.001" fill="#FFFFFF" d="M659.883,763.592
+			c4.187,0,9.662-1.191,14.353,0.223c14.194,4.283,27.598,1.652,41.041-2.723c2.666-0.867,5.342-1.711,9.323-2.986
+			c0,15.719-0.116,30.738,0.045,45.758c0.091,8.361-0.067,9.438-8.532,8.957c-13.256-0.752-25.711,1.402-37.894,6.545
+			c-5.278,2.229-6.756,1.158-7.93-4.537c-1.039-5.037-1.322-10.23-2.381-15.262C665.469,787.957,662.76,776.404,659.883,763.592z"/>
+	</g>
+
+                	<g id="campera-canguro-manga-derecha">
+                    <path id="campera-canguro-manga-derecha-back" fill="#FFFFFF" d="M616.672,280.37c10.836,6.739,18.344,15.696,24.771,25.729
+                        c9.77,15.252,13.811,32.649,19.021,49.666c15.828,51.678,31.601,103.377,48.232,154.797c4.455,13.771,9.733,27.045,11.258,41.684
+                        c4.254,40.865,9.25,81.654,13.703,122.5c0.549,5.031,0.408,10.436-0.838,15.303c-2.664,10.4-2.685,20.66-1.072,31.152
+                        c0.982,6.404,1.395,12.908,1.793,19.383c0.438,7.117-1.4,10.873-8.115,13.064c-10.719,3.496-21.602,7.033-32.69,8.639
+                        c-6.576,0.951-13.658-2.004-20.562-2.742c-3.342-0.357-6.965-0.248-10.164,0.676c-8.522,2.463-16.711-2.232-17.211-11.051
+                        c-0.828-14.619-0.729-29.291-1.549-43.912c-1.9-33.895-4.229-67.766-6.096-101.662c-0.308-5.564,0.635-11.242,1.391-16.814
+                        c0.838-6.172-0.805-10.834-5.865-14.861c-2.504-1.994-4.293-5.533-5.248-8.719c-6.825-22.773-13.342-45.639-19.983-68.467
+                        c-3.021-10.371-6.918-20.563-8.98-31.117c-3.932-20.114-2.36-40.491-0.725-60.748c3.195-39.536,9.863-78.565,17.695-117.411
+                        C615.73,283.998,616.137,282.558,616.672,280.37z"/>
+                    <g id="campera-canguro-manga-derecha-sombras">
+                        <path id="campera-canguro-manga-derecha-sombra-3" fill="#E8E8E8" d="M602.629,373.411c2.043,7.071,1.855,14.45,2.91,21.663
+                            c1.889,12.897,4.693,25.521,9.119,37.796c3.106,8.622,9.039,15.521,13.934,23.011c9.396,14.379,13.406,30.293,15.086,47.061
+                            c1.072,10.719,5.244,20.223,11.777,28.691c1.402,1.818,2.127,3.643,2.248,5.9c0.256,4.813,0.754,9.611,1.01,14.424
+                            c0.18,3.383,1.619,4.264,4.887,3.387c8.107-2.182,14.938-6.451,20.888-12.229c4.303-4.176,8.475-8.486,12.737-12.701
+                            c0.914-0.904,1.808-2.43,3.244-1.891c1.771,0.662,1.248,2.563,1.179,3.971c-0.322,6.43-2.802,12.328-4.957,18.252
+                            c-7.865,21.602-16.994,42.693-26.119,63.783c-0.914,2.113-2.015,4.322-3.586,5.945c-10.279,10.594-13.142,23.805-14.386,37.889
+                            c-1.414,16.004,1.009,31.85,1.117,47.779c0.029,4.389-0.672,8.518-2.328,12.646c-2.762,6.889-1.994,14.068-0.739,21.178
+                            c1.338,7.584,3.055,15.035,8.03,21.248c-9.616-1.072-12.424-3.746-12.744-13.645c-0.62-19.273-0.7-38.564-1.338-57.834
+                            c-0.936-28.422-3.694-56.723-6.196-85.033c-0.525-5.945,0.776-11.566,1.518-17.309c0.549-4.266,0.24-8.279-2.367-11.879
+                            c-0.903-4.111-0.264-8.248-0.133-12.369c0.176-5.486-1.133-9.941-6.354-13.021c-4.121-2.428-6.25-6.617-7.435-11.352
+                            c-3.276-13.104-7.229-25.994-12.975-38.271c-10.504-27.223-15.441-55.228-12.465-84.482
+                            C599.635,401.815,600.021,387.499,602.629,373.411z"/>
+                        <path id="campera-canguro-manga-derecha-sombra-2" fill="#E8E8E8" d="M711.676,758.287c-0.053-8.221,2.109-16.166,3.273-24.217
+                            c1.203-8.313-0.205-16.672,1.322-24.896c2.18-11.736,7.026-22.549,11.83-33.346c1.52-3.418,2.739-6.762,2.646-10.516
+                            c2.172,10.16,2.379,20.275-0.451,30.379c-1.25,4.467-1.879,9.057-1.771,13.719c-1.629,2.572-0.982,5.377-0.701,8.09
+                            c1.031,10,1.44,20.08,3.764,29.918c-2.688,5.287-7.688,7.211-12.883,8.834C716.377,756.979,714.02,757.611,711.676,758.287z"/>
+                        <path id="campera-canguro-manga-derecha-sombra-1" fill="#E8E8E8" d="M685.738,442.418c-5.609-8.819-7.896-18.965-11.104-28.693
+                            c-4.785-14.509-8.875-29.245-13.307-43.872c-1.313-4.328-3.271-8.338-6.215-11.834c-6.101-7.238-8.675-15.951-10.406-25.02
+                            c-3.457-18.082-12.438-32.003-29.877-39.521c0.633-3.586,1.266-7.172,1.998-11.324c6.42,3.437,11.164,8.027,15.543,12.992
+                            c11.463,12.994,18.533,28.301,23.383,44.776c9.725,33.043,19.521,66.067,29.269,99.104
+                            C685.348,440.131,685.504,441.286,685.738,442.418z"/>
+                    </g>
+                    <path class="path" id="campera-canguro-manga-derecha-path" opacity="0.001" fill="#FFFFFF" d="M616.672,280.37
+                        c10.836,6.739,18.344,15.696,24.771,25.729c9.77,15.252,13.811,32.649,19.021,49.666c15.828,51.678,31.601,103.377,48.232,154.797
+                        c4.455,13.771,9.733,27.045,11.258,41.684c4.254,40.865,9.25,81.654,13.703,122.5c0.549,5.031,0.408,10.436-0.838,15.303
+                        c-2.664,10.4-2.685,20.66-1.072,31.152c0.982,6.404,1.395,12.908,1.793,19.383c0.438,7.117-1.4,10.873-8.115,13.064
+                        c-10.719,3.496-21.602,7.033-32.69,8.639c-6.576,0.951-13.658-2.004-20.562-2.742c-3.342-0.357-6.965-0.248-10.164,0.676
+                        c-8.522,2.463-16.711-2.232-17.211-11.051c-0.828-14.619-0.729-29.291-1.549-43.912c-1.9-33.895-4.229-67.766-6.096-101.662
+                        c-0.308-5.564,0.635-11.242,1.391-16.814c0.838-6.172-0.805-10.834-5.865-14.861c-2.504-1.994-4.293-5.533-5.248-8.719
+                        c-6.825-22.773-13.342-45.639-19.983-68.467c-3.021-10.371-6.918-20.563-8.98-31.117c-3.932-20.114-2.36-40.491-0.725-60.748
+                        c3.195-39.536,9.863-78.565,17.695-117.411C615.73,283.998,616.137,282.558,616.672,280.37z"/>
+                </g>
+               <g id="campera-canguro-bolsillo-izquierdo">
+                    <path id="campera-canguro-bolsillo-izquierdo-back" fill="#FFFFFF" d="M443.61,747.516c-0.703-0.014-1.406-0.027-2.109-0.047
+                        c-0.596-0.016-1.191-0.029-1.787-0.049c-12.251-0.35-24.513-1.15-36.782-2.352c-26.696-2.611-52.96-7.617-78.313-16.744
+                        c-3.453-1.244-6.127-2.525-5.014-6.959c2.876-11.443,0.487-22.826-0.425-34.24c-0.383-4.787-0.438-9.643-0.072-14.422
+                        c0.101-1.318,2.206-3.502,3.471-3.561c29.67-1.355,43.491-21.273,48.762-45.326c2.232-10.191,2.951-20.719,4.285-31.102
+                        c0.618-4.811,1.166-9.635,1.563-14.469c0.433-5.271,4.341-6.621,8.381-6.875c11.445-0.717,22.921-1.289,34.386-1.34
+                        c7.088-0.029,14.177-0.023,21.266,0.029c0.479,0.004,0.958,0.008,1.438,0.012c0.318,0.004,0.639,0.006,0.957,0.01"/>
+                    <g id="sombras">
+                    <path fill="#E5E5E5" d="M374.212,616.314c0.845-0.16,1.936-1.133,2.184,0.666c0.522,3.785,0.89,7.842-0.484,11.234
+                        c-1.728,4.268-2.662,8.799-5.007,12.922c-2.478,4.355-2.252,9.746-3.818,14.582c-2.479,7.652-8.612,11.637-16.783,11.877
+                        c-2.396,0.07-5.883,0.893-8.404,2.652c-2.406,1.68-12.127,0.953-14.483-1.1c5.148-1.236,10.408-2.037,15.304-4.23
+                        c13.887-6.225,21.898-17.48,26.668-31.371C371.321,627.914,372.624,622.064,374.212,616.314z"/>
+                    <path fill="#E9E9E9" d="M443.057,729.723c-0.354,0.02-0.711,0.035-1.065,0.051c-6.284,0.279-12.584,0.301-18.895,0.023
+                        c-13.801-0.605-27.313-3.637-40.752-6.785c-0.739-0.174-1.406-0.658-2.107-0.998c9.236-1.148,18.145,0.096,27.111,0.01
+                        c11.652-0.111,23.083-2.105,34.6-3.332c0.37-0.039,0.739-0.078,1.109-0.115"/>
+                    <path fill="#E8E8E8" d="M443.066,621.492c-0.313-0.037-0.623-0.076-0.936-0.115c-8.394-1.074-16.646-3.088-24.77-5.885
+                        c-11.913-4.1-23.628-8.775-35.439-13.178c-1.229-0.457-2.508-0.779-3.764-1.164c-1.754-3.23,0.646-6.988-1.293-10.197
+                        c1.563-0.076,2.76-0.879,4.039-1.729c3.079-2.043,3.409-1.85,4.585,1.465c0.129,0.365,0.667,0.727,1.079,0.826
+                        c8.646,2.076,15.787,7.375,23.689,11.039c10.265,4.758,20.934,7.652,31.888,9.527c0.302,0.051,0.604,0.102,0.906,0.152"/>
+                        </g>
+                    <path class="path" id="campera-canguro-bolsillo-izquierdo-path" opacity="0.001" fill="#FFFFFF" d="M443.61,747.516
+                        c-0.703-0.014-1.406-0.027-2.109-0.047c-0.596-0.016-1.191-0.029-1.787-0.049c-12.251-0.35-24.513-1.15-36.782-2.352
+                        c-26.696-2.611-52.96-7.617-78.313-16.744c-3.453-1.244-6.127-2.525-5.014-6.959c2.876-11.443,0.487-22.826-0.425-34.24
+                        c-0.383-4.787-0.438-9.643-0.072-14.422c0.101-1.318,2.206-3.502,3.471-3.561c29.67-1.355,43.491-21.273,48.762-45.326
+                        c2.232-10.191,2.951-20.719,4.285-31.102c0.618-4.811,1.166-9.635,1.563-14.469c0.433-5.271,4.341-6.621,8.381-6.875
+                        c11.445-0.717,22.921-1.289,34.386-1.34c7.088-0.029,14.177-0.023,21.266,0.029c0.479,0.004,0.958,0.008,1.438,0.012
+                        c0.318,0.004,0.639,0.006,0.957,0.01"/>
+            </g>
+                <g id="campera-canguro-bolsillo-derecho">
+                    <path id="campera-canguro-bolsillo-derecho-path-fill" fill="#FFFFFF" d="M457.199,570.098c0.226,0.006,0.45,0.01,0.676,0.014
+                        c0.335,0.006,0.67,0.014,1.005,0.02c4.453,0.09,8.905,0.203,13.355,0.34c15.947,0.49,31.871,1.766,47.815,2.396
+                        c4.923,0.191,5.839,2.313,5.815,6.807c-0.09,17.051,1.653,33.893,7.677,50.029c2.181,5.844,4.098,11.826,6.784,17.434
+                        c5.695,11.889,16.604,16.748,28.521,19.752c4.643,1.168,9.488,1.523,14.707,2.32c1.319,14.875,2.65,29.443,3.867,44.021
+                        c0.231,2.764,0.613,5.762-0.195,8.293c-0.688,2.156-2.663,4.924-4.628,5.492c-15.938,4.613-31.82,9.73-48.071,12.891
+                        c-24.564,4.771-49.272,7.121-74.057,7.492c-0.604,0.008-1.209,0.016-1.813,0.021c-0.487,0.006-0.976,0.01-1.462,0.014"/>
+                    <g id="campera-canguro-bolsillo-derecho-sombras">
+                        <path id="campera-canguro-bolsillo-derecho-sombra-4" fill="#E6E6E6" d="M562.224,666.004c0.804,2.391-0.284,3.324-2.406,2.473
+                            c-6.556-2.631-13.75-4.18-18.034-10.766c-1.126-1.732-2.916-3.104-4.594-4.389c-2.725-2.088-4-5.154-4.147-8.145
+                            c-0.194-3.926-3.383-6.879-2.846-10.854c0.541-0.531,0.809-1.6,1.935-0.986c2.394,1.396,4.089,3.297,4.516,6.145
+                            c1.916,12.811,10.447,19.869,21.511,24.725C559.513,664.803,560.868,665.404,562.224,666.004z"/>
+                        <path id="campera-canguro-bolsillo-derecho-sombra-3" fill="#E8E8E8" d="M525.431,603.334
+                            c-10.971-3.131-22.454-1.045-34.71-3.525c12.364-0.885,23.557-1.688,34.747-2.488
+                            C525.455,599.324,525.442,601.33,525.431,603.334z"/>
+                        <path id="campera-canguro-bolsillo-derecho-sombra-2" fill="#E9E9E9" d="M456.814,717.373c0.463-0.064,0.926-0.129,1.39-0.193
+                            c16.03-2.293,31.846-5.918,47.54-9.855c13.136-3.297,26.703-5.557,38.729-12.635c3.639-2.143,8.065-3.08,12.241-4.137
+                            c5.098-1.291,8.939,1.254,10.675,6.557c1.685,5.143-0.084,8.689-5.502,11.035c-9.088,3.932-18.76,6.465-28.392,7.549
+                            c-18.071,2.031-35.613,6.373-53.379,9.789c-7.248,1.395-14.541,2.531-21.866,3.354c-0.479,0.055-0.957,0.107-1.436,0.158"/>
+                        <path id="campera-canguro-bolsillo-derecho-sombra-1" fill="#E8E8E8" d="M456.814,613.26c0.363,0.037,0.729,0.074,1.093,0.109
+                            c12.948,1.268,25.89,0.215,38.859,1.385c-10.624,3.795-21.622,5.617-32.833,6.449c-2.154,0.162-4.3,0.254-6.438,0.283
+                            c-0.229,0.002-0.454,0.004-0.682,0.006"/>
+                    </g>
+                    <path class="path" id="campera-canguro-bolsillo-derecho-path" opacity="0.001" fill="#FFFFFF" d="M457.199,570.098
+                        c0.226,0.006,0.45,0.01,0.676,0.014c0.335,0.006,0.67,0.014,1.005,0.02c4.453,0.09,8.905,0.203,13.355,0.34
+                        c15.947,0.49,31.871,1.766,47.815,2.396c4.923,0.191,5.839,2.313,5.815,6.807c-0.09,17.051,1.653,33.893,7.677,50.029
+                        c2.181,5.844,4.098,11.826,6.784,17.434c5.695,11.889,16.604,16.748,28.521,19.752c4.643,1.168,9.488,1.523,14.707,2.32
+                        c1.319,14.875,2.65,29.443,3.867,44.021c0.231,2.764,0.613,5.762-0.195,8.293c-0.688,2.156-2.663,4.924-4.628,5.492
+                        c-15.938,4.613-31.82,9.73-48.071,12.891c-24.564,4.771-49.272,7.121-74.057,7.492c-0.604,0.008-1.209,0.016-1.813,0.021
+                        c-0.487,0.006-0.976,0.01-1.462,0.014"/>
+                </g>
+                <g id="contorno">
+                    <path id="campera-canguro-contorno-2" fill-rule="evenodd" clip-rule="evenodd" d="M452.264,566.322
+                        c21.951,1.016,43.911,1.895,65.853,3.102c11.066,0.607,11.181,0.875,11.106,11.715c-0.094,13.57,1.227,26.971,5.176,39.957
+                        c2.537,8.336,5.626,16.533,8.942,24.598c3.028,7.363,9.224,12.053,16.403,14.469c7.477,2.514,15.413,3.818,23.243,5.047
+                        c3.119,0.49,4.099,1.221,4.325,4.43c1.059,14.936,2.561,29.842,3.64,44.775c0.258,3.568,0.155,7.443-1.023,10.732
+                        c-0.796,2.223-3.468,4.428-5.809,5.344c-20.397,7.986-41.682,12.617-63.295,15.732c-41.085,5.924-82.293,6.57-123.534,1.934
+                        c-26.182-2.943-51.94-7.936-76.713-17.326c-4.272-1.619-6.153-4.361-5.073-8.332c3.492-12.844,0.245-25.484-0.566-38.201
+                        c-0.169-2.656-0.458-5.324-0.352-7.973c0.361-8.949,1.63-10.271,10.522-11.141c18.829-1.842,31.372-12.025,38.196-29.307
+                        c6.242-15.809,8.218-32.385,8.429-49.328c0.062-4.885,1.21-10.662,4.057-14.322c2.298-2.959,7.843-4.469,12.044-4.678
+                        c14.784-0.73,29.609-0.654,44.419-0.824c6.658-0.076,13.318-0.012,19.978-0.012C452.242,566.582,452.253,566.453,452.264,566.322z
+                         M583.331,669.477c-5.219-0.797-10.065-1.152-14.707-2.32c-11.919-3.004-22.827-7.865-28.522-19.752
+                        c-2.687-5.607-4.604-11.59-6.784-17.434c-6.022-16.139-7.767-32.979-7.677-50.029c0.023-4.494-0.893-6.613-5.815-6.807
+                        c-15.945-0.631-31.868-1.904-47.816-2.396c-17.469-0.537-34.956-0.688-52.434-0.611c-11.465,0.051-22.939,0.623-34.386,1.34
+                        c-4.04,0.254-7.948,1.604-8.381,6.875c-0.396,4.834-0.943,9.658-1.562,14.469c-1.334,10.383-2.053,20.91-4.285,31.102
+                        c-5.271,24.053-19.092,43.971-48.762,45.326c-1.265,0.059-3.37,2.242-3.471,3.561c-0.365,4.779-0.31,9.635,0.073,14.422
+                        c0.912,11.414,3.3,22.797,0.424,34.24c-1.113,4.434,1.561,5.715,5.014,6.959c25.353,9.127,51.615,14.133,78.313,16.744
+                        c44.114,4.314,88.158,3.479,131.75-4.992c16.251-3.158,32.135-8.275,48.072-12.889c1.964-0.57,3.939-3.336,4.628-5.492
+                        c0.809-2.533,0.427-5.529,0.195-8.295C585.981,698.92,584.65,684.352,583.331,669.477z"/>
+                    <path id="campera-canguro-contorno-1" fill-rule="evenodd" clip-rule="evenodd" d="M550.726,251.53
+                        c19.202,7.136,38.097,14.548,57.272,21.145c12.174,4.188,21.484,11.682,29.434,21.397c13.205,16.141,19.096,35.466,24.984,55.016
+                        c15.969,53.029,32.063,106.033,49.158,158.706c5.199,16.021,11.607,31.439,12.135,48.592c0.301,9.799,1.232,19.607,2.428,29.344
+                        c3.344,27.263,6.938,54.494,10.51,81.729c1.225,9.325,1.703,18.6-1.115,27.726c-3.016,9.772-0.68,19.468,0.197,29.195
+                        c0.568,6.298,0.943,12.614,1.557,18.907c0.434,4.467-1.332,7.866-4.877,10.257c-4.074,2.75-5.277,6.605-5.152,11.198
+                        c0.387,14.314,0.561,28.639,1.234,42.939c0.229,4.842-1.604,7.413-6.053,8.001c-4.6,0.607-9.33,1.28-13.896,0.837
+                        c-7.387-0.717-14.193,0.766-20.932,3.404c-2.787,1.091-5.605,2.126-8.469,2.987c-7.807,2.347-10.877,0.738-12.449-7.279
+                        c-1.438-7.34-1.654-14.944-3.4-22.192c-2.207-9.159-5.297-18.116-8.318-27.055c-0.463-1.369-2.449-2.592-3.996-3.164
+                        c-6.357-2.35-9.611-6.582-9.773-13.503c-0.494-21.138-0.779-42.293-1.912-63.401c-1.373-25.598-3.701-51.145-5.23-76.736
+                        c-0.441-7.4,0.031-14.927,0.861-22.309c0.578-5.12-0.309-8.779-4.33-12.348c-2.809-2.492-5.125-6.226-6.225-9.842
+                        c-7.209-23.712-14.021-47.544-20.975-71.334c-1.063-3.636-2.174-7.257-4.148-10.844c-1.617,11.815-3.371,23.615-4.816,35.451
+                        c-1.695,13.883-3.154,27.794-4.641,41.701c-0.281,2.639-0.906,5.524-0.18,7.937c2.377,7.887,3.021,15.599,0.061,23.456
+                        c-0.363,0.961-0.17,2.439,0.334,3.369c6.119,11.298,6.383,24.015,8.762,36.189c4.789,24.495,9.318,49.041,13.795,73.595
+                        c3.154,17.298-1.883,32.155-13.691,45.036c-1.826,1.992-3.273,5.042-3.463,7.705c-0.865,12.093-1.051,24.235-1.93,36.327
+                        c-0.139,1.921-2.225,4.744-4.012,5.334c-11.641,3.845-23.248,8.287-35.243,10.464c-23.887,4.335-47.934,9.349-72.066,10.341
+                        c-25.961,1.067-52.173,3.125-78.229-1.463c-28.652-5.045-57.49-9.026-86.188-13.823c-4.093-0.684-7.989-3.113-11.694-5.228
+                        c-1.249-0.713-2.21-2.916-2.31-4.5c-0.739-11.768-1.375-23.546-1.727-35.331c-0.155-5.189-1.771-9.404-4.916-13.598
+                        c-11.678-15.57-12.386-32.927-8.55-51.393c5.787-27.852,10.719-55.881,16.023-83.832c0.186-0.979,0.331-2.005,0.737-2.899
+                        c4.009-8.82,4.58-17.904,2.367-27.276c-0.335-1.419-0.427-3.117,0.024-4.468c4.642-13.913,0.875-27.749-0.517-41.53
+                        c-1.622-16.059-4.06-32.036-6.171-48.045c-0.149-1.131-0.524-2.231-1.141-4.781c-3.392,13.031-6.423,24.698-9.467,36.362
+                        c-2.139,8.199-4.397,16.126-10.613,22.674c-4.037,4.253-6.747,9.888-9.479,15.197c-1.111,2.16-1.619,5.417-0.847,7.633
+                        c5.666,16.261,1.848,32.385-0.574,48.411c-6.229,41.23-10.025,82.613-9.675,124.346c0.044,5.314-0.51,10.643-0.95,15.951
+                        c-0.451,5.435-3.668,8.977-8.664,10.465c-3.31,0.985-4.656,3.108-6.035,5.91c-6.166,12.527-7.641,26.094-9.245,39.661
+                        c-0.351,2.963-0.889,5.937-1.69,8.807c-1.843,6.602-4.408,8.01-11.109,6.179c-2.882-0.788-5.729-1.781-8.49-2.924
+                        c-7.178-2.97-14.454-4.553-22.36-3.782c-4.561,0.444-9.302-0.257-13.884-0.956c-3.913-0.597-5.779-2.954-5.585-7.389
+                        c0.619-14.14,0.785-28.298,1.224-42.446c0.158-5.112-0.835-9.46-5.507-12.527c-4.916-3.228-4.885-8.226-4.197-13.42
+                        c2.208-16.667,4.502-33.328,6.333-50.038c0.55-5.021,0.612-10.444-0.689-15.254c-3.54-13.088-2.123-26.052-0.674-39.137
+                        c2.966-26.798,5.148-53.703,8.925-80.385c2.084-14.726,6.035-29.305,10.405-43.564c7.596-24.786,16.565-49.151,24.228-73.92
+            
+                        c8.553-27.649,16.566-55.474,24.294-83.366c6.092-21.988,17.95-40.692,31.559-58.507c14.786-19.354,14.861-19.286,37.722-27.693
+                        c12.801-4.708,25.584-9.467,38.368-14.224c1.525-0.567,3.001-1.265,3.78-1.596c-4.713-9.637-9.454-18.898-13.799-28.342
+                        c-3.88-8.432-3.491-16.952-0.263-25.693c11.1-30.059,25.502-58.547,40.772-86.622c10.816-19.888,21.274-40.053,35.833-57.582
+                        c5.081-6.118,10.736-11.873,16.742-17.088c14.588-12.666,30.938-13.639,47.969-5.567c16.727,7.928,28.264,21.33,37.539,36.936
+                        c0.084,0.144,0.213,0.284,0.234,0.438c3.123,20.787,18.402,35.486,26.891,53.599c7.27,15.509,14.736,30.951,22.832,46.038
+                        c9.47,17.646,9.454,35.662,3.858,54.174c-1.584,5.235-3.298,10.522-5.757,15.377C557.438,242.467,554.022,246.632,550.726,251.53z
+                         M367.083,252.549c5.704-1.692,10.115,1.333,14.491,4.138c12.048,7.723,23.941,15.689,36.046,23.319
+                        c25.252,15.917,50.523,15.157,75.762-0.212c21.328-12.987,39.709-29.648,54.393-49.458c10.826-14.606,15.27-32.712,8.313-50.682
+                        c-10.881-28.107-24.408-55.017-40.527-80.583c-2.783-4.415-4.752-9.544-6.084-14.609c-1.055-4.018-2.85-6.843-6.184-9.116
+                        c-12.211-8.322-25.293-14.786-39.688-18.226c-9.988-2.387-20.38-4.029-29.55,2.021c-8.133,5.365-16.369,11.086-23.014,18.111
+                        c-32.679,34.544-52.004,76.89-68.802,120.584c-0.928,2.415-1.673,5.32-1.239,7.773c2.859,16.179,9.323,30.544,22.613,40.951
+                        c2.213,1.733,3.617,3.388,3.647,6.158c-0.329-0.02-0.704,0.057-0.982-0.072c-17.793-8.275-31.986-38.389-27.151-57.529
+                        c0.116-0.462-0.05-0.994-0.084-1.493c-0.482-0.067-0.964-0.135-1.446-0.202c-1.257,6.421-4.545,13.229-3.409,19.194
+                        c4.277,22.46,15.782,41.043,35.381,53.365c11.506,7.234,23.791,13.397,36.199,18.993c25.431,11.47,51.802,16.073,79.183,7.454
+                        c23.896-7.522,42.57-22.784,59.701-40.478c9.211-9.513,15.027-20.455,18.354-33.167c4.333-16.565,4.192-32.405-4.092-47.927
+                        c-6.184-11.587-11.529-23.62-17.301-35.43c-1.717-3.511-3.611-6.935-5.426-10.397c-0.096,2.3,0.746,4.067,1.576,5.84
+                        c7.051,15.064,14.805,29.847,20.975,45.264c8.163,20.396,3.822,40.412-8.59,57.208c-14.061,19.028-31.828,34.958-51.994,47.776
+                        c-22.561,14.34-46.221,19.209-71.593,7.652c-1.059-0.482-2.182-0.86-3.165-1.466C404.615,275.736,385.85,264.14,367.083,252.549z
+                         M443.06,301.403c-14.516-4.996-28.837-8.928-42.307-14.81c-17.491-7.638-34.917-15.818-48.557-29.973
+                        c-0.905-0.938-3.622-0.914-5.142-0.361c-18.289,6.653-36.432,13.716-54.804,20.126c-4.797,1.673-5.399,3.672-4.503,8.227
+                        c8.71,44.272,16.521,88.683,18.826,133.862c0.842,16.497,0.813,32.924-2.118,49.276c-0.772,4.31-0.972,8.892-0.458,13.233
+                        c2.559,21.654,5.555,43.257,8.162,64.907c1.169,9.709,2.659,19.431-0.62,29.188c-0.939,2.794-0.268,6.311,0.278,9.387
+                        c1.253,7.06,1.238,13.885-1.862,20.53c-0.763,1.636-1.196,3.465-1.536,5.252c-5.604,29.421-10.674,58.954-16.915,88.238
+                        c-4.168,19.559,0.349,36.185,12.984,51.093c0.919,1.084,2.022,2.354,3.287,2.749c12.501,3.913,24.833,8.904,37.642,11.169
+                        c20.939,3.703,42.274,5.12,63.292,8.449c11.573,1.833,22.861,3.55,34.351,0.245C443.06,614.719,443.06,457.341,443.06,301.403z
+                         M456.8,301.25c0,157.157,0,314.268,0,472.871c1.334-2.336,1.889-3.308,2.023-3.543c1.834,0.91,3.172,2.14,4.518,2.147
+                        c7.158,0.044,14.373,0.289,21.469-0.467c24.826-2.645,49.648-5.39,74.396-8.66c14.454-1.91,28.2-5.82,38.237-17.855
+                        c9.344-11.206,14.482-23.686,11.922-38.254c-4.896-27.864-10.275-55.645-15.564-83.438c-1.457-7.656-2.48-15.556-5.246-22.751
+                        c-2.111-5.491-2.713-10.267-1.318-15.873c0.84-3.378,0.322-7.143,0.123-10.717c-0.248-4.446-1.566-8.959-1.092-13.299
+                        c2.676-24.487,5.779-48.929,8.67-73.394c0.641-5.413,1.725-10.908,1.352-16.278c-0.793-11.414-3.434-22.765-3.502-34.152
+                        c-0.242-40.785,6.059-80.944,13.068-120.986c2.203-12.587,4.67-25.129,7.047-37.859c-1.701-0.711-3.045-1.326-4.426-1.84
+                        c-16.689-6.203-33.568-11.946-49.997-18.775c-7.9-3.284-12.799-2.661-19.105,3.838c-17.311,17.84-37.762,31.08-62.607,36.197
+                        C470.188,299.515,463.481,300.234,456.8,301.25z M616.674,280.37c-0.535,2.189-0.941,3.628-1.236,5.089
+                        c-7.832,38.846-14.5,77.875-17.695,117.411c-1.637,20.257-3.207,40.633,0.725,60.747c2.063,10.555,5.961,20.747,8.98,31.118
+                        c6.643,22.828,13.158,45.693,19.984,68.466c0.955,3.187,2.744,6.726,5.248,8.719c5.061,4.028,6.703,8.69,5.865,14.862
+                        c-0.756,5.572-1.697,11.249-1.391,16.814c1.867,33.896,4.195,67.768,6.096,101.662c0.82,14.621,0.721,29.293,1.549,43.913
+                        c0.5,8.816,8.688,13.513,17.211,11.051c3.199-0.924,6.822-1.034,10.164-0.677c6.902,0.739,13.984,3.694,20.561,2.742
+                        c11.09-1.604,21.973-5.142,32.691-8.639c6.715-2.191,8.553-5.947,8.115-13.063c-0.398-6.476-0.811-12.979-1.793-19.383
+                        c-1.611-10.493-1.592-20.752,1.072-31.153c1.246-4.867,1.387-10.271,0.838-15.303c-4.453-40.846-9.449-81.634-13.703-122.5
+                        c-1.523-14.638-6.803-27.911-11.258-41.684c-16.633-51.419-32.404-103.12-48.232-154.796
+                        c-5.211-17.017-9.252-34.415-19.021-49.667C635.018,296.067,627.51,287.11,616.674,280.37z M283.447,280.957
+                        c-5.899,7.44-10.866,13.471-15.58,19.691c-13.79,18.198-24.658,37.768-30.504,60.145c-6.095,23.332-12.946,46.486-20.16,69.502
+                        c-8.799,28.074-18.622,55.829-27.394,83.911c-3.953,12.652-7.55,25.61-9.352,38.699c-3.698,26.863-5.976,53.919-9.039,80.872
+                        c-1.641,14.432-3.126,28.731,1.15,43.067c1.132,3.794,0.606,8.255,0.132,12.326c-1.985,17.029-4.405,34.008-6.325,51.044
+                        c-0.885,7.855,1.774,11.528,9.313,14.153c5.34,1.86,10.788,3.41,16.182,5.119c10.715,3.396,21.299,4.173,32.34,0.65
+                        c4.236-1.352,9.501-0.643,14.032,0.347c8.152,1.78,15.861-2.699,16.621-10.915c0.659-7.118,0.834-14.289,1.021-21.442
+                        c0.415-15.814-0.259-31.725,1.253-47.428c2.647-27.495,6.721-54.851,9.935-82.295c0.882-7.531,3.004-15.901,0.755-22.611
+                        c-4.775-14.241-0.387-25.24,7.839-36.004c0.202-0.265,0.345-0.591,0.588-0.806c7.211-6.358,8.938-15.281,11.221-23.946
+                        c0.466-1.77,0.918-3.543,1.411-5.306c3.718-13.287,7.625-26.524,11.121-39.87c4.451-16.993,3.763-34.379,2.965-51.679
+                        c-1.59-34.49-6.896-68.541-12.888-102.489C288.126,304.599,285.865,293.559,283.447,280.957z M305.303,755.727
+                        c0.194,3.046,0.36,5.68,0.529,8.313c0.587,9.124,1.508,18.245,1.594,27.374c0.033,3.518,0.688,5.881,3.882,7.041
+                        c3.408,1.237,6.904,2.323,10.446,3.075c5.515,1.17,11.115,1.931,16.653,2.994c8.98,1.726,17.885,3.938,26.921,5.262
+                        c17.604,2.577,35.243,5.026,52.939,6.833c8.49,0.866,17.143,0.149,26.096,0.149c-0.566-4.521,2.354-9.451-3.936-11.688
+                        c-0.689-0.245-0.639-2.572-0.93-3.934c0.344-0.086,0.686-0.172,1.027-0.258c0.537,0.994,1.074,1.988,1.609,2.982
+                        c0.266-0.057,0.531-0.113,0.797-0.171c0-8.948,0-17.896,0-26.124c-7.83,0-15.514,0.612-23.063-0.127
+                        c-15.871-1.554-31.707-3.58-47.495-5.847c-21.376-3.069-42.975-5.339-62.917-14.651
+                        C308.299,756.409,306.981,756.21,305.303,755.727z M456.042,816.82c5.799,0,11.844,0.622,17.721-0.107
+                        c26.559-3.294,53.146-6.484,79.559-10.739c11.216-1.807,22.034-6.104,33.013-9.334c2.885-0.849,3.982-2.69,3.926-5.941
+                        c-0.102-5.634,0.633-11.277,0.799-16.923c0.156-5.387,0.033-10.781,0.033-16.937c-12.541,7.165-25.846,9.602-39.433,11.552
+                        c-29.027,4.166-58.084,7.698-87.449,8.163c-1.693,0.026-3.371,1.14-5.475,1.898c-0.137-0.16-0.84-0.99-1.543-1.82
+                        c-0.383,0.103-0.766,0.204-1.15,0.307C456.042,789.952,456.042,802.965,456.042,816.82z M175.123,758.982
+                        c0,15.143,0.141,30.071-0.056,44.996c-0.107,8.132,0.013,8.553,8.167,8.989c0.996,0.054,2.009,0.158,2.991,0.042
+                        c11.562-1.371,22.359,1.27,33.017,5.601c8.002,3.253,9.5,2.323,10.814-6.313c2.439-16.025,2.991-32.444,11.29-47.025
+                        c-5.763-2.78-10.938-2.934-16.548-1.709c-6.091,1.33-12.551,2.912-18.576,2.169C196.094,764.483,186.182,761.483,175.123,758.982z
+                         M659.885,763.592c2.877,12.813,5.586,24.365,8.025,35.974c1.059,5.032,1.342,10.226,2.381,15.263
+                        c1.174,5.695,2.65,6.765,7.93,4.537c12.182-5.142,24.637-7.297,37.893-6.545c8.465,0.48,8.623-0.595,8.533-8.957
+                        c-0.162-15.019-0.045-30.04-0.045-45.758c-3.982,1.275-6.658,2.119-9.324,2.986c-13.443,4.376-26.846,7.007-41.041,2.723
+                        C669.547,762.399,664.07,763.592,659.885,763.592z M446.75,299.958c0,172.417,0,344.39,0,516.519c2.082,0,4.296,0,6.066,0
+                        c0-172.313,0-344.287,0-516.519C450.619,299.958,449.203,299.958,446.75,299.958z M510.028,74.368
+                        c-0.58-1.693-0.873-3.563-1.785-5.054c-7.902-12.942-17.547-24.32-30.695-32.218c-18.984-11.401-35.781-9.911-52.009,5.118
+                        c-6.431,5.956-12.774,12.432-17.469,19.754c-12.014,18.736-23.081,38.079-34.495,57.198c-0.165,0.275,0.084,0.798-0.03-0.033
+                        c10.243-13.37,20.723-27.519,31.76-41.218c4.241-5.264,9.641-9.629,14.705-14.189c14.967-13.479,32.066-14.504,50.412-8.548
+                        C484.44,59.729,497.339,66.409,510.028,74.368z"/>
+                    <path id="cierre" fill-rule="evenodd" clip-rule="evenodd" fill="#E8E8E8" d="M446.75,299.958c2.453,0,3.869,0,6.066,0
+                        c0,172.232,0,344.206,0,516.519c-1.77,0-3.984,0-6.066,0C446.75,644.348,446.75,472.375,446.75,299.958z"/>
+                </g>
+            </g>
+            <g>
+                <path fill="#10A3C7" d="M838.062,616.747c-0.898,14.86-3.869,29.212-8.928,43.207c-0.57,1.582,0.918,3.227,2.543,2.875
+                    c4.985-1.087,9.912-2.413,14.775-3.938c6.799,22.727,12.354,45.801,16.432,69.177c3.625,20.787,8.887,44.937,1.281,65.441
+                    c-9.116,24.575-36.42,29.044-58.555,20.188c-21.081-8.431-42.794-25.402-50.059-47.477c-0.376-1.14-2.024-0.838-1.852,0.393
+                    c3.097,22.1,26.209,39.297,44.806,48.536c19.385,9.628,45.382,11.541,61.257-5.732c14.871-16.188,13.52-40.659,10.842-60.921
+                    c-4.074-30.813-10.962-61.241-19.883-90.997c3.519-1.197,7.004-2.493,10.447-3.892c2.843-0.842,5.674-1.754,8.492-2.746
+                    c1.514-0.534,1.379-2.459,0.668-3.491c-8.165-11.831-17.564-22.453-28.338-31.977C840.601,614.176,838.188,614.636,838.062,616.747
+                    z M840.415,634.879c1.252-0.217,2.493-0.387,3.729-0.505c-1.301,0.553-2.614,1.087-3.94,1.6
+                    C840.272,635.606,840.349,635.244,840.415,634.879z M844.313,640.545c-1.856,0.759-3.709,1.544-5.548,2.361
+                    c0.164-0.715,0.33-1.424,0.484-2.133c0.112,0.013,0.214,0.056,0.335,0.048C841.16,640.729,842.737,640.634,844.313,640.545z
+                     M838.635,647.782c1.112-0.142,2.228-0.254,3.34-0.378c-1.454,0.442-2.905,0.881-4.36,1.319c-0.127,0.036-0.239,0.088-0.354,0.142
+                    c0.112-0.403,0.218-0.813,0.326-1.218C837.911,647.762,838.254,647.832,838.635,647.782z M838.528,653.05
+                    c2.033-0.359,4.055-0.653,6.072-0.882c-2.892,0.79-5.781,1.582-8.674,2.365c-0.148,0.04-0.248,0.117-0.375,0.181
+                    c0.266-0.848,0.518-1.691,0.773-2.541C836.741,652.811,837.491,653.232,838.528,653.05z M864.114,648.001
+                    c-0.331-0.354-0.803-0.601-1.429-0.641c-1.577-0.104-3.141-0.135-4.704-0.17c0.994-0.294,1.987-0.597,2.98-0.898
+                    c0.944-0.28,1.484-1.11,1.624-1.979c0.839,1.114,1.667,2.24,2.481,3.375C864.752,647.795,864.432,647.895,864.114,648.001z
+                     M852.551,642.133c2.167-0.794,4.347-1.559,6.554-2.28c0.559,0.69,1.118,1.374,1.666,2.074c-0.047-0.004-0.08-0.022-0.128-0.022
+                    C857.935,641.915,855.24,642.008,852.551,642.133z M852.33,635.602c0.755-0.369,1.511-0.744,2.266-1.132
+                    c0.276,0.317,0.545,0.634,0.817,0.956C854.386,635.487,853.358,635.542,852.33,635.602z"/>
+                <path fill="#DE2C8C" d="M769.281,590.009c20.306-8.416,29.39-31.18,35.497-50.684c9.286-29.661,15.858-60.16,20.303-90.904
+                    c3.695,0.396,7.402,0.688,11.114,0.871c2.934,0.435,5.885,0.8,8.858,1.088c1.599,0.152,2.287-1.649,2.077-2.885
+                    c-2.421-14.17-6.471-27.764-12.229-40.939c-0.749-1.689-3.131-2.288-4.135-0.427c-7.075,13.099-15.815,24.863-26.299,35.425
+                    c-1.184,1.194-0.527,3.313,1.095,3.679c4.979,1.114,10.007,1.988,15.06,2.652c-3.408,23.477-8.091,46.743-14.24,69.662
+                    c-5.469,20.379-10.87,44.497-26.406,59.891 M825.262,423.565c1.228,0.331,2.425,0.7,3.597,1.113
+                    c-1.413-0.046-2.829-0.115-4.248-0.209C824.827,424.164,825.049,423.869,825.262,423.565z M826.411,430.346
+                    c-2.003-0.094-4.014-0.162-6.026-0.195c0.449-0.579,0.899-1.152,1.338-1.73c0.097,0.059,0.171,0.141,0.284,0.184
+                    C823.474,429.185,824.944,429.762,826.411,430.346z M818.212,434.517c1.069,0.341,2.127,0.709,3.188,1.064
+                    c-1.505-0.211-3.006-0.424-4.51-0.64c-0.132-0.021-0.254-0.021-0.381-0.021c0.272-0.318,0.54-0.645,0.809-0.968
+                    C817.564,434.194,817.846,434.401,818.212,434.517z M815.896,439.25c1.996,0.53,3.952,1.114,5.879,1.758
+                    c-2.956-0.501-5.91-1.001-8.863-1.509c-0.152-0.026-0.274,0.002-0.416,0.006c0.598-0.656,1.182-1.315,1.771-1.979
+                    C814.376,438.279,814.879,438.979,815.896,439.25z M841.228,445.449c-0.151-0.46-0.474-0.883-1.025-1.183
+                    c-1.387-0.758-2.792-1.445-4.194-2.136c1.025,0.151,2.054,0.295,3.081,0.44c0.975,0.145,1.814-0.382,2.307-1.11
+                    c0.291,1.364,0.568,2.733,0.829,4.106C841.894,445.531,841.561,445.486,841.228,445.449z M833.213,435.256
+                    c2.301,0.193,4.599,0.418,6.905,0.693c0.215,0.861,0.435,1.716,0.637,2.582c-0.041-0.023-0.063-0.053-0.106-0.073
+                    C838.188,437.327,835.705,436.276,833.213,435.256z M835.765,429.24c0.84-0.018,1.684-0.038,2.531-0.072
+                    c0.116,0.404,0.228,0.804,0.338,1.211C837.677,430.002,836.722,429.619,835.765,429.24z"/>
+                <path fill="#DE2C8C" d="M273.052,226.875c-12.562-17.903-13.603-42.597-15.373-63.623c-1.989-23.646-2.474-47.374-1.667-71.083
+                    c5.091,0.242,10.193,0.273,15.291,0.06c1.661-0.073,2.683-2.041,1.729-3.427c-8.445-12.252-14.962-25.38-19.604-39.525
+                    c-0.657-2.01-3.108-1.842-4.145-0.313c-8.003,11.946-14.398,24.606-19.292,38.123c-0.426,1.179-0.067,3.074,1.532,3.207
+                    c2.978,0.244,5.947,0.408,8.911,0.5c3.686,0.479,7.386,0.848,11.093,1.112c-1.075,31.046-0.013,62.227,3.868,93.063
+                    c2.554,20.278,7.459,44.291,25.952,56.174 M256.238,68.417c-1.413-0.159-2.819-0.342-4.218-0.547
+                    c1.227-0.199,2.47-0.35,3.736-0.458C255.913,67.749,256.079,68.079,256.238,68.417z M258.067,72.948
+                    c0.119-0.022,0.207-0.09,0.313-0.131c0.329,0.646,0.67,1.291,1.01,1.94c-1.986-0.324-3.978-0.613-5.966-0.876
+                    C254.97,73.567,256.52,73.26,258.067,72.948z M261.733,79.044c0.207,0.365,0.413,0.734,0.624,1.096
+                    c-0.124-0.023-0.245-0.045-0.378-0.047c-1.519-0.055-3.033-0.111-4.552-0.17c1.107-0.162,2.214-0.337,3.326-0.482
+                    C261.134,79.392,261.448,79.237,261.733,79.044z M264.102,83.101c0.463,0.758,0.921,1.51,1.393,2.262
+                    c-0.139-0.029-0.254-0.078-0.408-0.079c-2.996-0.023-5.992-0.056-8.99-0.086c2.01-0.292,4.039-0.521,6.098-0.688
+                    C263.243,84.422,263.862,83.823,264.102,83.101z M235.163,86.06c0.5-1.305,1.016-2.604,1.544-3.895
+                    c0.355,0.805,1.088,1.471,2.073,1.502c1.037,0.039,2.074,0.08,3.11,0.112c-1.503,0.431-3.008,0.858-4.507,1.358
+                    c-0.596,0.197-0.988,0.557-1.219,0.982C235.831,86.098,235.495,86.083,235.163,86.06z M237.974,79.342
+                    c-0.046,0.013-0.073,0.038-0.118,0.054c0.353-0.816,0.721-1.619,1.085-2.429c2.318,0.138,4.62,0.324,6.918,0.542
+                    C243.226,78.071,240.596,78.665,237.974,79.342z M241.388,71.748c0.182-0.381,0.361-0.755,0.548-1.132
+                    c0.828,0.184,1.654,0.354,2.479,0.52C243.405,71.339,242.397,71.547,241.388,71.748z"/>
+                <path fill="#10A3C7" d="M62.109,626.812c-10.773,9.523-20.173,20.146-28.338,31.977c-0.711,1.032-0.846,2.957,0.668,3.491
+                    c2.818,0.992,5.649,1.904,8.492,2.746c3.443,1.398,6.929,2.694,10.447,3.892c-8.921,29.756-15.809,60.185-19.883,90.997
+                    c-2.678,20.262-4.029,44.733,10.842,60.921c15.875,17.273,41.872,15.36,61.257,5.732c18.597-9.239,41.709-26.437,44.806-48.536
+                    c0.173-1.23-1.476-1.532-1.852-0.393c-7.265,22.074-28.978,39.046-50.059,47.477c-22.135,8.856-49.438,4.388-58.555-20.188
+                    c-7.605-20.505-2.344-44.654,1.281-65.441c4.078-23.376,9.633-46.45,16.432-69.177c4.863,1.525,9.79,2.852,14.775,3.938
+                    c1.625,0.352,3.113-1.293,2.543-2.875c-5.059-13.995-8.029-28.347-8.928-43.207C65.913,626.055,63.5,625.595,62.109,626.812z
+                     M63.896,647.393c-1.326-0.513-2.64-1.047-3.94-1.6c1.236,0.118,2.478,0.288,3.729,0.505
+                    C63.752,646.663,63.828,647.025,63.896,647.393z M64.516,652.24c0.121,0.008,0.223-0.035,0.335-0.048
+                    c0.154,0.709,0.32,1.418,0.484,2.133c-1.839-0.817-3.691-1.603-5.548-2.361C61.363,652.053,62.94,652.148,64.516,652.24z
+                     M66.514,659.066c0.108,0.405,0.214,0.814,0.326,1.218c-0.114-0.054-0.227-0.105-0.354-0.142c-1.455-0.438-2.906-0.877-4.36-1.319
+                    c1.112,0.124,2.228,0.236,3.34,0.378C65.847,659.251,66.189,659.181,66.514,659.066z M67.775,663.592
+                    c0.256,0.85,0.508,1.693,0.773,2.541c-0.127-0.063-0.227-0.141-0.375-0.181c-2.893-0.783-5.782-1.575-8.674-2.365
+                    c2.018,0.229,4.039,0.522,6.072,0.882C66.609,664.651,67.359,664.229,67.775,663.592z M39.033,659.107
+                    c0.814-1.135,1.643-2.261,2.481-3.375c0.14,0.868,0.68,1.698,1.624,1.979c0.993,0.302,1.986,0.604,2.98,0.898
+                    c-1.563,0.035-3.127,0.066-4.704,0.17c-0.626,0.04-1.098,0.287-1.429,0.641C39.669,659.313,39.349,659.214,39.033,659.107z
+                     M43.458,653.323c-0.048,0-0.081,0.019-0.128,0.022c0.548-0.7,1.107-1.384,1.666-2.074c2.207,0.722,4.387,1.486,6.554,2.28
+                    C48.86,653.427,46.166,653.334,43.458,653.323z M48.688,646.845c0.272-0.322,0.541-0.639,0.817-0.956
+                    c0.755,0.388,1.511,0.763,2.266,1.132C50.742,646.961,49.715,646.906,48.688,646.845z"/>
+                <path fill="#DE2C8C" d="M70.82,446.17c-0.273-0.301-0.548-0.595-0.82-0.892c-0.554-0.611-1.729-0.676-2.291-0.034
+                    c-0.211,0.243-0.428,0.483-0.641,0.726c-0.533-0.649-1.484-0.916-2.313-0.14c-15.264,14.327-30.528,28.646-45.863,42.895
+                    c-1.258,1.171,0.367,3.472,1.838,2.463c2.878-1.971,5.719-3.987,8.542-6.033c-4.207,4.389-8.454,8.734-12.751,13.04
+                    c-1.372,1.373,0.69,3.487,2.097,2.158c6.494-6.13,12.924-12.332,19.248-18.645c-4.775,5.773-9.361,11.706-13.616,17.934
+                    c-0.974,1.429,1.097,2.832,2.291,1.798c5.482-4.763,10.816-9.683,16.023-14.731c-0.507,0.723-1.027,1.436-1.527,2.159
+                    c-0.625,0.905,0.556,1.9,1.421,1.455l4.544-2.356c1.142-0.593,0.169-2.292-0.971-1.735c-0.23,0.111-0.458,0.226-0.687,0.336
+                    c3.594-4.814,7.315-9.514,11.169-14.094c1.749-1.888,3.472-3.793,5.18-5.713c0.063,2.458,0.183,4.914,0.366,7.349
+                    c-1.249,16.624,3.158,31.681,10.982,45.441c15.464,36.553,45.696,66.096,84.774,80.146c1.61,0.576,2.768-2.106,1.175-2.811
+                    c-1.579-0.694-3.14-1.42-4.689-2.172c-0.074-0.175-0.188-0.346-0.373-0.496c-3.481-2.855-7.145-5.771-10.909-8.748
+                    c4.138,2.201,8.321,4.316,12.514,6.371c1.924,0.967,3.86,1.91,5.816,2.812c0.779,0.365,1.506,0.007,1.896-0.547
+                    c0.199,0.101,0.394,0.208,0.591,0.314c1.742,0.901,3.3-1.735,1.548-2.644c-2.503-1.318-4.993-2.686-7.479-4.084
+                    c-9.519-5.43-18.631-11.629-27.1-18.538c9.869,6.595,20.659,11.9,32.15,15.62c1.171,0.38,1.655-1.455,0.493-1.849
+                    c-34.95-11.774-63.156-38.946-77.996-72.149c-5.322-12.443-8.725-25.806-9.776-39.957c3.079,2.449,6.121,4.951,9.102,7.521
+                    c6.863,7.015,13.995,13.761,21.41,20.233c0.68,0.593,1.48,0.491,2.042,0.084c1.935,2.003,3.855,4.023,5.81,6.011
+                    c1.478,1.5,3.729-0.717,2.335-2.273c-2.398-2.677-4.832-5.315-7.283-7.945c0.427-0.198,0.782-0.596,0.947-1.081
+                    c0.658,0.448,1.317,0.9,1.976,1.35c1.558,1.063,3.3-1.27,2.021-2.579c-13.958-14.284-27.598-28.855-41.054-43.612
+                    C74.322,447.103,72.306,444.99,70.82,446.17z M67.678,459.933c0.047-0.054,0.096-0.105,0.144-0.157
+                    c0.563,0.659,1.124,1.324,1.689,1.975c-0.605-0.407-1.208-0.824-1.816-1.231C67.693,460.321,67.681,460.128,67.678,459.933z
+                     M65.494,457.03c-0.292,0.315-0.584,0.63-0.877,0.945c-0.134-0.232-0.321-0.4-0.539-0.522c0.365-0.373,0.731-0.735,1.096-1.106
+                    C65.226,456.576,65.324,456.802,65.494,457.03z M61.7,460.325c-0.005,0.265,0,0.53-0.001,0.791
+                    c-5.797,6.173-11.666,12.281-17.574,18.347c-1.443,1.461-2.886,2.922-4.329,4.383c6.824-8.238,14.141-16.06,21.643-23.715
+                    C61.526,460.197,61.612,460.263,61.7,460.325z M70.899,451.127c0.016,0.007,0.029,0.021,0.043,0.029
+                    c-1.106,1.209-2.226,2.395-3.337,3.597c-0.197-0.13-0.395-0.216-0.594-0.255c1.189-1.193,2.381-2.379,3.574-3.564
+                    C70.691,450.994,70.789,451.057,70.899,451.127z M90.575,543.613c2.044,2.787,4.221,5.433,6.493,7.969
+                    c5.634,7.382,11.903,14.277,18.743,20.575C104.424,562.642,94.644,551.44,86.781,539c0.969,1.148,1.966,2.286,2.971,3.417
+                    C90.036,542.813,90.286,543.217,90.575,543.613z M109.971,553.393c-2.911-2.728-5.726-5.549-8.439-8.455
+                    c-2.192-3.28-4.256-6.65-6.2-10.089C99.721,541.357,104.626,547.547,109.971,553.393z M76.25,518.994
+                    c-2.451-5.717-4.512-11.617-6.202-17.652c1.966,5.313,4.244,10.484,6.819,15.502c0.852,2.001,1.735,3.988,2.665,5.955
+                    c0.438,1.192,0.884,2.384,1.375,3.563C79.242,523.951,77.692,521.493,76.25,518.994z M78.362,502.067
+                    c2.667,9.162,6.136,18.035,10.345,26.524c-5.744-9.347-9.256-19.231-11.381-29.566C77.661,500.043,77.998,501.061,78.362,502.067z
+                     M73.797,499.115c-3.282-11.114-5.322-22.633-5.946-34.334c0.985,0.735,1.961,1.48,2.937,2.224
+                    C71.047,477.997,71.752,488.751,73.797,499.115z M83.078,464.391c-2.729-2.518-5.485-5.013-8.29-7.459
+                    c-1.383-1.207-3.17,0.171-2.752,1.617c-0.556-0.484-1.112-0.971-1.668-1.453c1.077-1.114,2.166-2.223,3.267-3.324
+                    c0.927,1.132,1.8,2.346,2.674,3.302C78.552,459.524,80.817,461.957,83.078,464.391z"/>
+                <path fill="#10A3C7" d="M183.716,329.926c-7.676,0.664-16.949,9.575-24.084,8.577c-16.458-2.303-0.354-27.61,4.429-34.933
+                    c4.176-6.397,8.723-12.324,12.958-18.652c5.925-8.844,21.819-33.126,8.148-36.505c-12.69-3.137-33.864,12.604-46.137,21.949
+                    c-17.92,13.647-34.634,30.966-51.642,47.155c-7.235,6.886-19.103,21.063-27.372,22.65c-16.985,3.263-9.327-16.485-5.663-24.496
+                    c1.393-3.046,3.007-6.071,4.67-8.913c4.964-8.488,10.846-15.987,16.81-23.138c18.801-22.542,39.01-40.911,58.982-60.868
+                    c11.161-11.151,21.299-28.663,12.39-42.353c-8.497-13.056-26.629-11.783-40.09-7.924c-11.393,3.264-22.01,11.914-33.265,16.101
+                    c-17.714,6.587-25.531-10.846-25.788-31.853c-0.149-12.153,0.806-28.81,8.805-39.609c13.394-18.083,38.119-29.376,48.931-46.035
+                    c0.093-0.063,0.185-0.128,0.277-0.192c-3.527,9.29-5.817,19.367-5.349,28.478c0.168,3.297,4.023,2.369,4.425-1.123
+                    c1.454-12.615,3.252-23.326,9.199-35.026c0.885-1.735,0.59-3.385-0.204-4.188c0.02-0.032,0.043-0.063,0.066-0.092
+                    c0.752-1.015,0.162-2.816-0.802-1.87c-1.928,1.893-3.791,3.909-5.608,6.01c-6.751,5.957-12.971,5.66-20.318,5.155
+                    c0.002,0.035,0.004,0.069,0.007,0.1c-1.421,0.16-2.617,2.777-1.344,4.057c3.414,3.437,8.148,3.676,13.001,2.035
+                    c-10.279,15.221-46.175,28.514-50.817,47.024c-5.77,23.017-8.596,52.55,2.647,68.079c12.604,17.404,32.347-0.979,49.049-7.999
+                    c12.165-5.115,26.504-7.269,36.932-1.488c9.949,5.511,10.303,16.752,1.745,31.097c-4.804,8.054-15.857,15.403-22.117,21.405
+                    c-19.738,18.926-41.007,39.792-57.402,64.68c-8.129,12.339-26.054,49.425-6.441,51.208c7.037,0.643,14.711-5.504,21.17-11.087
+                    c10.302-8.903,20.251-18.861,30.264-28.515c19.33-18.637,39.388-37.84,61.012-47.801c5.649-2.604,20.386-11.519,17.837,3.727
+                    c-1.232,7.367-12.01,19.774-15.593,24.814c-7.44,10.471-16.434,22.531-19.738,36.17c-2.183,9.006-0.534,16.347,5.232,19.103
+                    c9.207,4.4,20.082-6.835,29.856-7.669C186.127,336.88,187.078,329.638,183.716,329.926z"/>
+                <path fill="#DE2C8C" d="M598.722,166.443c12.563-6.048,19.654-19.039,24.599-31.475c5.243-13.168,9.196-29.333,6.581-43.689
+                    c1.402,1.911,2.791,4.058,3.316,4.706c2.611,3.203,5.104,6.629,8.099,9.484c1.458,1.396,4.347-0.246,3.098-2.174
+                    c-2.903-4.482-6.67-8.453-10.108-12.531c-1.634-1.94-4.615-7.499-7.93-7.126c-2.779,0.31-3.777,4.361-4.706,6.373
+                    c-2.517,5.452-5.141,10.86-7.487,16.389c-0.514,1.212,1.453,2.156,2.09,0.995c1.928-3.513,3.735-7.091,5.596-10.64
+                    c0.377-0.719,2.558-5.521,3.873-7.725c0.209,23.725-2.699,51.97-21.747,68.935"/>
+                <path fill="#10A3C7" d="M686.956,111.702c17.009-12.054,34.018-22.427,47.281-37.2c5.49-6.121,12.183-24.033,22.4-26.371
+                    c10.324-2.365,14.305,8.268,17.868,13.24c11.79,16.485,23.186,33.14,33.583,50.144c1.837,3-3.965,5.66-6.029,2.631
+                    c-9.078-13.302-18.102-26.635-27.775-39.708c-2.028-2.75-7.624-12.87-11.087-14.624c-4.441-4.019-7.118-3.439-8.04,1.739
+                    c-0.667,1.029-1.446,2.02-2.155,3.041c2.776-1.281,7.04-0.51,6.851,2.647c-2.548,41.573-33.279,79.557-31.027,121.588
+                    c1.224,22.685,12.96,41.446,36.106,56.181c17.152,10.919,37.016,19.688,50.817,33.272c54.183,53.293-6.096,129.203-82.416,145.474
+                    c-3.854,0.822-5.413-3.528-1.644-4.457c43.529-10.715,78.791-37.342,90.564-70.684c7.122-20.143,5.479-42.83-9.044-61.002
+                    c-11.909-14.901-32.554-24.166-50.217-34.789c-81.785-49.191-22.343-122.536-12.414-184.834c-0.479,0.656-0.907,1.335-1.405,1.984
+                    c-13.64,17.749-33.271,36.261-57.322,46.461C687.936,118.101,683.565,114.107,686.956,111.702z"/>
+            </g>
+        </svg>
+		<div class="reset img-center">
+        	<input class=" btn btn-primary"  value="RESETEAR" id="reset" type="button" onclick="resetall()" />
+        </div>
+</div>
+</div>
+<!--  -->
 </body>
 </html>
