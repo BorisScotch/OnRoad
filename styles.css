@@ -442,7 +442,7 @@ ul, menu, dir {
 
 	background-size: 75%;
 }
-.fp-nav{
+#fp-nav{
     display:none !important;
 }
 .navbar-toggle .icon-bar {
@@ -483,6 +483,7 @@ width: 35px;
 .section2 {
 	background-size:150%;
 }
+
 }
 @media screen and (max-width: 880px) {
 	.navbar a {
@@ -494,9 +495,7 @@ width: 35px;
 .navbar-brand>img.brand2 {
 	display:block;
 }
-	#fp-nav{
-    display:none;
-}
+
 	}
 @media (max-width: 812px) and (min-width: 300px) {
 .navbar-nav {
