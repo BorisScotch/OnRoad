@@ -129,6 +129,7 @@ ul, menu, dir {
 	height:100vh;
 	
 }
+
 #slide1 {
 	background-image:url(fotos/onRoad-fotos-15.jpg);
 	background-size:cover;
@@ -153,8 +154,15 @@ ul, menu, dir {
 .intro {
 	color:#dd2c8c; 
 	text-shadow:-1px -1px 0 whitesmoke;
-	
 }
+.intro h1, .intro h2 {
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.6);
+-webkit-transform: skew(30deg); 
+    -moz-transform: skew(30deg); 
+    transform: skew(30deg);
+}
+
 .rows {
 	text-align:center;
 	box-shadow:-15px -15px 0px whitesmoke ,-20px -20px 0px #0fa2c6 ;
@@ -234,8 +242,17 @@ ul, menu, dir {
 	background-color:#0fa2c6;
 }
 .album img {
-	height:100px;
 	margin-bottom:10px;
+	border:3px solid #fff;
+	border-radius:3px;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.album img:hover {
+	transform: scale(1.1) rotate(2deg);
+	opacity:0.8;
 }
 .formulario {
 	background:skyblue url(onroad-combi.svg) center no-repeat;
